@@ -1,6 +1,6 @@
 package ex;
 
-/*
+/* test
  * 계산기 인터페이스 구현하기
  * */
 public class Ex1 {
