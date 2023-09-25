@@ -2,7 +2,6 @@ package main;
 
 /*
  * 변수 선언하여 사용하기
- * 테스트~~~~
  * */
 public class Ex01 {
 		public static void main(String[] args) {
