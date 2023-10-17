@@ -1,23 +1,42 @@
 package quiz;
 
 /*
- * 비교연산자와 논리연산자
+ * 논리연산자
+ * 코드를 보고 연산과정과 결과값을 주석으로 작성하세요
  * */
 public class Quiz7 {
 
 	public static void main(String[] args) {
 
-//		(1) int형변수 i를 선언하고 80을 대입하세요
-//		논리연산자를 사용하여 i가 50<i<100 범위에 속해있다면 true를 출력하세요
-		int i = 100;
-		boolean bool = (i>50) && (i<100);
-		System.out.println(bool);
+		boolean result1 = (1 == 2) || (1 < 2); //
+		boolean result2 = true && false; //
+		boolean result3 = !false; //
 		
-//		(2) int형변수 i2를 선언하고 5을 대입하세요
-//		논리연산자를 사용하여 i2가 10보다 작거나 30보다 크면 true를 출력하세요
-		int i2 = 5;
-		boolean bool2 = (i2<10) || (i2>30);
-		System.out.println(bool2);
+		int x = 1;
+		int y = 5;
+		boolean result4 = (x<y) || (x==y); //
+		
+//		//답:
+//		boolean result1 = (1 == 2) || (1 < 2); //풀이: false || true, 논리합은 둘중하나라도 참이면 참을 도출
+//		System.out.println(result1); // 정답: true
+//		
+//		boolean result2 = true && false; //풀이: 
+//		System.out.println(result2); // 정답: false
+//		
+//		boolean result3 = !false; //풀이: ->
+//		System.out.println(result3); // 정답: true
+//		
+//		int x = 1;
+//		int y = 5;
+//		boolean result4 = (x<y) || (x==y); //풀이: true || false
+//		System.out.println(result4); // 정답: true
+		
 	}
 
 }
+
+
+
+
+
+

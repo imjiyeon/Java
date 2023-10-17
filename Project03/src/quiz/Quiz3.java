@@ -1,28 +1,18 @@
 package quiz;
 
 /*
- * 산술연산자
- * 
- * 수학점수 mathScore 90
- * 영어점수 engSccore 70
- * 국어점수 korScore 100
- * 점수의 총점과 평균를 구하세요
+ * 변수 num을 선언하고 456를 저장하세요.
+ * 그리고 백의 자리 이하를 버린 값을 구하세요.
+ * 만일 변수 num의 값이 '456'이라면 '400'이 되고, '111'이라면 '100'이 됩니다.
  * */
 public class Quiz3 {
 
 	public static void main(String[] args) {
 
-		int mathScore = 90;
-		int engSccore = 70;
-		int korScore = 100;
+		int num = 456;
+		int result = num/100 * 100;
 		
-		//총점
-		int totalScore = mathScore + engSccore + korScore;
-		System.out.println(totalScore); //260
-		//평균
-		double avgScore1 = totalScore / 3.0;
-		System.out.println(avgScore1); //86.66666666666667
-
+		System.out.println("결과: " + result);
 	}
+
 }
-          

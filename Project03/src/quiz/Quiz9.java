@@ -1,25 +1,25 @@
 package quiz;
 
 /*
- * 연산자 우선순위
- * 코드를 보고 예상결과와 풀이과정을 주석으로 작성하세요
+ * 삼항연산자
+ * 1. 숫자 5가 숫자3보다 크면, 문자 '오' 아니면 문자 '삼' 출력하세요
+ * 2. 코드를 보고 예상 결과와 풀이과정을 주석으로 작성하세요
  * */
 public class Quiz9 {
 
 	public static void main(String[] args) {
-
-		int result1 = -5 + 3 * 10 / 2; //
-		int x = 1;
-		int result2 = (++x) + 5; //
+		//정답
+		char ch;
+		ch = (5 > 3) ? '오': '삼';
+		System.out.println(ch);
 		
-		//답:
-//		int result1 = -5 + 3 * 10 / 2; // +보다 * /가 더 연산순위가 높으니까 3*10/2가 먼저 수행됨. 그리고 -5 + 15가 수행됨
-//		System.out.println(result1); //10
-//
-//		int x = 1;
-//		int result2 = (++x) + 5; //증가연산자가 먼저 x값을 1증가시키고, + 5를 수행함 -> 2 + 5
-//		System.out.println(result2); //7
+		//정답
+		int x = 10;
+		int y = 20;		
+		int result = (x>10) ? y+10: y-10; //
+		System.out.println(result); //
 		
 	}
+	
 
 }

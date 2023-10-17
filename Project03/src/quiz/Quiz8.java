@@ -1,25 +1,23 @@
 package quiz;
 
 /*
- * 삼항연산자
- * 1. 숫자 5가 숫자3보다 크면, 문자 '오' 아니면 문자 '삼' 출력하세요
- * 2. 코드를 보고 예상 결과와 풀이과정을 주석으로 작성하세요
+ * 비교연산자와 논리연산자
  * */
 public class Quiz8 {
 
 	public static void main(String[] args) {
-		//정답
-		char ch;
-		ch = (5 > 3) ? '오': '삼';
-		System.out.println(ch);
+
+//		(1) int형변수 i를 선언하고 80을 대입하세요
+//		논리연산자를 사용하여 i가 50<i<100 범위에 속해있다면 true를 출력하세요
+		int i = 100;
+		boolean bool = (i>50) && (i<100);
+		System.out.println(bool);
 		
-		//정답
-		int x = 10;
-		int y = 20;		
-		int result = (x>10) ? y+10: y-10; //
-		System.out.println(result); //
-		
+//		(2) int형변수 i2를 선언하고 5을 대입하세요
+//		논리연산자를 사용하여 i2가 10보다 작거나 30보다 크면 true를 출력하세요
+		int i2 = 5;
+		boolean bool2 = (i2<10) || (i2>30);
+		System.out.println(bool2);
 	}
-	
 
 }
