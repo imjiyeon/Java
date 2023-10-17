@@ -16,7 +16,5 @@ public class Ex01 {
 		System.out.print("반갑습니다");
 
 		// sysout -> 컨트롤 + 스페이스 -> 코드 자동완성
-		
-		//test
 	}
 }

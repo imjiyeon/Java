@@ -13,6 +13,6 @@ public class Quiz5 {
 		String name = "임지연";
 		int age = 32;
 		char gender = 'F';
-		boolean isMarried = true;
+		boolean isMarried = false;
 	}
 }

@@ -11,6 +11,6 @@ public class Ex06 {
 		double d = 3.14;
 
 		//float형 변수에 값을 저장할때 식별자가 없으면 에러가 발생한다
-		//fnum = 3.0;
+		//f = 3.0;
 	}
 }
