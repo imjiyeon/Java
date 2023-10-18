@@ -1,6 +1,6 @@
 package main;
 
-/* tt
+/* 테스트입니다
  * 부호연산자
  * */
 public class Ex1 {
