@@ -8,9 +8,9 @@ import java.io.IOException;
  * */
 public class Ex2 {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 
-		int age = 10; // 7로 바꿔보기
+		int age = 10; 
 		if (age >= 8) { //나이가 8살이상이면
 			System.out.println("학교에 다닙니다"); // 참이면 수행
 		} else { //그렇지 않다면
