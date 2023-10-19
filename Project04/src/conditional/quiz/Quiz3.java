@@ -9,8 +9,8 @@ import java.io.IOException;
  * */
 public class Quiz3 {
 
-	public static void main(String[] args) throws IOException {
-		char gender = 'F'; // 값 바꿔보기
+	public static void main(String[] args) {
+		char gender = 'F';
 
 		if (gender == 'F') { // gender가 F라면
 			System.out.println("여성입니다");
