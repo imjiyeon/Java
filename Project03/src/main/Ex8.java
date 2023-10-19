@@ -11,7 +11,7 @@ public class Ex8 {
 		int fatherAge = 50;
 
 		String str;
-		str = (motherAge > fatherAge) ? "엄마" : "아빠"; // 엄마의 나이가 더 많기때문에 첫번째 결과를 반환한다
+		str = (motherAge > fatherAge) ? "엄마" : "아빠"; // 아빠의 나이가 더 많기때문에 두번째 결과를 반환한다
 		System.out.println(str);
 
 		char ch = (motherAge > fatherAge) ? 'm' : 'f';
