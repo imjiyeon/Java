@@ -10,9 +10,8 @@ public class Quiz4 {
 
 	public static void main(String[] args) {
 		int i = 160;
-		// && 논리곱 AND
-		// || 논리합 OR
-		if(i>100 && i<200) { //i가 100<i<200 범위라면, true && true -> true
+		
+		if(i>100 && i<200) { //i가 100<i<200 범위에 포함된다면
 			System.out.println("i는 100이상 200이하 입니다");
 		}else { //그렇지 않다면
 			System.out.println("i는 100보다 작거나 200보다 큽니다");

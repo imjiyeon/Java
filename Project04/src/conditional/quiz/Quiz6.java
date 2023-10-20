@@ -14,7 +14,7 @@ public class Quiz6 {
 
 	public static void main(String[] args) {
 		
-		int score = 50; //학생의 점수를 저장할 변수를 선언한다
+		int score = 50; //학생의 점수
 
 		if(score >= 90 && score<=99) { //학생의 점수가 90점 이상이면
 			System.out.println("수");
