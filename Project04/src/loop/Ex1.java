@@ -1,12 +1,12 @@
 package loop;
 
 /*
- * 숫자 1부터 10까지 출력하세요
+ * 숫자 1부터 10까지 츨력하기
  * */
-
 public class Ex1 {
 
 	public static void main(String[] args) {
+		//반복문없이 처리
 		System.out.println(1);
 		System.out.println(2);
 		System.out.println(3);
@@ -17,8 +17,14 @@ public class Ex1 {
 		System.out.println(8);
 		System.out.println(9);
 		System.out.println(10);
-		//우리가 배운 코드만으로 작성한다면 print문을 10번 사용해야 한다
-		//이렇게 반복되는일을 처리하기 위해 사용되는 것이 "반복문" 이다
+		
+		//반복문으로 처리
+		int num = 1; //출력할 숫자
+		while (num <= 10) { // 조건을 만족하는 동안 블록을 10번 실행
+			System.out.println(num);
+			num++; // num을 1씩 증가시켜서 출력
+		}
+
 	}
 
 }
