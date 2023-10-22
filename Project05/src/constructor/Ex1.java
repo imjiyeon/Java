@@ -26,7 +26,7 @@ class Person2 {
 	int weight;
 	
 	// 이름을 매개변수로 받아서 초기화하는 생성자
-	public Person2(String nm) {
+	public Person2(String nm) { //생성자는 반환값이 없음
 		name = nm;
 	}
 	
