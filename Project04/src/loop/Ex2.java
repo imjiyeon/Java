@@ -1,33 +1,30 @@
 package loop;
 
 /*
- * 숫자 1부터 10까지 합 구하기
+ * 숫자 1부터 10까지 츨력하기
  * */
 public class Ex2 {
 
 	public static void main(String[] args) {
 		//반복문없이 처리
-		int sum = 0;
-		sum = sum + 1;
-		sum = sum + 2;
-		sum = sum + 3;
-		sum = sum + 4;
-		sum = sum + 5;
-		sum = sum + 6;
-		sum = sum + 7;
-		sum = sum + 8;
-		sum = sum + 9;
-		sum = sum + 10;
-		System.out.println("1부터10까지의 합은 " + sum + "입니다.");
+		System.out.println(1);
+		System.out.println(2);
+		System.out.println(3);
+		System.out.println(4);
+		System.out.println(5);
+		System.out.println(6);
+		System.out.println(7);
+		System.out.println(8);
+		System.out.println(9);
+		System.out.println(10);
+		
+		//반복문으로 처리
+		int num = 1; //출력할 숫자
+		while (num <= 10) { // 조건을 만족하는 동안 블록을 10번 실행
+			System.out.println(num);
+			num++; // num을 1씩 증가시켜서 출력
+		}
 
-//		//반복문으로 처리
-//		int num = 1; //더할 숫자
-//		int sum = 0; //합계를 저장할 변수
-//		
-//		while(num <= 10){ //조건을 만족하는 동안 총 10번 코드를 실행
-//			sum = sum + num; // num을 1씩 증가시켜서 sum에 계속 더하기
-//			num++;
-//		}
-//		System.out.println("1부터10까지의 합은 " + sum + "입니다.");
 	}
+
 }
