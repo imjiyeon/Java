@@ -1,22 +1,25 @@
 package loop;
 
 /*
- * 중첩반복문을 사용하여 구구단 짜기
+ * break를 사용하여 1부터 20까지 더하다가, 합이 100이 넘어가면 반복문을 중단한다
+ * for문이 종료되기전 i과 sum의 값을 출력한다
  * */
 public class Ex9 {
 
 	public static void main(String[] args) {
-
-		for (int dan = 2; dan <= 9; dan++) { //외부for문에서 2단부터 9단까지 총 8번 수행함
-			
-			for (int times = 1; times <= 9; times++) { //내부for문에서 곱하는 수 1부터 9까지 총 9번 수행함
-				System.out.println(dan + "X" + times + "=" + dan * times); //구구단 출력
+		int sum = 0; // 합계
+		int i; // 마지막에 i의값을 출력하기 위해 외부에 선언
+		
+		for (i = 1; i <= 20; i++) { // i가 1부터 20이 될때까지 총 20번 수행함
+			sum = sum + i;
+			System.out.println("i: " + i + " , sum: " + sum);
+			if (sum >= 100) { // 합이 100을 넘으면 for문 종료
+				break;
 			}
-			
-			System.out.println();	
 		}
 		
-		// 2단 출력이 끝나면 다시 외부 for문으로 돌아간다
+		System.out.println("i : " + i); // 14
+		System.out.println("sum : " + sum); // 1~14까지의 합은 105
 	}
 
 }

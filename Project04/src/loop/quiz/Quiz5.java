@@ -1,21 +1,19 @@
 package loop.quiz;
 
 /*
- * 구구단을 3단부터 7단까지만 출력하세요
+ * continue를 사용해서,
+ * 1부터 100까지의 수 중에서 3의 배수만 출력하세요.
  * */
 
 public class Quiz5 {
 
-		public static void main(String[] args) {
+	public static void main(String[] args) {
 
-			for(int dan = 3; dan <=7; dan++){ //초기화식을 3단으로 설정. 조건식은 7단으로 설정.
-				
-				for(int times = 1; times <=9; times++){ //곱하는수 1부터 9까지 총 9번 수행함
-					System.out.println(dan + "X" + times + "=" + dan * times);
-				}
-				
-				System.out.println();
+		for(int i = 1; i<=100; i++) { //i가 100될때까지 총 100번 수행함
+			if (i % 3 != 0) { //i가 3의 배수가 아니면 다음 코드를 스킵
+				continue;
 			}
+			System.out.println(i); //3,6,9...
 		}
-
+	}
 }

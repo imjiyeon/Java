@@ -1,25 +1,21 @@
 package loop.quiz;
 
+/*
+ * 구구단을 3단부터 7단까지만 출력하세요
+ * */
 
-//*****
-//*****
-//*****
-
-/* 중첩반복문을 사용해서 직사각형을 그려보세요 
-* */
 public class Quiz7 {
 
-	public static void main(String[] args) {	
-		
-		for(int i = 1; i <=3; i++){
-			
-			for(int j = 1; j <=5; j++){
-				System.out.print('*');
-			}
-			
-			System.out.println();
-		}
-		
-	}
-}
+		public static void main(String[] args) {
 
+			for(int dan = 3; dan <=7; dan++){ //초기화식을 3단으로 설정. 조건식은 7단으로 설정.
+				
+				for(int times = 1; times <=9; times++){ //곱하는수 1부터 9까지 총 9번 수행함
+					System.out.println(dan + "X" + times + "=" + dan * times);
+				}
+				
+				System.out.println();
+			}
+		}
+
+}

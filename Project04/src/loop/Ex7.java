@@ -1,22 +1,29 @@
 package loop;
 
 /*
- * for문을 사용하여 1~10 사이의 홀수들의 합 구하기
+ * for문을 사용하여 1부터 10까지 합 구하기
  * */
 public class Ex7 {
 
 	public static void main(String[] args) {
 
-		int sum = 0; //합계
-
-		for(int i=1; i<=10; i++){ //i가 1부터 10이 될때까지, 블록을 10번 수행함
-			if( i%2 == 0) { //i가 짝수라면
-				continue;  //다음 코드를 수행하지 않고 skip한
-			} 		
-			sum = sum + i; //i이 홀수라면 sum에 더하기
+		/*for문*/
+		int sum = 0;
+		for (int i = 1; i <= 10; i++) { //초기화식, 조건식, 증감식
+			sum = sum + i;
 		}
-		
-		System.out.println("1부터 10까지의 홀수들의 합은 " + sum + "입니다.");
+		System.out.println("1부터 10까지의 합은 " + sum + "입니다.");
+
+		/*while문*/
+		int num = 1; // 초기화식
+		int sum2 = 0;
+		while (num <= 10) { //조건식
+			sum2 = sum2 + num;
+			num++; //증감식
+		}
+		System.out.println("1부터 10까지의 합은 " + sum + "입니다.");
+
+		// for문은 전체 조건을 한눈에 볼수 있기때문에, 가독성이 더 좋다
 	}
 
 }

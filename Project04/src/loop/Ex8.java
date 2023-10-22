@@ -1,26 +1,22 @@
 package loop;
 
 /*
- * for문을 사용해 1부터 20까지 값을 더하다가
- * 합이 100이 넘어가면 반복문을 중단한다
- * for문이 종료되기전 i과 sum의 값을 출력한다
+ * continue를 사용하여 1~10 사이의 홀수들의 합 구하기
  * */
 public class Ex8 {
 
 	public static void main(String[] args) {
-		int sum = 0; // 합계
-		int i; // 마지막에 i의값을 출력하기 위해 외부에 선언
-		
-		for (i = 1; i <= 20; i++) { // i가 1부터 20이 될때까지 총 20번 수행함
-			sum = sum + i;
-			System.out.println("i: " + i + " , sum: " + sum);
-			if (sum >= 100) { // 합이 100을 넘으면 for문 종료
-				break;
-			}
+
+		int sum = 0; //합계
+
+		for(int i=1; i<=10; i++){ //i가 1부터 10이 될때까지, 블록을 10번 수행함
+			if( i%2 == 0) { //i가 짝수라면
+				continue;  //다음 코드를 수행하지 않고 skip한
+			} 		
+			sum = sum + i; //i이 홀수라면 sum에 더하기
 		}
 		
-		System.out.println("i : " + i); // 14
-		System.out.println("sum : " + sum); // 1~14까지의 합은 105
+		System.out.println("1부터 10까지의 홀수들의 합은 " + sum + "입니다.");
 	}
 
 }
