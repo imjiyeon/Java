@@ -8,10 +8,12 @@ public class Quiz5 {
 
 		public static void main(String[] args) {
 
-			for(int dan = 3; dan <=7; dan++){ //단이 3부터 7까지 참이므로 총 5번 반복한다. 
-				for(int times = 1; times <=9; times++){ //곱하는수가 1부터 9까지 참이므로 총 9번 반복한다. 
+			for(int dan = 3; dan <=7; dan++){ //초기화식을 3단으로 설정. 조건식은 7단으로 설정.
+				
+				for(int times = 1; times <=9; times++){ //곱하는수 1부터 9까지 총 9번 수행함
 					System.out.println(dan + "X" + times + "=" + dan * times);
 				}
+				
 				System.out.println();
 			}
 		}

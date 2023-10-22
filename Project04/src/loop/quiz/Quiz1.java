@@ -8,7 +8,7 @@ public class Quiz1 {
 	public static void main(String[] args) {
 
 		int num = 10; // 10으로 초기화
-		while (num <= 20) { // 조건을 만족하는 동안 블록을 10번 실행
+		while (num <= 20) { // num이 20이 될 때까지 총 10번 수행함
 			System.out.println(num);
 			num++; // 11,12,13,14,15,16,17,18,19,20
 		}

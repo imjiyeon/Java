@@ -7,35 +7,23 @@ public class Ex6 {
 
 	public static void main(String[] args) {
 
+		/*for문*/
 		int sum = 0;
-		for(int i=1; i<=10; i++){//i가 1부터 10까지 1씩 증가되므로, 블록을 10번 반복 수행한다
+		for (int i = 1; i <= 10; i++) { //초기화식, 조건식, 증감식
 			sum = sum + i;
-		}	
+		}
 		System.out.println("1부터 10까지의 합은 " + sum + "입니다.");
-				
-//		/* for문을 while문으로 변경한다면 */
-//		int num = 1; //더할 숫자
-//		int sum = 0; //합계를 저장할 변수
-//		while(num <= 10){
-//			sum = sum + num;
-//			num++;
-//		} //for문과 비교하면 for문이 더 가독성이 좋은 것을 알 수 있다
-//		System.out.println("1부터 10까지의 합은 " + sum + "입니다.");
-		
-//		/* 반복문 없이 코드를 구현한다면 */
-//		int sum = 0;
-//		sum = sum + 1;
-//		sum = sum + 2;
-//		sum = sum + 3;
-//		sum = sum + 4;
-//		sum = sum + 5;
-//		sum = sum + 6;
-//		sum = sum + 7;
-//		sum = sum + 8;
-//		sum = sum + 9;
-//		sum = sum + 10;
-//		System.out.println("1부터 10까지의 합은 " + sum + "입니다.");
+
+		/*while문*/
+		int num = 1; // 초기화식
+		int sum2 = 0;
+		while (num <= 10) { //조건식
+			sum2 = sum2 + num;
+			num++; //증감식
+		}
+		System.out.println("1부터 10까지의 합은 " + sum + "입니다.");
+
+		// for문은 전체 조건을 한눈에 볼수 있기때문에, 가독성이 더 좋다
 	}
 
 }
-

@@ -8,17 +8,16 @@ package loop.quiz;
 public class Quiz4 {
 
 	public static void main(String[] args) {
-		int sum = 0;
-		int i;
-	
-		for(i=1; i<=100; i++){ //조건을 만족하는 동안 총 100번 반복한다. 
-			sum = sum + i; //i를 1씩 증가시켜서 sum에 계속 더한다
-//			System.out.println("i: " + i + " , sum: " + sum); //중간과정보기
-			if(sum >= 500) { //반복횟수가 완료되지 않았더라도 sum이 500을 넘으면 for문을 종료하는 조건문을 추가한다
+		int sum = 0; // 합계
+		int i; // 더할 수
+
+		for (i = 1; i <= 100; i++) { // i가 100이 될때까지 총 100번 수행함
+			sum = sum + i; // i를 1씩 증가시키면서 sum에 더하기
+			if (sum >= 500) { // sum이 500을 넘으면 for문을 종료
 				break;
-			} 		
+			}
 		}
-		System.out.println("i: " + i + " , sum: " + sum);
+		System.out.println("i: " + i + " , sum: " + sum); // i: 32 , sum: 528
 	}
 
 }
