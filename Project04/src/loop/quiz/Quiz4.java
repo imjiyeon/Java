@@ -10,8 +10,8 @@ public class Quiz4 {
 
 		for (int i = 1; i <= 100; i++) {
 
-			if (i % 2 == 0) { // i가 3의 배수면 숫자를 출력하는 조건 추가
-				System.out.println(i); // 3,6,9...
+			if (i % 2 == 0) { // i가 2의 배수면 숫자를 출력하는 조건 추가
+				System.out.println(i); // 2,4,6...
 			}
 
 		}
