@@ -7,7 +7,7 @@ package method;
 public class Ex1 {
 
 	// 두수를 더하는 함수 선언
-	public static int add(int n1, int n2) { // 넘겨받은 3과 5는 매개변수에 저장
+	public static int add(int n1, int n2) { // 두 수를 매개변수로 선언, 반환할 값은 숫자이므로 리턴타입은 int로 선언
 		int result = n1 + n2;
 		return result; // 결과값 반환
 	}
