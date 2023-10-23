@@ -1,7 +1,7 @@
 package method.quiz;
 
 /* 
- * 선수의 순위를 입력 받고 메달을 반환하는 함수를 만들고 호출한다
+ * 선수의 순위를 입력 받아 메달을 반환하는 함수를 만들고 호출하세요.
  * 1등 -> 금
  * 2등 -> 은
  * 3등 -> 동
@@ -9,7 +9,7 @@ package method.quiz;
  * */
 public class Quiz6 {
 
-	//선수의 순위를 입력받고 메달을 반환하는 함수 선언
+	//선수의 순위를 입력받아 메달을 반환하는 함수 선언
 	public static String awardMedal(int rank){
 		String medal = "";	
 		switch (rank) {
@@ -30,7 +30,7 @@ public class Quiz6 {
 	
 	public static void main(String[] args) {
 		int playerLevel = 10;
-		String rank = awardMedal(playerLevel);
+		String rank = awardMedal(playerLevel); //함수호출
 		System.out.println(playerLevel + "등 선수의 메달은 " + rank + " 입니다");
 	}
 
