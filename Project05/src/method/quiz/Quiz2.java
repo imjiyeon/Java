@@ -1,29 +1,21 @@
 package method.quiz;
 
 /* 
- * 빼기 메소드를 만들고 호출하세요.
- * 두 수를 입력받아 첫번째 수에서 두번째 수를 뺀 후 그 결과를 반환합니다.
- * 
- * 단, 첫번째 수가 두번째 수보다 작으면 -999을 반환하고 함수를 종료하세요.
+ * 둘 중에 더 큰 수를 출력하는 함수를 만들고 호출하세요.
  * */
 public class Quiz2 {
 
-	//빼기 함수 선언
-	public static int substract(int n1, int n2){
-		if(n1<n2) {
-			return -999;
-		}
-		int result = n1 - n2;
-		return result;
+	//두수를 비교하는 함수 선언
+	public static void max(int n1, int n2){
+		if ( n1 <= n2) {
+			System.out.println(n2);
+		} else {
+			System.out.println(n1);
+		}	
 	}
-
+	
 	public static void main(String[] args) {
-		int num1 = 10;
-		int num2 = 20;
-
-		int result = substract(num1, num2); //함수 호출
-		System.out.println(num1 + " - " + num2 + " = " + result + "입니다");
-
+		max(10,5); //함수 호출
 	}
 
 }
