@@ -15,11 +15,11 @@ public class Ex7 {
 		System.out.println("1부터 10까지의 합은 " + sum + "입니다.");
 
 		/*while문*/
-		int num = 1; // 초기화식
+		int i = 1; // 초기화식
 		int sum2 = 0;
-		while (num <= 10) { //조건식
-			sum2 = sum2 + num;
-			num++; //증감식
+		while (i <= 10) { //조건식
+			sum2 = sum2 + i;
+			i++; //증감식
 		}
 		System.out.println("1부터 10까지의 합은 " + sum + "입니다.");
 
