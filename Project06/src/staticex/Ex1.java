@@ -14,18 +14,18 @@ public class Ex1 {
 		student2.studentName = "또치";
 		System.out.println(student2.studentName + " 학번:" + student2.studentID); //학번을 확인해보면 순서대로 학번을 부여받음
 
-		System.out.println(Student.serialNum); //serialNum변수를 직접 클래스이름으로 참조
+		System.out.println(Student.count); //count변수를 직접 클래스이름으로 참조
 	}
 }
 
 class Student {
-	static int serialNum = 1000; //공통속성
+	static int count = 0; //공통속성
 	int studentID;
 	String studentName;
 	
 	public Student() {
-		serialNum++; //학생이 생성될 때마다 증가
-		studentID = serialNum;  //증가된 값을 학번에 부여
+		count++; //학생이 생성될 때마다 증가
+		studentID = count;  //증가된 값을 학번에 부여
 	}
 
 }

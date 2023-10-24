@@ -21,7 +21,7 @@ class BirthDay{
 	int year;
 	
 	public void setYear(int year) { //태어난 연도를 지정하는 메소드
-		this.year = year; //멤버변수 = 지역변수
+		this.year = year; //멤버변수 = 지역변수. 같은 이름의 변수를 사용할 때, this를 사용해서 멤버변수와 지역변수를 구분함.
 	}
 	
 	public void printThis() { //this 출력 메소드
