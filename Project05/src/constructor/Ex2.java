@@ -1,12 +1,11 @@
 package constructor;
 
 /*
- * 사용자 정의 생성자 만들고 객체 생성하기
+ * 사용자정의 생성자를 사용하여 인스턴스 생성하기
  * */
 public class Ex2 {
 
 	public static void main(String[] args) {
-
 		// 첫번째 생성자 메소드를 사용하여 인스턴스 생성
 		Person person1 = new Person();  
 		person1.name = "둘리"; // 인스턴스 생성 후 멤버변수 값을 따로 초기화
@@ -29,21 +28,21 @@ class Person {
 	String name;
 	int height;
 	int weight;
-
-	// 디폴트 생성자
-	public Person() { // 생성자가 하나도 없으면 컴파일러가 자동으로 디폴트 생성자를 만든다
+	
+	// 디폴트 생성자 직접 추가
+	public Person() { //클래스 내부에 생성자가 하나라도 있으면, 컴파일러가 디폴트생성자를 만들지 않음
 	}
-
+	
 	// 이름을 매개변수로 받아서 초기화하는 생성자
-	public Person(String nm) {
+	public Person(String nm) { //생성자는 반환값이 없음
 		name = nm;
 	}
-
-	// 이름, 키, 몸무게를 매개변수로 받아서 초기화하는 생성자
-	public Person(String nm, int hg, int wg) {
+	
+	// 이름,키,몸무게를 매개변수로 받아서 초기화하는 생성자
+	public Person(String nm, int he, int we) {
 		name = nm;
-		height = hg;
-		weight = wg;
+		height = he;
+		weight = we;
 	}
-
+	
 }

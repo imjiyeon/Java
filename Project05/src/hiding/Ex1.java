@@ -1,42 +1,20 @@
 package hiding;
 
 /*
- * private 변수와 get/set 함수 사용하기
+ * public 변수 선언하고 값 변경하기
  * */
 public class Ex1 {
-
 	public static void main(String[] args) {
-		Person person = new Person();
-//		person.name = "둘리"; //에러발생 -> private 변수는 외부에서 사용할 수 없다
-		
-		person.setName("둘리"); //public 메소드를 이용해서 멤버변수를 간접적으로 사용할 수 있다
-		person.getName();
-	}
-}   
+		MyDate date = new MyDate();
+		date.month = 2; // 멤버변수 직접 사용
+		date.day = 31; // 2월은 28일이나 29일까지 인데 31일이 저장됨
+		System.out.println("현재 날짜는 " + date.month + "월 " + date.day + "일 입니다");
 
+		// public변수는 잘못된 값이 저장되는 것을 막을 수 없음
+	}
+}
 
-class Person {
-	private String name; //private 접근제한자 사용
-	private int height;
-	private double weight;
-	
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public int getHeight() {
-		return height;
-	}
-	public void setHeight(int height) {
-		this.height = height;
-	}
-	public double getWeight() {
-		return weight;
-	}
-	public void setWeight(double weight) {
-		this.weight = weight;
-	}
-
-}   
+class MyDate {
+	public int month; // 월
+	public int day; // 일
+}
