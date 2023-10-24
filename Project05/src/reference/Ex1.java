@@ -1,7 +1,7 @@
 package reference;
 
 /*
- * 학생의 국어점수와 수학점수를 저장하는 프로그램 만들기
+ * 학생의 시험점수를 저장하는 프로그램 만들기
  * */
 public class Ex1 {
 
@@ -14,9 +14,8 @@ public class Ex1 {
 	}
 }
 
-/*
- * 성적을 저장하는 클래스 만들기
- * */
+
+//성적을 저장하는 클래스 만들기
 class Subject {
 	String subjectName; //과목
 	int scorePoint; //점수

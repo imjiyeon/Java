@@ -1,12 +1,12 @@
-package reference.quiz;
+package reference;
 
 /*
- * 부서에 부서원을 구성하는 프로그램을 구현하세요.
- * 먼저 Department와 Employee 클래스를 설계하세요.
- * Department의 멤버변수: 부서장, 수석연구원, 책임연구원
- * Employee의 멤버변수: 이름, 나이, 월급, 근속년수
+ * 부서(Department)을 정의하는 클래스를 만드세요.
+ * 속성: 부서장, 수석연구원, 책임연구원
+ * 직원(Employee)을 정의하는 클래스를 만드세요.
+ * 속성: 이름, 나이, 월급, 근속년수
  * 
- * Department 인스턴스를 만들고 부서원을 추가하세요.
+ * 부서 객체를 생성하고, 부서원을 추가하세요.
  * */
 public class Quiz2 {
 

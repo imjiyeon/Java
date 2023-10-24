@@ -1,12 +1,12 @@
-package reference.quiz;
+package reference;
 
 /*
- * 도서관 회원이 책 3권을 대여하는 프로그램을 구현하세요.
- * 먼저 Member와 Book 클래스를 설계하세요.
- * Member의 멤버변수: 회원번호, 이름, 대여한 책1, 책2, 책3
- * Book의 멤버변수: 제목, 가격, 출판사, 페이지수
+ * 회원(Member)을 정의하는 클래스를 만드세요.
+ * 속성: 회원번호, 이름, 대여한 책1, 책2, 책3
+ * 책(Book)을 정의하는 클래스를 만드세요.
+ * 속성: 제목, 가격, 출판사, 페이지수
  * 
- * Member 인스턴스를 만들고 책 3권을 추가하세요.
+ * 도서관 회원을 생성하고, 책 3권을 추가하세요.
  * */
 
 public class Quiz1 {
@@ -49,10 +49,10 @@ class Member {
 }
 
 class Book {
-	public String title;
-	public int price;
-	public String company;
-	public int page;
+	String title;
+	int price;
+	String company;
+	int page;
 	
 	public Book(String title, int price, String company, int page) {
 		super();
