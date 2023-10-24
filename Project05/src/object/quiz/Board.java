@@ -1,9 +1,8 @@
 package object.quiz;
 
 /*
- * 게시물 객체를 설계한다
- * 클래스 이름: Board
- * 멤버변수: 글번호, 제목, 내용, 작성자
+ * 게시물(Board)을 정의하는 클래스를 만드세요.
+ * 속성: 글번호, 제목, 내용, 작성자
  * */
 public class Board {
 	int no; //글번호 (1)

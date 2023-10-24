@@ -1,9 +1,8 @@
 package object.quiz;
 
 /*
- * 영화 객체를 설계한다
- * 클래스 이름: Movie
- * 멤버변수: 제목, 가격, 감독, 상영시간
+ * 영화(Movie)을 정의하는 클래스를 만드세요.
+ * 속성: 제목, 가격, 감독, 상영시간
  * */
 public class Movie {
 	  String title; //제목 (영웅)
