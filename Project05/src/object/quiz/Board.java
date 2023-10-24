@@ -6,8 +6,8 @@ package object.quiz;
  * 멤버변수: 글번호, 제목, 내용, 작성자
  * */
 public class Board {
-	int no; //글번호
-	String title; //제목
-	String content; //내용
-	String writer; //작성자
+	int no; //글번호 (1)
+	String title; //제목 (안녕하세요) 
+	String content; //내용 (반갑습니다 ~~ )
+	String writer; //작성자 (jiyeon)
 }
