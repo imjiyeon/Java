@@ -2,6 +2,7 @@ package method.quiz;
 
 /* 
  * 두 수를 입력받아, 둘 중에 더 큰 수를 출력하는 함수를 만들고 호출하세요.
+ * 예시) 10,5 => 10
  * */
 public class Quiz2 {
 
