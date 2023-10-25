@@ -9,9 +9,9 @@ public class Quiz3 {
 	
 	//n1부터 n2까지의 합을 구하는 함수 선언 
 	public static int hap(int n1, int n2) {
-		int result = 0;
+		int result = 0;	
 		for(int i=n1; i<=n2; i++) {
-			result = result + i;
+			result = result + i;	
 		}
 		return result;
 	}
@@ -25,3 +25,10 @@ public class Quiz3 {
 	}
 
 }
+
+
+//문제풀이
+//매개변수o, 리턴값o
+//두수의 합계를 구하는 반복문 만들기
+//for문안에서 return하면 에러남 
+//for문도 조건문이라 만족하지 못하면 return 못함
