@@ -16,6 +16,8 @@ public class Quiz2 {
 	
 	public static void main(String[] args) {
 		max(10,5); //함수 호출
+		max(2,7); 
+		max(5,5); 
 	}
 
 }
