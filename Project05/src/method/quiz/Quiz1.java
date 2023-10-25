@@ -8,17 +8,18 @@ public class Quiz1 {
 
 	//사칙연산을 수행하는 함수 선언
 	public static void arithmetic(int n1, int n2){
-		System.out.println("덧셈 결과 ->" + (n1 + n2));
-		System.out.println("뺄셈 결과 ->" + (n1 - n2));
-		System.out.println("곱셈 결과 ->" + (n1 * n2));
-		System.out.println("나눗셈 몫 ->" + (n1 / n2));
-		System.out.println("나눗셈 나머지 ->" + (n1 % n2));
+		System.out.println(n1 + "+" + n2 + "=" + (n1 + n2));
+		System.out.println(n1 + "-" + n2 + "=" + (n1 - n2));
+		System.out.println(n1 + "*" + n2 + "=" + (n1 * n2));
+		System.out.println(n1 + "/" + n2 + "=" + (n1 / n2));
+		System.out.println(n1 + "%" + n2 + "=" + (n1 % n2));
+		System.out.println();
 	}
 
 	public static void main(String[] args) {
-		int num1 = 10;
-		int num2 = 5;
-		arithmetic(num1, num2); //함수 호출
+		arithmetic(10, 5); //함수 호출
+		arithmetic(20, 3);
+		arithmetic(6, 2);
 	}
 
 }
