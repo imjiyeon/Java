@@ -5,7 +5,7 @@ package method.quiz;
  * 두 수를 입력받아 첫번째 수에서 두번째 수를 뺀 후 그 결과를 반환하세요.
  * 
  * 단, 첫번째 수가 두번째 수보다 작으면 -999을 반환하고 함수를 종료하세요.
- * 예시)10,20 -> -999
+ * 예시)10,20 => -999
  * */
 public class Quiz4 {
 
@@ -24,7 +24,6 @@ public class Quiz4 {
 
 		int result = substract(num1, num2); //함수 호출
 		System.out.println(num1 + " - " + num2 + " = " + result + "입니다");
-
 	}
 
 }
