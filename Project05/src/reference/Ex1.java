@@ -40,21 +40,20 @@ class Student {
 		
 	int studentID; //학번
 	String studentName; //이름
-	Subject korean; //국어과목 - Subject형을 사용해서 선언
 	Subject math; //수학과목 - Subject형을 사용해서 선언
-	
+	Subject korean; //국어과목 - Subject형을 사용해서 선언
 
-	public Student(int studentID, String studentName, Subject korean, Subject math) {
+	public Student(int studentID, String studentName, Subject math, Subject korean) {
 		this.studentID = studentID;
 		this.studentName = studentName;
-		this.korean = korean;
 		this.math = math;
+		this.korean = korean;
 	}
 
 	@Override
 	public String toString() {
-		return "Student [studentID=" + studentID + ", studentName=" + studentName + ", korean=" + korean + ", math="
-				+ math + "]";
+		return "Student [studentID=" + studentID + ", studentName=" + studentName + ", math=" + math + ", korean="
+				+ korean + "]";
 	}
 
 }
