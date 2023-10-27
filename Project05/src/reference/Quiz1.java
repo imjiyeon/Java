@@ -19,9 +19,6 @@ public class Quiz1 {
 		
 		//사람 1명 만들기
 		Member member = new Member(1001, "둘리", book1, book2, book3);
-		
-		//사람의 모든 정보 출력하기
-		System.out.println(member.toString());	
 	}
 }
 
@@ -41,11 +38,6 @@ class Member {
 		this.book3 = book3;
 	}
 
-	@Override
-	public String toString() {
-		return "Member [memberNo=" + memberNo + ", name=" + name + ", book1=" + book1 + ", book2=" + book2 + ", book3="
-				+ book3 + "]";
-	}
 }
 
 class Book {
@@ -60,11 +52,6 @@ class Book {
 		this.price = price;
 		this.company = company;
 		this.page = page;
-	}
-
-	@Override
-	public String toString() {
-		return "Book [title=" + title + ", price=" + price + ", company=" + company + ", page=" + page + "]";
 	}
 
 }
