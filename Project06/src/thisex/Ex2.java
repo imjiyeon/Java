@@ -5,23 +5,24 @@ package thisex;
  * */
 public class Ex2 {
 
-	public static void main(String[] args) {	
-		
+	public static void main(String[] args) {
 		Person person = new Person();
-		person.setName("둘리");
-		System.out.println(person); //참조 변수 출력
-		person.printThis(); //동일한 주소가 출력됨
+		person.setName("둘리"); // 이름 변경
+		System.out.println(person); // 변수 person 출력
+		person.printThis(); // 변수 this 출력. 위와 같은 값이 출력됨
 	}
 }
 
-class Person{
+class Person {
 	String name;
-	
-	public void setName(String name) { //이름을 지정하는 메소드
-		this.name = name; //같은 이름의 변수를 사용할 때, this를 사용해서 멤버변수와 지역변수를 구분함.
+
+	// 이름을 변경하는 메소드
+	public void setName(String name) {
+		this.name = name; // 멤버변수 = 지역변수
 	}
-	
+
+	// this의 값을 출력하는 메소드
 	public void printThis() {
-		System.out.println(this);  
+		System.out.println(this);
 	}
 }

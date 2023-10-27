@@ -6,25 +6,26 @@ package thisex;
 public class Ex1 {
 
 	public static void main(String[] args) {
-		
+
 		BirthDay bDay = new BirthDay();
-		bDay.setYear(2000); //태어난 연도를 2000으로 지정
-		System.out.println(bDay); //참조 변수 출력
-		bDay.printThis(); //this 출력메소드 호출
+		bDay.setYear(2000); // 태어난 연도 변경
+		System.out.println(bDay); // 변수 bDay 출력
+		bDay.printThis(); // 변수 this 출력. 위와 같은 값이 출력됨
 	}
 }
 
-class BirthDay{
-
+class BirthDay {
 	int day;
 	int month;
 	int year;
-	
-	public void setYear(int year) { //태어난 연도를 지정하는 메소드
-		this.year = year; //멤버변수 = 지역변수. 같은 이름의 변수를 사용할 때, this를 사용해서 멤버변수와 지역변수를 구분함.
+
+	// 태어난 연도를 변경하는 메소드
+	public void setYear(int year) {
+		this.year = year; // 변수의 이름이 같을 때, this를 사용해서 구분할 수 있음
 	}
-	
-	public void printThis() { //this 출력 메소드
-		System.out.println(this);  
+
+	// this의 값을 출력하는 메소드
+	public void printThis() {
+		System.out.println(this);
 	}
 }
