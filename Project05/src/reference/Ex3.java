@@ -12,7 +12,7 @@ public class Ex3 {
 		
 		Subject math = new Subject("수학", 100);
 		method2(math); //주소 전달
-		System.out.println(math.toString()); //sub참조변수로 점수를 변경하면 math참조변수의 점수도 함께 변경된다
+		System.out.println(math.scorePoint); //sub참조변수로 점수를 변경하면 math참조변수의 점수도 함께 변경된다
 	}
 	
 	public static void method1(int n){ //기본형 매개변수
