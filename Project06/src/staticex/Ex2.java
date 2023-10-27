@@ -1,14 +1,14 @@
 package staticex;
 
 /*
- * count변수의 get(),set() 메소드 사용하기
+ * static 변수의 getter(),setter() 메소드 사용하기
  * */
 public class Ex2 {
 
 	public static void main(String[] args) {
 		Student2 student1 = new Student2(); 
 		student1.studentName = "둘리";
-		System.out.println(Student2.getCount()); //count를 가져오기 위해 get메소드를 클래스이름으로 직접 호출
+		System.out.println(Student2.getCount()); //count를 가져오기 위해 get메소드를 호출
 		
 		Student2 student2 = new Student2(); 
 		student2.studentName = "도우너";
@@ -26,8 +26,8 @@ class Student2 {
 		studentID = count;
 	}
 	
-	//count변수의 set,get메소드 만들기 
-	public static int getCount() { //count을 외부에서 사용하기위해 만듬
+	//외부에서 값을 사용하기 위해 public 메소드 만들기 
+	public static int getCount() {
 		return count;
 	}
 	
