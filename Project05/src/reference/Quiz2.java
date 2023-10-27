@@ -17,8 +17,6 @@ public class Quiz2 {
 		Employee employee3 = new Employee("도우너",30,3000000,3);
 		//부서생성하고 부서원 추가
 		Department department = new Department(employee1, employee2, employee3);
-		//부서정보 출력
-		System.out.println(department);
 	}
 }
 
@@ -36,11 +34,6 @@ class Employee{
 		this.year = year;
 	}
 
-	@Override
-	public String toString() {
-		return "Employee [name=" + name + ", age=" + age + ", salary=" + salary + ", year=" + year + "]";
-	}
-
 }
 
 class Department{
@@ -53,11 +46,6 @@ class Department{
 		this.head = head;
 		this.senior = senior;
 		this.junior = junior;
-	}
-
-	@Override
-	public String toString() {
-		return "Department [head=" + head + ", senior=" + senior + ", junior=" + junior + "]";
 	}
 
 }
