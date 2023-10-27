@@ -9,8 +9,6 @@ public class Ex1 {
 		Subject math = new Subject("수학", 85); //수학과목
 		Subject korean = new Subject("국어", 100); //국어과목	
 		Student student = new Student(1001, "둘리", math, korean); //학생 객체 생성
-		
-		System.out.println(student.toString());	
 	}
 }
 
@@ -25,12 +23,7 @@ class Subject {
 		this.subjectName = subjectName;
 		this.scorePoint = scorePoint;
 	}
-	
-	// 과목정보를 출력하는 toString함수 generate
-	@Override
-	public String toString() {
-		return "Subject [subjectName=" + subjectName + ", scorePoint=" + scorePoint + "]";
-	}
+
 }
 
 /*
@@ -48,12 +41,6 @@ class Student {
 		this.studentName = studentName;
 		this.math = math;
 		this.korean = korean;
-	}
-
-	@Override
-	public String toString() {
-		return "Student [studentID=" + studentID + ", studentName=" + studentName + ", math=" + math + ", korean="
-				+ korean + "]";
 	}
 
 }
