@@ -6,8 +6,8 @@ package hiding;
 public class Ex2 {
 	public static void main(String[] args) {
 		MyDate2 date = new MyDate2(); // 달력 생성
-		date.setMonth(2);
 		// date.day = 30; //private 변수는 외부에서 직접 사용할 수 없음
+		date.setMonth(2);
 		date.setDay(30); // 검증 실패하여 저장되지 않음
 		date.setDay(10); // 10일 저장 성공
 		System.out.println("현재 날짜는 " + date.getMonth() + "월 " + date.getDay() + "일 입니다");

@@ -10,10 +10,10 @@ public class Quiz1 {
 	public static void main(String[] args) {
 		MyDate date = new MyDate();
 		date.setMonth(2);
-		System.out.println(date.toString());
+		System.out.println("현재는 " + date.getMonth() + "월 입니다");
 
-		date.setMonth(13); // 존재하지않는 월입니다
-		System.out.println(date.toString());
+		date.setMonth(13);
+		System.out.println("현재는 " + date.getMonth() + "월 입니다");
 	}
 }
 
@@ -28,7 +28,8 @@ class MyDate {
 
 	public void setMonth(int month) {
 		if (month < 1 || month > 12) {
-			System.out.println(month + "월은 존재하지 않습니다");
+			System.out.println(month + "월은 잘못된 월입니다.");
+			return; //함수종료
 		} 
 		this.month = month;
 	}
@@ -46,8 +47,4 @@ class MyDate {
 		}
 	}
 
-	@Override
-	public String toString() {
-		return "MyDate [month=" + month + ", day=" + day + "]";
-	}
 }
