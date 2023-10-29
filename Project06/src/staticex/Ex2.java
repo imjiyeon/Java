@@ -1,7 +1,7 @@
 package staticex;
 
 /*
- * static 변수의 getter(),setter() 메소드 사용하기
+ * static 변수의 getter(),setter() 메소드 만들기
  * */
 public class Ex2 {
 
