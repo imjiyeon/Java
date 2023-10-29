@@ -12,15 +12,15 @@ public class Quiz1 {
 
 	public static void main(String[] args) {
 		Student student1 = new Student("둘리", 5000); // 만원을 가진 도우너이라는 학생을 만든다
-		Bus bus100 = new Bus(100); // 100번 버스를 만든다
-		student1.takeBus(bus100); // 둘리가 100번 버스에 탄다
-		student1.showInfo(); //둘리, 100버스의 현재정보를 출력한다
-		bus100.showInfo();
-		
+		Bus bus = new Bus(100); // 100번 버스를 만든다
+		student1.takeBus(bus); // 둘리가 100번 버스에 탄다
+		student1.showInfo(); // 둘리의 현재정보를 출력한다
+		bus.showInfo(); // 버스의 현재정보를 출력한다
+
 		Student student2 = new Student("도우너", 10000); // 만원을 가진 도우너라는 학생을 만든다
-		Subway subway2 = new Subway("2호선"); // 노선번호가 2호선인 지하철을 만든다
-		student2.takeSubway(subway2);
+		Subway subway = new Subway("2호선"); // 노선번호가 2호선인 지하철을 만든다
+		student2.takeSubway(subway);
 		student2.showInfo();
-		subway2.showInfo();
+		subway.showInfo();
 	}
 }

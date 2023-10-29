@@ -1,7 +1,7 @@
 package thisex;
 
 /*
- * this 출력하기
+ * this 사용하기
  * */
 public class Ex1 {
 
