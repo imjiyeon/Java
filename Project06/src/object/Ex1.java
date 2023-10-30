@@ -39,9 +39,9 @@ class Bus {
 
 //지하철 클래스
 class Subway {
-	public String lineNumber; // 지하철 노선번호
-	public int passengerCount; // 승객수
-	public int money; // 수입
+	String lineNumber; // 지하철 노선번호
+	int passengerCount; // 승객수
+	int money; // 수입
 
 	// 지하철 노선번호를 초기화하는 생성자
 	public Subway(String lineNumber) {
@@ -62,8 +62,8 @@ class Subway {
 
 //학생클래스 구현하기
 class Student {
-	public String studentName; // 학생이름
-	public int money; // 소지금
+	String studentName; // 학생이름
+	int money; // 소지금
 
 	// 학생이름과 가진돈을 초기화하는 생성자
 	public Student(String studentName, int money) {
