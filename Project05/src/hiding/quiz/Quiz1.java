@@ -37,10 +37,10 @@ public class Quiz1 {
 }
 
 class Book {
-	String title; //제목
-	int price; //가격
-	String company; //출판사
-	int page; //페이지수
+	private String title; //제목
+	private int price; //가격
+	private String company; //출판사
+	private int page; //페이지수
 	
 	public String getTitle() {
 		return title;
