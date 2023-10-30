@@ -15,8 +15,6 @@ public class Ex1 {
 }
 
 class BirthDay {
-	int day;
-	int month;
 	int year;
 
 	// 태어난 연도를 변경하는 메소드
