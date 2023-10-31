@@ -18,8 +18,8 @@ public class Ex1 {
 		arr[0] = 10; //배열의 첫번째 요소에 값 10을 저장한다
 		arr[1] = 20; //배열의 두번째 요소에 값 20을 저장한다
 		arr[2] = 30; //배열의 세번째 요소에 값 30을 저장한다
-		int value = arr[1]; //배열의 두번째 요소값을 가져와서 value에 저장한다
-		
 		//arr[3] = 40; //에러남. 배열 길이를 벗어나는 index를 사용했다
+		int value = arr[1]; //배열의 두번째 요소값을 가져와서 value에 저장한다
+		System.out.println(value);
 	}
 }
