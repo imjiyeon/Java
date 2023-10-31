@@ -11,34 +11,26 @@ package staticex;
 public class Quiz1 {
 
 	public static void main(String[] args) {
-		Card card1 = new Card("둘리", "VIP");
-		card1.showInfo();
-		
-		Card card2 = new Card("또치", "SILVER");
-		card2.showInfo();
-		
-		Card card3 = new Card("도우너", "SILVER");
+		Card card1 = new Card();
+		card1.showInfo();		
+		Card card2 = new Card();
+		card2.showInfo();		
+		Card card3 = new Card();
 		card3.showInfo();
 	}
 }
 
 class Card {
-	
 	static int serialNum = 100;
 	int cardNo; //카드번호
-	String name; //이름
-	String grade; //등급
 	
-	public Card(String name, String grade) {
-		super();
+	public Card() {
 		this.cardNo = serialNum; //카드번호에 시리얼번호를 대입한다
-		this.name = name;
-		this.grade = grade;
 		serialNum++; //카드번호를 먼저 대입하고 다음에 시리얼번호 증가
 	}
 
 	public void showInfo() {
-		System.out.println("카드번호:" + cardNo + ", 이름:" + name + ", 등급: " + grade);
+		System.out.println("카드번호:" + cardNo);
 	}
 
 }
