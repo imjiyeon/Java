@@ -20,7 +20,10 @@ public class Ex1 {
 		System.out.println(list);
 		// 3번째 요소 삭제
 		list.remove(2);
-		System.out.println(list);
-		// 중간에 있던 요소가 삭제하면 리스트는 연속된 구조이기 때문에 뒤에 있던 요소가 앞으로 한칸 이동한다
+		System.out.println(list); // 중간에 있던 요소가 삭제하면 리스트는 연속된 구조이기 때문에 뒤에 있던 요소가 앞으로 한칸 이동한다
+		// 리스트에 저장된 요소 꺼내기
+		int num1 = list.get(0);
+		int num2 = list.get(1);
+		int num3 = list.get(2);
 	}
 }
