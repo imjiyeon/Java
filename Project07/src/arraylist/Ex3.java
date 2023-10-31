@@ -1,55 +1,43 @@
 package arraylist;
 
-import java.util.ArrayList;
+import java.util.ArrayList; //ArrayList 클래스 import
 
 /*
- * 학생의 성적 관리하기
- * 둘리 학생은 국어와 수학을 수강 중
- * 도우너 학생은 국어, 영어, 과학, 사회를 수강 중
+ * 리스트에 도서정보 저장하기
  * */
 public class Ex3 {
 
 	public static void main(String[] args) {
-		Student student1 = new Student("둘리");
-		student1.subjectList.add(new Subject("국어", 100)); // 둘리가 수강 중인 과목 추가
-		student1.subjectList.add(new Subject("수학", 50));
-		student1.showInfo(); // 학생 정보 출력
-
-		Student student2 = new Student("도우너");
-		student2.subjectList.add(new Subject("국어", 70)); // 도우너가 수강 중인 과목 추가
-		student2.subjectList.add(new Subject("영어", 85));
-		student2.subjectList.add(new Subject("과학", 70));
-		student2.subjectList.add(new Subject("사회", 85));
-		student2.showInfo(); // 학생 정보 출력
-	}
-}
-
-class Subject {
-	String name; // 과목명
-	int score; // 점수
-
-	public Subject(String name, int score) {
-		super();
-		this.name = name;
-		this.score = score;
-	}
-}
-
-class Student {
-	String studentName;
-	ArrayList<Subject> subjectList; // 수강과목 목록을 저장할 리스트 선언
-
-	public Student(String studentName) {
-		this.studentName = studentName;
-		subjectList = new ArrayList<Subject>(); // 리스트 생성
-	}
-
-	// 학생의 총 점수를 출력하는 메소드
-	public void showInfo() {
-		int total = 0; // 총 점수
-		for (Subject s : subjectList) {
-			total = total + s.score;
+		ArrayList<Book> list = new ArrayList<Book>(); //리스트 생성
+		
+		list.add(new Book("태백산맥", "조정래")); //add메소드로 리스트에 요소 추가
+		list.add(new Book("데미안", "헤르만 헤세"));
+		list.add(new Book("어떻게 살 것인가", "유시민"));
+		
+		System.out.println("=== 일반 for문 사용 ===");
+		for(int i=0; i<list.size(); i++){
+			Book book = list.get(i);
+			book.showBookInfo();
 		}
-		System.out.println(studentName + " 학생의 총점은 " + total + " 입니다.");
+
+		System.out.println("=== 람다식 for문 사용 ===");
+		for(Book book : list){
+			book.showBookInfo();
+		}
+
+	}
+}
+
+class Book {
+	String bookName; //제목
+	String author; //저자
+
+	public Book(String bookName, String author){
+		this.bookName = bookName;
+		this.author = author;
+	}
+	
+	public void showBookInfo(){
+		System.out.println(bookName + "," + author);
 	}
 }
