@@ -33,7 +33,7 @@ class Student2 {
 	
 	public static void setCount(int count) {
 		Student2.count = count; //static메소드에서는 static변수와 지역변수만 사용 가능
-		//Student2.studentName = "둘리"; //에러남. studentName은 인스턴스가 생성될 때 만들어지는 멤버변수이기때문에 사용할 수 없음
+		//studentName = "둘리"; //에러남. studentName은 인스턴스가 생성될 때 만들어지는 멤버변수이기때문에 사용할 수 없음
 	}
 
 }
