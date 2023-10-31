@@ -3,7 +3,7 @@ package array.quiz;
 import java.util.Arrays;
 
 /*
- * 배열의 길이가 5인 정수형 배열을 선언하고, 1~10 중 짝수만 배열에 저장하세요
+ * 5개 크기의 정수형 배열을 생성하고, 1~10 중 짝수만 저장하세요.
  * */
 public class Quiz4 {
 
