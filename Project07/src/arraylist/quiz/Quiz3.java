@@ -3,11 +3,10 @@ package arraylist.quiz;
 import java.util.ArrayList;
 
 /*
- * String타입의 Arraylist 생성하세요
+ * 문자열형(String) 리스트를 생성하세요.
  * 문자열 5개를 추가하세요 ("AA","BB","CC","DD","EE")
- * 일반for문과 람다식for문을 사용하여 배열의 모든 요소를 출력하세요
- * 
- * 그리고 리스트에서 모든 문자를 삭제하세요
+ * 반복문을 사용하여 리스트의 요소를 출력하세요.
+ * 리스트에 저장된 모든 문자열을 삭제하세요.
  * */
 public class Quiz3 {
 

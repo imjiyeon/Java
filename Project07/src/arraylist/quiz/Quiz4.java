@@ -3,9 +3,10 @@ package arraylist.quiz;
 import java.util.ArrayList;
 
 /*
- * 학번과 이름 속성을 가지는 Student클래스를 만드세요
- * Student타입의 리스트를 생성하고 학생 3명을 추가하세요
- * 일반for문을 사용하여 배열의 모든 요소를 출력하세요
+ * 학생(Student)을 정의하는 클래스를 만드세요.
+ * 속성: 학번, 이름
+ * Student형 리스트를 생성하고, 학생 3명을 추가하세요.
+ * 반복문을 사용하여 리스트의 요소를 출력하세요.
  * */
 public class Quiz4 {
 
@@ -16,16 +17,16 @@ public class Quiz4 {
 		list.add(new Student(1003,"도우너"));
 		
 		Student student1 = list.get(0);
-		student1.showStudentInfo();
+		student1.showInfo();
 		Student student2 = list.get(1);
-		student2.showStudentInfo();
+		student2.showInfo();
 		Student student3 = list.get(2);
-		student3.showStudentInfo();
+		student3.showInfo();
 		
 		System.out.println("=== 일반 for문 사용 ===");
 		for(int i=0; i<list.size(); i++){
 			Student student = list.get(i);
-			student.showStudentInfo();
+			student.showInfo();
 		}
 
 	}
@@ -41,7 +42,7 @@ class Student {
 		this.studentName = studentName;
 	}
 
-	public void showStudentInfo(){
+	public void showInfo(){
 		System.out.println(studentID + "," + studentName);
 	}
 }
