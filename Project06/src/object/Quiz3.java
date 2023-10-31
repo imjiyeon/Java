@@ -9,7 +9,6 @@ package object;
 public class Quiz3 {
 
 	public static void main(String[] args) {
-
 		Customer customer1 = new Customer("둘리", 10000);
 		Cafe starCafe = new Cafe("별다방");
 		customer1.buyAmericano(starCafe);
@@ -46,8 +45,8 @@ class Cafe {
 
 // 손님클래스
 class Customer {
-	public String name; // 이름
-	public int money; // 소지금
+	String name; // 이름
+	int money; // 소지금
 
 	// 손님의이름과 가진돈을 초기화하는 생성자
 	public Customer(String name, int money) {

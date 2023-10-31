@@ -19,8 +19,8 @@ public class Quiz2 {
 
 // 택시 클래스 구현하기
 class Taxi {
-	public String taxiNumber; // 택시번호
-	public int money; // 수입
+	String taxiNumber; // 택시번호
+	int money; // 수입
 
 	// 택시번호를 초기화하는 생성자
 	public Taxi(String taxiNumber) {
@@ -40,8 +40,8 @@ class Taxi {
 
 // 학생클래스 구현하기
 class Student2 {
-	public String studentName; // 학생이름
-	public int money; // 가진돈
+	String studentName; // 학생이름
+	int money; // 가진돈
 
 	// 학생이름과 가진돈을 초기화하는 생성자
 	public Student2(String studentName, int money) {
