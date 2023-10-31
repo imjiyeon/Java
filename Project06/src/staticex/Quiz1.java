@@ -34,7 +34,7 @@ class Card {
 		this.cardNo = serialNum; //카드번호에 시리얼번호를 대입한다
 		this.name = name;
 		this.grade = grade;
-		serialNum++; //카드를 발급할 때마다 시리얼번호는 1 증가한다
+		serialNum++; //카드번호를 먼저 대입하고 다음에 시리얼번호 증가
 	}
 
 	public void showInfo() {
