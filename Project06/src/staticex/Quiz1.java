@@ -30,7 +30,7 @@ class Card {
 	}
 
 	public void showInfo() {
-		System.out.println("카드번호:" + cardNo);
+		System.out.println("카드번호: " + cardNo);
 	}
 
 }
