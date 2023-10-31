@@ -1,7 +1,7 @@
 package scope;
 
 /* 
- * 모든 변수의 유효범위를 작성하세요
+ * 모든 변수의 유효범위를 작성하세요 (블록스코프)
  * */
 public class Quiz3 {
 
