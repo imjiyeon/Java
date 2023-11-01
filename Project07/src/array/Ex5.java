@@ -16,7 +16,10 @@ public class Ex5 {
 			System.out.print(i + " ");
 		}
 		System.out.println();
-		
+		for (int i = 0; i < 10; i++) {
+			System.out.print(arr[i] + " ");
+		}
+		System.out.println();
 		// 배열의 요소를 한번에 출력
 		System.out.println(arr); // arr은 참조변수이므로 주소가 출력됨
 		System.out.println(Arrays.toString(arr)); // Arrays 클래스의 메소드 사용
