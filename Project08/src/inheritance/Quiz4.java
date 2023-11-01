@@ -1,4 +1,4 @@
-package inheritance.quiz;
+package inheritance;
 
 public class Quiz4 {
 

@@ -1,5 +1,8 @@
 package inheritance;
 
+/*
+ * 클래스 상속받기
+ * */
 public class Ex1 {
 	public static void main(String[] args) {
 		Child child = new Child();
