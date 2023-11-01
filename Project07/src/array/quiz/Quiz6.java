@@ -13,7 +13,7 @@ public class Quiz6 {
 		int[] arr = new int[] { 5, 20, 100, 30, 77 };
 		int findIndex = 0; //인덱스를 저장하기위한 변수
 
-		for (int i = 0; i < arr.length; i++) {
+		for (int i = 0; i < 5; i++) {
 			if (arr[i] == 20) { //배열의 값이 20이라면
 				findIndex = i; //배열의 인덱스를 저장
 				break;
