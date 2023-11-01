@@ -1,4 +1,4 @@
-package override.quiz;
+package override;
 
 /*
  * 동물클래스를 상속받아 고양이 클래스를 만든다

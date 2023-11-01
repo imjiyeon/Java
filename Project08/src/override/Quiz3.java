@@ -1,4 +1,4 @@
-package override.quiz;
+package override;
 
 public class Quiz3 {
 	public static void main(String[] args) {

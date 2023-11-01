@@ -1,4 +1,4 @@
-package downcasting.quiz;
+package downcasting;
 
 import java.util.ArrayList;
 
