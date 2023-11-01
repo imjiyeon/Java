@@ -7,20 +7,19 @@ package inheritance;
 public class Quiz4 {
 
 	public static void main(String[] args) {
-		Monster monster = new Monster();
+		Monster monster = new Monster(); // 몬스터 생성
 		monster.atack = 10;
 		monster.health = 100;
 		monster.showInfo();
 		monster.doAttack();
-
 		System.out.println();
 
-		Slime slime = new Slime();
-		slime.atack = 30;
-		slime.health = 200;
+		Slime slime = new Slime(); // 슬라임 생성
+		slime.atack = 30; // 부모클래스에서 물려받은 속성
+		slime.health = 200; // 부모클래스에서 물려받은 속성
 		slime.skill = "마비";
-		slime.showInfo();
-		slime.doAttack();
+		slime.showInfo(); // 부모클래스에서 물려받은 기능
+		slime.doAttack(); // 부모클래스에서 물려받은 기능
 		slime.doSkill();
 	}
 
