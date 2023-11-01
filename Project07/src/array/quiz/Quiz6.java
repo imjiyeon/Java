@@ -16,6 +16,7 @@ public class Quiz6 {
 		for (int i = 0; i < arr.length; i++) {
 			if (arr[i] == 20) { //배열의 값이 20이라면
 				findIndex = i; //배열의 인덱스를 저장
+				break;
 			}	
 		}
 		
