@@ -9,13 +9,13 @@ import java.util.Arrays;
 public class Quiz4 {
 
 	public static void main(String[] args) {
-		//1~10 중에서 짝수 찾기
-		for(int i=1; i<=10; i++){
-			if(i%2==0) {
-				System.out.print(i+" ");
-			}	
-		}
-		System.out.println();
+//		//1~10 중에서 짝수 찾기
+//		for(int i=1; i<=10; i++){
+//			if(i%2==0) {
+//				System.out.print(i+" ");
+//			}	
+//		}
+//		System.out.println();
 
 		int[] arr = new int[5];
 		System.out.println(Arrays.toString(arr));
