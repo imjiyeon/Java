@@ -17,7 +17,7 @@ public class Ex3 {
 class Customer3 {
 	String customerName;
 	String customerGrade;
-	int bonusPoint;
+	double bonusPoint;
 	double bonusRatio;
 
 	public Customer3(String customerName) {
@@ -28,9 +28,9 @@ class Customer3 {
 		System.out.println("Customer(String) 생성자 호출");
 	}
 
-	public int calcPrice(int price) {
-		bonusPoint = (int) (bonusPoint + (price * bonusRatio));
-		return price;
+	public void calcPrice(int price) {
+		bonusPoint = bonusPoint + (price * bonusRatio);
+		System.out.println(customerName+"님이 " + price + "원을 결제했습니다.");
 	}
 
 	public void showCustomerInfo() {

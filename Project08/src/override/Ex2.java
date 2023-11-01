@@ -8,7 +8,7 @@ public class Ex2 {
 	public static void main(String[] args) {		
 		//형변환과 오버라이드 추가
 		Customer2 vc = new VIPCustomer2("둘리"); //일반회원 참조변수로 VIP 인스턴스 생성
-		System.out.println("둘리님이 " + vc.calcPrice(10000) + "를 결제했습니다"); //재정의된 메소드가 호출됨
+		vc.calcPrice(10000); //재정의된 메소드가 호출됨
 		
 	}
 }
@@ -17,7 +17,7 @@ public class Ex2 {
 class Customer2 {
 	String customerName;
 	String customerGrade;
-	int bonusPoint;
+	double bonusPoint;
 	double bonusRatio;
 
 	public Customer2(String customerName) {
@@ -28,9 +28,9 @@ class Customer2 {
 //		System.out.println("Customer(String) 생성자 호출");
 	}
 
-	public int calcPrice(int price) {
-		bonusPoint = (int) (bonusPoint + (price * bonusRatio));
-		return price;
+	public void calcPrice(int price) {
+		bonusPoint = bonusPoint + (price * bonusRatio);
+		System.out.println(customerName+"님이 " + price + "원을 결제했습니다.");
 	}
 
 	public void showCustomerInfo() {
@@ -52,8 +52,9 @@ class VIPCustomer2 extends Customer2 {
 	}
 
 	@Override
-	public int calcPrice(int price) {
-		bonusPoint = (int)(bonusPoint + (price * bonusRatio));
-		return price - (int) (price * saleRatio);
+	public void calcPrice(int price) {
+		bonusPoint = bonusPoint + (price * bonusRatio);
+		int salePrice = price - (int) (price * saleRatio);
+		System.out.println(customerName+"님이 " + salePrice + "원을 결제했습니다.");
 	}
 }

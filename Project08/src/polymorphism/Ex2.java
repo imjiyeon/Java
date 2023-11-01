@@ -8,11 +8,11 @@ public class Ex2 {
 
 	public static void main(String[] args) {
 		Customer customer1 = new Customer("둘리");
-		System.out.println("둘리님이 " + customer1.calcPrice(10000) + "를 결제했습니다");
+		customer1.calcPrice(10000);
 		customer1.showCustomerInfo();
 		
 		Customer customer2 = new VIPCustomer("또치"); // VIP 회원을 Customer형으로 선언
-		System.out.println("또치님이 " + customer2.calcPrice(10000) + "를 결제했습니다");
+		customer2.calcPrice(10000);
 		customer2.showCustomerInfo();
 		
 		//출력결과를 보면 등급에 따라 다른 적립률과 할인률이 적용된 것이 확인됨
@@ -25,7 +25,7 @@ public class Ex2 {
 class Customer {
 	String customerName;
 	String customerGrade;
-	int bonusPoint;
+	double bonusPoint;
 	double bonusRatio;
 
 	public Customer(String customerName) {
@@ -35,9 +35,9 @@ class Customer {
 		bonusRatio = 0.01;
 	}
 
-	public int calcPrice(int price) {
-		bonusPoint = (int) (bonusPoint + (price * bonusRatio));
-		return price;
+	public void calcPrice(int price) {
+		bonusPoint = bonusPoint + (price * bonusRatio);
+		System.out.println(customerName+"님이 " + price + "원을 결제했습니다.");
 	}
 
 	public void showCustomerInfo() {
@@ -58,8 +58,9 @@ class VIPCustomer extends Customer {
 	}
 
 	@Override
-	public int calcPrice(int price) {
-		bonusPoint = (int)(bonusPoint + (price * bonusRatio));
-		return price - (int) (price * saleRatio);
+	public void calcPrice(int price) {
+		bonusPoint = bonusPoint + (price * bonusRatio);
+		int salePrice = price - (int) (price * saleRatio);
+		System.out.println(customerName+"님이 " + salePrice + "원을 결제했습니다.");
 	}
 }

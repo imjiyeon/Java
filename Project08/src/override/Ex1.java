@@ -7,11 +7,11 @@ public class Ex1 {
 
 	public static void main(String[] args) {
 		Customer customer = new Customer("둘리"); //일반 회원 생성
-		System.out.println("둘리님이 " + customer.calcPrice(10000) + "를 결제했습니다"); //일반 등급이므로 정가 10000원 그대로 지불
+		customer.calcPrice(10000); //일반 등급이므로 정가 10000원 그대로 지불
 		customer.showCustomerInfo();
 		
 		VIPCustomer vip = new VIPCustomer("또치"); //VIP 생성
-		System.out.println("또치님이 " + vip.calcPrice(10000) + "를 결제했습니다"); //VIP 등급이므로 10% 할인받아 9000원 지불
+		vip.calcPrice(10000); //VIP 등급이므로 10% 할인받아 9000원 지불
 		vip.showCustomerInfo();		
 	}
 }
@@ -20,7 +20,7 @@ public class Ex1 {
 class Customer {
 	String customerName;
 	String customerGrade;
-	int bonusPoint;
+	double bonusPoint;
 	double bonusRatio;
 
 	public Customer(String customerName) {
@@ -31,9 +31,9 @@ class Customer {
 //		System.out.println("Customer(String) 생성자 호출");
 	}
 
-	public int calcPrice(int price) {
-		bonusPoint = (int) (bonusPoint + (price * bonusRatio));
-		return price; //원가 그대로 받기
+	public void calcPrice(int price) {
+		bonusPoint = bonusPoint + (price * bonusRatio);
+		System.out.println(customerName+"님이 " + price + "원을 결제했습니다."); //원가 그대로 받기
 	}
 
 	public void showCustomerInfo() {
@@ -56,8 +56,9 @@ class VIPCustomer extends Customer {
 
 	//재정의한 메소드
 	@Override
-	public int calcPrice(int price) {
-		bonusPoint = (int)(bonusPoint + (price * bonusRatio));
-		return price - (int) (price * saleRatio); //할인된 가격을 계산하여 반환
+	public void calcPrice(int price) {
+		bonusPoint = bonusPoint + (price * bonusRatio);
+		int salePrice = price - (int) (price * saleRatio);
+		System.out.println(customerName+"님이 " + salePrice + "원을 결제했습니다."); //할인된 가격을 계산하여 반환
 	}
 }

@@ -14,7 +14,7 @@ public class Ex2 {
 class Customer2 {
 	String customerName;
 	String customerGrade;
-	int bonusPoint;
+	double bonusPoint;
 	double bonusRatio;
 
 	// 디폴트 생성자 삭제 또는 주석처리
@@ -33,9 +33,9 @@ class Customer2 {
 		System.out.println("Customer(String) 생성자 호출");
 	}
 
-	public int calcPrice(int price) {
-		bonusPoint = (int) (bonusPoint + (price * bonusRatio));
-		return price;
+	public void calcPrice(int price) {
+		bonusPoint = bonusPoint + (price * bonusRatio);
+		System.out.println(customerName+"님이 " + price + "원을 결제했습니다.");
 	}
 
 	public void showCustomerInfo() {

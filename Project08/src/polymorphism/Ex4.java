@@ -26,7 +26,7 @@ public class Ex4 {
 
 		System.out.println("====== 회원등급에따라 할인율과 보너스 포인트 계산 =======");
 		for (Customer customer : customerList) { // 배열의 요소를 하나씩 Customer형으로 꺼내기
-			System.out.println(customer.customerName + " 님이 " + customer.calcPrice(10000) + "원 지불하였습니다."); //실제 인스턴스에따라 재정의된 메소드 호출
+			customer.calcPrice(10000); //실제 인스턴스에따라 재정의된 메소드 호출
 		}
 		
 		for (Customer customer : customerList) {

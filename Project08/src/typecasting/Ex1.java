@@ -18,7 +18,7 @@ public class Ex1 {
 class Customer {
 	String customerName;
 	String customerGrade;
-	int bonusPoint;
+	double bonusPoint;
 	double bonusRatio;
 
 	public Customer() {
@@ -27,9 +27,9 @@ class Customer {
 		System.out.println("Customer() 생성자 호출"); //상위 클래스 생성할 때 콘솔창에 출력하기 (추가)
 	}
 
-	public int calcPrice(int price){
-		bonusPoint = (int)(bonusPoint + (price * bonusRatio));
-		return price;
+	public void calcPrice(int price) {
+		bonusPoint = bonusPoint + (price * bonusRatio);
+		System.out.println(customerName+"님이 " + price + "원을 결제했습니다.");
 	}
 	
 	public void showCustomerInfo() {

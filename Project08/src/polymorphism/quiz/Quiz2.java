@@ -15,7 +15,7 @@ public class Quiz2 {
 
 	public static void main(String[] args) {
 
-		ArrayList<Customer> customerList = new ArrayList<Customer>(); //자료형을 Customer로 지정한다
+		ArrayList<Customer> customerList = new ArrayList<Customer>(); // 자료형을 Customer로 지정한다
 
 		customerList.add(new Customer("둘리"));
 		customerList.add(new GoldCustomer("또치"));
@@ -24,9 +24,9 @@ public class Quiz2 {
 		System.out.println("====== 회원등급에따라 할인율과 보너스 포인트 계산 =======");
 
 		for (Customer customer : customerList) {
-			System.out.println(customer.customerName + " 님이 " + customer.calcPrice(10000) + "원 지불하였습니다.");
+			customer.calcPrice(10000);
 		}
-		
+
 		for (Customer customer : customerList) {
 			customer.showCustomerInfo();
 		}
@@ -38,7 +38,7 @@ public class Quiz2 {
 class Customer {
 	String customerName;
 	String customerGrade;
-	int bonusPoint;
+	double bonusPoint;
 	double bonusRatio;
 
 	public Customer(String customerName) {
@@ -48,9 +48,9 @@ class Customer {
 		bonusRatio = 0.01;
 	}
 
-	public int calcPrice(int price) {
-		bonusPoint = (int) (bonusPoint + (price * bonusRatio));
-		return price;
+	public void calcPrice(int price) {
+		bonusPoint = bonusPoint + (price * bonusRatio);
+		System.out.println(customerName + "님이 " + price + "원을 결제했습니다.");
 	}
 
 	public void showCustomerInfo() {
@@ -71,15 +71,16 @@ class VIPCustomer extends Customer {
 	}
 
 	@Override
-	public int calcPrice(int price) {
-		bonusPoint = (int)(bonusPoint + (price * bonusRatio));
-		return price - (int) (price * saleRatio);
+	public void calcPrice(int price) {
+		bonusPoint = bonusPoint + (price * bonusRatio);
+		int salePrice = price - (int) (price * saleRatio);
+		System.out.println(customerName + "님이 " + salePrice + "원을 결제했습니다.");
 	}
 }
 
 /*
  * 새로운 등급 만들기
- * */
+ */
 class GoldCustomer extends Customer {
 
 	double saleRatio;
@@ -91,10 +92,11 @@ class GoldCustomer extends Customer {
 		saleRatio = 0.1; // 10퍼센트 할인
 	}
 
-	//재정의한 메소드
+	// 재정의한 메소드
 	@Override
-	public int calcPrice(int price) {
-		bonusPoint = (int) (bonusPoint + (price * bonusRatio));
-		return price - (int) (price * saleRatio);
+	public void calcPrice(int price) {
+		bonusPoint = bonusPoint + (price * bonusRatio);
+		int salePrice = price - (int) (price * saleRatio);
+		System.out.println(customerName + "님이 " + salePrice + "원을 결제했습니다.");
 	}
 }
