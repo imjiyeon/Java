@@ -10,12 +10,12 @@ public class Ex3 {
 		Customer customer = new Customer();
 		customer.customerName = "둘리";
 		customer.calcPrice(10000);
-		customer.showCustomerInfo();
+		customer.showInfo();
 		// vip회원 생성
 		VIPCustomer vip = new VIPCustomer();
 		vip.customerName = "또치"; // 부모클래스에서 물려받은 속성
 		vip.calcPrice(10000); // 결제금액이 할인되지않았음! 이문제는 오버라이드 해결할 예정~
-		vip.showCustomerInfo();
+		vip.showInfo();
 	}
 }
 
@@ -37,7 +37,7 @@ class Customer {
 		System.out.println(customerName+"님이 " + price + "원을 결제했습니다.");
 	}
 
-	public void showCustomerInfo() {
+	public void showInfo() {
 		System.out.println(customerName + " 님의 등급은 " + customerGrade + "이며, 보너스 포인트는 " + bonusPoint + "입니다.");
 	}
 

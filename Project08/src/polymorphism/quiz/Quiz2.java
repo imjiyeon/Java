@@ -28,7 +28,7 @@ public class Quiz2 {
 		}
 
 		for (Customer customer : customerList) {
-			customer.showCustomerInfo();
+			customer.showInfo();
 		}
 
 	}
@@ -53,7 +53,7 @@ class Customer {
 		System.out.println(customerName + "님이 " + price + "원을 결제했습니다.");
 	}
 
-	public void showCustomerInfo() {
+	public void showInfo() {
 		System.out.println(customerName + " 님의 등급은 " + customerGrade + "이며, 보너스 포인트는 " + bonusPoint + "입니다.");
 	}
 

@@ -9,11 +9,11 @@ public class Ex2 {
 	public static void main(String[] args) {
 		Customer customer1 = new Customer("둘리");
 		customer1.calcPrice(10000);
-		customer1.showCustomerInfo();
+		customer1.showInfo();
 		
 		Customer customer2 = new VIPCustomer("또치"); // VIP 회원을 Customer형으로 선언
 		customer2.calcPrice(10000);
-		customer2.showCustomerInfo();
+		customer2.showInfo();
 		
 		//출력결과를 보면 등급에 따라 다른 적립률과 할인률이 적용된 것이 확인됨
 		//두 회원 모두 Customer형으로 선언되었지만 재정의된 메소드가 각각 호출되었음
@@ -40,7 +40,7 @@ class Customer {
 		System.out.println(customerName+"님이 " + price + "원을 결제했습니다.");
 	}
 
-	public void showCustomerInfo() {
+	public void showInfo() {
 		System.out.println(customerName + " 님의 등급은 " + customerGrade + "이며, 보너스 포인트는 " + bonusPoint + "입니다.");
 	}
 

@@ -8,11 +8,11 @@ public class Ex1 {
 	public static void main(String[] args) {
 		Customer customer = new Customer("둘리"); //일반 회원 생성
 		customer.calcPrice(10000); //일반 등급이므로 정가 10000원 그대로 지불
-		customer.showCustomerInfo();
+		customer.showInfo();
 		
 		VIPCustomer vip = new VIPCustomer("또치"); //VIP 생성
 		vip.calcPrice(10000); //VIP 등급이므로 10% 할인받아 9000원 지불
-		vip.showCustomerInfo();		
+		vip.showInfo();		
 	}
 }
 
@@ -36,7 +36,7 @@ class Customer {
 		System.out.println(customerName+"님이 " + price + "원을 결제했습니다."); //원가 그대로 받기
 	}
 
-	public void showCustomerInfo() {
+	public void showInfo() {
 		System.out.println(customerName + " 님의 등급은 " + customerGrade + "이며, 보너스 포인트는 " + bonusPoint + "입니다.");
 	}
 

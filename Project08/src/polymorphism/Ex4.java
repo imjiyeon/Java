@@ -30,7 +30,7 @@ public class Ex4 {
 		}
 		
 		for (Customer customer : customerList) {
-			customer.showCustomerInfo(); //고객정보 출력
+			customer.showInfo(); //고객정보 출력
 		}
 
 	}
