@@ -1,49 +1,35 @@
 package inheritance;
 
 /*
- * 사람(Person)을 정의하는 클래스를 만드세요.
- * 기능: 말하기, 먹기
- * 사람 클래스를 상속받는 학생(Student) 클래스를 만드세요.
- * 기능: 공부하기
- * 사람 클래스를 상속받는 교수(Professor) 클래스를 만드세요.
- * 기능: 일하기
- * 
- * 학생 인스턴스를 생성하고, 인스턴스가 가지고 있는 모든 메소드를 호출하세요.
- * 교수 인스턴스를 생성하고, 인스턴스가 가지고 있는 모든 메소드를 호출하세요.
+ * 아래 그림은 펜과 볼펜,만년필 클래스의 상속관계를 표현한 것입니다.
+ * 다음과 같이 클래스를 구현하고, 객체를 생성하세요.
  * */
 public class Quiz3 {
 
 	public static void main(String[] args) {
-		Student student = new Student();
-		student.sound();
-		student.eat();
-		student.study();
+		Balpen balpen = new Balpen(); //볼펜 생성
+		balpen.width = 2;
+		balpen.amount = 100;
+		balpen.color = "blue";
 		
-		Professor professor = new Professor();
-		professor.sound();
-		professor.eat();
-		professor.work();
+		FountainPen fountainPen = new FountainPen(); //만년필 생성
+		fountainPen.width = 3;
+		fountainPen.amount = 80;
+		fountainPen.brand = "MONTBLANC";
 	}
 
 }
-//사람 클래스
-class Person {
-	public void sound() {
-		System.out.println("대화를 한다");
-	}
-	public void eat() {
-		System.out.println("밥을 먹는다");
-	}
+
+class Pen {
+	int width; // 펜의 굵기
+	int amount; // 남은 양
+
 }
-// 학생 클래스
-class Student extends Person {
-	public void study() {
-		System.out.println("공부를 한다");
-	}
+
+class Balpen extends Pen { // 볼펜
+	String color; // 볼펜의 색
 }
-// 교수 클래스
-class Professor extends Person {
-	public void work() {
-		System.out.println("일을 한다");
-	}
+
+class FountainPen extends Pen { // 만년필
+	String brand; // 브랜드
 }

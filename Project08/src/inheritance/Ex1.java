@@ -1,7 +1,7 @@
 package inheritance;
 
 /*
- * 클래스 상속받기
+ * 클래스 상속받기 (속성)
  * */
 public class Ex1 {
 	public static void main(String[] args) {
@@ -11,12 +11,12 @@ public class Ex1 {
 		child.firstName = "길동";
 	}
 }
-
-class Parents { //부모클래스
+//부모클래스
+class Parents {
 	String nationality; //국적
 	String lastName; //성
 }
-
-class Child extends Parents{ //자식클래스
+//자식클래스
+class Child extends Parents{
 	String firstName; //이름
 }
