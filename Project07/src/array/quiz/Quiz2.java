@@ -6,7 +6,6 @@ package array.quiz;
  * 첫번째 요소와 마지막 요소를 출력하세요.
  * 단, 값의 목록이 바뀌었을때도 첫번째요소와 마지막요소가 출력되어야합니다.
  * */
-
 public class Quiz2 {
 
 	public static void main(String[] args) {
@@ -19,3 +18,5 @@ public class Quiz2 {
 	}
 
 }
+
+//문제풀이 : 인덱스 규칙을 알고있는지 확인
