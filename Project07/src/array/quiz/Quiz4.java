@@ -9,10 +9,16 @@ import java.util.Arrays;
 public class Quiz4 {
 
 	public static void main(String[] args) {
+		//1~10 중에서 짝수 찾기
+		for(int i=1; i<=10; i++){
+			if(i%2==0) {
+				System.out.print(i+" ");
+			}	
+		}
+		System.out.println();
 
 		int[] arr = new int[5];
 		System.out.println(Arrays.toString(arr));
-		
 		int cnt = 0; //인덱스를 저장할 변수
 		
 		//10번 반복수행을 해야하기 때문에 i는 인덱스로 사용할 수 없음.
