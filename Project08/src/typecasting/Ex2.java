@@ -1,12 +1,12 @@
 package typecasting;
 
 /* 
- * super 예약어로 매개변수가 있는 생성자 호출하기
+ * super 예약어를 사용해서 부모클래스의 생성자 호출하기
  * */
 public class Ex2 {
 
 	public static void main(String[] args) {
-		VIPCustomer2 vip = new VIPCustomer2("둘리"); //정상적으로 vip 객체 생성
+		VIPCustomer2 vip = new VIPCustomer2("둘리"); //vip클래스의 객체 생성
 	}
 }
 
@@ -49,7 +49,7 @@ class VIPCustomer2 extends Customer2 {
 	double saleRatio;
 
 //	public VIPCustomer2() {
-//		super(); //에러남. 하위클래스 생성자에서 super()코드가 상위클래스의 디폴트 생성자를 호출함
+//		super(); //에러남. super()는 부모클래스의 디폴트 생성자를 호출
 //		customerGrade = "VIP";
 //		bonusRatio = 0.05;
 //		saleRatio = 0.1;
@@ -57,8 +57,7 @@ class VIPCustomer2 extends Customer2 {
 //	}
 
 	public VIPCustomer2(String customerName) {
-		super(customerName); //상위클래스에서 매개변수가 있는 생성자 호출
-		//첫줄에 super()가 없으면 컴파일러가 자동으로 생성함
+		super(customerName); //부모클래스의 매개변수가 있는 생성자 호출
 		customerGrade = "VIP";
 		bonusRatio = 0.05;
 		saleRatio = 0.1;
