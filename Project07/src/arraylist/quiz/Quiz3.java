@@ -18,14 +18,8 @@ public class Quiz3 {
 		list.add("DD");
 		list.add("EE");
 		
-		System.out.println("=== 일반 for문 사용 ===");
 		for(int i=0; i<list.size(); i++){
 			String str = list.get(i);
-			System.out.print(str + " ");
-		}
-		System.out.println();
-		System.out.println("=== 람다식 for문 사용 ===");
-		for(String str : list){ //(배열에서 꺼낸 값을 저장할 변수 : 배열)
 			System.out.print(str + " ");
 		}
 		
