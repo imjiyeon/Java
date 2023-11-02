@@ -14,7 +14,7 @@ public class Ex3 {
 		// vip회원 생성
 		VIPCustomer vip = new VIPCustomer();
 		vip.customerName = "또치"; // 부모클래스에서 물려받은 속성
-		vip.calcPrice(10000); // 결제금액이 할인되지않았음! 이문제는 오버라이드 해결할 예정~
+		vip.calcPrice(10000); // 할인안됨. 이문제는 오버라이드 해결할 예정~
 		vip.showInfo();
 	}
 }
@@ -24,10 +24,10 @@ class Customer {
 	String customerName; // 회원 이름
 	String customerGrade; // 회원 등급
 	double bonusPoint; // 보너스 포인트
-	double bonusRatio; // 적립 비율
+	double bonusRatio; // 적립률
 
 	public Customer() {
-		customerGrade = "SILVER";
+		customerGrade = "SILVER"; //고정값이니까 초기화
 		bonusRatio = 0.01;
 	}
 

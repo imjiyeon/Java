@@ -24,15 +24,14 @@ public class Quiz3 {
 class Pen {
 	int width; // 펜의 굵기
 	int amount; // 남은 양
-
 }
 
 // 볼펜 클래스
-class Balpen extends Pen {
+class Balpen extends Pen { // 상속받기
 	String color; // 볼펜의 색
 }
 
 // 만년필 클래스
-class FountainPen extends Pen {
+class FountainPen extends Pen { // 상속받기
 	String brand; // 브랜드
 }

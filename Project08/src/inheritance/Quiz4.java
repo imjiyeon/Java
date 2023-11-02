@@ -40,7 +40,7 @@ class Monster {
 }
 
 //슬라임 클래스
-class Slime extends Monster { // 상속받기
+class Slime extends Monster {
 	String skill; // 스킬
 
 	public void doSkill() {
