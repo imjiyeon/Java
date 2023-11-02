@@ -23,12 +23,27 @@ public class Quiz3 {
 			System.out.print(str + " ");
 		}
 		
-		list.remove(0); //중간에 있던 요소가 삭제하면 배열은 연속된 구조이기 때문에 뒤에 있던 요소가 앞으로 한칸 이동한다
+		//뒤부터 삭제
+		list.remove(4);
+		list.remove(3);
+		list.remove(2);
+		list.remove(1);
 		list.remove(0);
-		list.remove(0);
-		list.remove(0);
-		list.remove(0);
-		System.out.println();
+		
+		//앞부터 삭제
+		//list.remove(0); //중간에 있던 요소가 삭제하면 배열은 연속된 구조이기 때문에 뒤에 있던 요소가 앞으로 한칸 이동한다
+		//list.remove(0);
+		//list.remove(0);
+		//list.remove(0);
+		//list.remove(0);
+		
+		//잘못된 경우
+		//list.remove(0);
+		//list.remove(1);
+		//list.remove(2);
+		//list.remove(3);
+		//list.remove(4);
+		
 		System.out.println();
 		System.out.println("배열요소의 개수: " + list.size());
 
