@@ -1,7 +1,7 @@
 package typecasting;
 
 /* 
- * 상위클래소 형 변환하기
+ * 상위클래스로 형 변환하기
  * */
 public class Ex3 {
 
