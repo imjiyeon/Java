@@ -1,8 +1,7 @@
 package polymorphism;
 
 /* 
- * 다형성 활용하기
- * (앞에서 구현한 쇼핑몰 회원 관리 프로그램 다시 보기)
+ * 쇼핑몰 회원 관리 프로그램에 다형성 활용하기
  * */
 public class Ex2 {
 
@@ -12,12 +11,11 @@ public class Ex2 {
 		customer1.showInfo();
 		
 		Customer customer2 = new VIPCustomer("또치"); // VIP 회원을 Customer형으로 선언
-		customer2.calcPrice(10000);
+		customer2.calcPrice(10000); //재정의된 메소드가 호출되어 할인가로 계산됨
 		customer2.showInfo();
 		
-		//출력결과를 보면 등급에 따라 다른 적립률과 할인률이 적용된 것이 확인됨
-		//두 회원 모두 Customer형으로 선언되었지만 재정의된 메소드가 각각 호출되었음
-		//이렇게 다형성을 활용하면 부모클래스 하나로 여러가지 인스턴스를 사용할 수 있음 (다형성의 장점)
+		//등급에 따라 적립률과 할인률이 적용됨
+		//다형성을 활용하면 부모클래스 하나로 여러개의 자식 클래스를 사용할 수 있음 (다형성의 장점)
 	}
 }
 
