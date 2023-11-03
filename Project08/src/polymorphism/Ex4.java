@@ -35,6 +35,3 @@ public class Ex4 {
 
 	}
 }
-
-//예제 3번에 있는 Customer와 VIP클래스 사용하기
-

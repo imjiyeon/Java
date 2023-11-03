@@ -21,7 +21,7 @@ public class Ex2 {
 	}
 }
 
-//override패키지의 Customer와 VIP 클래스 복사
+//오버라이드(override)패키지의 회원 클래스 복사하기
 class Customer {
 	String customerName;
 	String customerGrade;
