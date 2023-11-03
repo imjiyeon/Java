@@ -10,7 +10,7 @@ public class Ex4 {
 	public static void main(String[] args) {
 
 		// 회원을 담을 리스트 생성
-		ArrayList<Customer> customerList = new ArrayList<Customer>(); //리스트 자료형을 Customer로 지정
+		ArrayList<Customer> customerList = new ArrayList<Customer>(); //자료형을 부모클래스로 지정
 
 		Customer customer1 = new Customer("둘리"); //일반 회원 생성
 		Customer customer2 = new Customer("또치");
@@ -25,7 +25,7 @@ public class Ex4 {
 		customerList.add(customer5);
 
 		System.out.println("====== 회원등급에따라 할인율과 보너스 포인트 계산 =======");
-		for (Customer customer : customerList) { // 배열의 요소를 하나씩 Customer형으로 꺼내기
+		for (Customer customer : customerList) { //리스트의 요소를 하나씩 Customer형으로 꺼내기
 			customer.calcPrice(10000); //실제 인스턴스에따라 재정의된 메소드 호출
 		}
 		
