@@ -1,19 +1,21 @@
 package typecasting;
 
 /* 
- * 상위 클래스로 묵시적 클래스 형 변환
+ * 상위클래소 형 변환하기
  * */
 public class Ex3 {
 
 	public static void main(String[] args) {
 		// 부모타입 변수 = 자식 인스턴스 생성
 		Customer3 vc = new VIPCustomer3("둘리");
-		System.out.println(vc.customerName); //vc 변수는 Customer클래스의 멤버변수와 메소드만 사용 가능함
-//		System.out.println(vc.saleRatio); //사용불가	
+		System.out.println(vc.customerName); 
+		
+		//vc 변수는 Customer클래스가 물려준 멤버변수와 메소드만 사용 할 수 있음
+		//System.out.println(vc.saleRatio); //vip클래스의 할인률을 사용할 수 없음
 	}
 }
 
-//예제2번의 Customer와 VIP 클래스 복사
+//이전에 작성한 Customer와 VIP 클래스 복사
 class Customer3 {
 	String customerName;
 	String customerGrade;
@@ -25,7 +27,7 @@ class Customer3 {
 		this.customerName = customerName;
 		customerGrade = "SILVER";
 		bonusRatio = 0.01;
-		System.out.println("Customer(String) 생성자 호출");
+//		System.out.println("Customer(String) 생성자 호출");
 	}
 
 	public void calcPrice(int price) {
@@ -48,7 +50,7 @@ class VIPCustomer3 extends Customer3 {
 		customerGrade = "VIP";
 		bonusRatio = 0.05;
 		saleRatio = 0.1;
-		System.out.println("VIPCustomer(String) 생성자 호출");
+//		System.out.println("VIPCustomer(String) 생성자 호출");
 	}
 
 }
