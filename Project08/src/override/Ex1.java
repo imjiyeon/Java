@@ -16,7 +16,7 @@ public class Ex1 {
 	}
 }
 
-//형변환 패키지(typecasting) 예제3번 파일에서 회원 클래스 복사하기
+//형변환 패키지(typecasting) 예제2번 파일에서 회원 클래스 복사하기
 class Customer {
 	String customerName;
 	String customerGrade;
