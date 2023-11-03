@@ -1,7 +1,7 @@
 package polymorphism;
 
 /* 
- * 다형성 테스트
+ * 다형성 활용하기
  * (앞에서 구현한 쇼핑몰 회원 관리 프로그램 다시 보기)
  * */
 public class Ex2 {

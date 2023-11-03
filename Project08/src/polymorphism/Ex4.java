@@ -3,7 +3,7 @@ package polymorphism;
 import java.util.ArrayList;
 
 /* 
- * 배열을 활용한 회원 관리 프로그램 구현하기
+ * 리스트와 다형성을 활용하여 회원 관리 프로그램 구현하기
  * */
 public class Ex4 {
 

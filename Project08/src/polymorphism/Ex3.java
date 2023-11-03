@@ -1,7 +1,7 @@
 package polymorphism;
 
 /*
- * 다형성 테스트하기
+ * 다형성 활용하기
  * */
 public class Ex3 {
 
