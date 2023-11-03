@@ -1,22 +1,22 @@
 package override;
 
 /* 
- * VIP 클래스의 제품 가격 계산 메소드 재정의하기
+ * VIP 클래스의 계산 메소드 재정의하기
  * */ 
 public class Ex1 {
 
 	public static void main(String[] args) {
 		Customer customer = new Customer("둘리"); //일반 회원 생성
-		customer.calcPrice(10000); //일반 등급이므로 정가 10000원 그대로 지불
+		customer.calcPrice(10000); //일반 등급이므로 정가를 그대로 지불
 		customer.showInfo();
 		
 		VIPCustomer vip = new VIPCustomer("또치"); //VIP 생성
-		vip.calcPrice(10000); //VIP 등급이므로 10% 할인받아 9000원 지불
+		vip.calcPrice(10000); //VIP 등급이므로 10% 할인받아서 9000원을 지불
 		vip.showInfo();		
 	}
 }
 
-//typecasting패키지의 예제3번 Customer와 VIP 클래스 복사
+//형변환 패키지(typecasting) 예제3번 파일에서 회원 클래스 복사하기
 class Customer {
 	String customerName;
 	String customerGrade;
@@ -28,12 +28,11 @@ class Customer {
 		this.customerName = customerName;
 		customerGrade = "SILVER";
 		bonusRatio = 0.01;
-//		System.out.println("Customer(String) 생성자 호출");
 	}
 
 	public void calcPrice(int price) {
 		bonusPoint = bonusPoint + (price * bonusRatio);
-		System.out.println(customerName+"님이 " + price + "원을 결제했습니다."); //원가 그대로 받기
+		System.out.println(customerName+"님이 " + price + "원을 결제했습니다."); //정가를 그대로 지불함
 	}
 
 	public void showInfo() {
@@ -51,14 +50,13 @@ class VIPCustomer extends Customer {
 		customerGrade = "VIP";
 		bonusRatio = 0.05;
 		saleRatio = 0.1;
-//		System.out.println("VIPCustomer(String) 생성자 호출");
 	}
 
-	//재정의한 메소드
+	//generate를 사용해서 메소드 재정의하기
 	@Override
 	public void calcPrice(int price) {
 		bonusPoint = bonusPoint + (price * bonusRatio);
-		int salePrice = price - (int) (price * saleRatio);
-		System.out.println(customerName+"님이 " + salePrice + "원을 결제했습니다."); //할인된 가격을 계산하여 반환
+		int salePrice = price - (int) (price * saleRatio); //할인률을 적용해서 할인가 구하기
+		System.out.println(customerName+"님이 " + salePrice + "원을 결제했습니다."); //할인된 가격을 지불
 	}
 }
