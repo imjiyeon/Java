@@ -1,5 +1,9 @@
 package override;
 
+/*
+ * 컴퓨터,노트북,데스크탑 클래스를 정의하세요.
+ * 커피클래스에서 상속받은 메소드를 재정의하세요 on() off()
+ * */
 public class Quiz3 {
 	public static void main(String[] args) {
 		Computer computer1 = new Computer();
