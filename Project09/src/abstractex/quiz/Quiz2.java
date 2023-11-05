@@ -1,20 +1,20 @@
 package abstractex.quiz;
 
 /*
- * Car 추상클래스 내용 확인
- * Test 클래스 결과를 확인하여 다음과 같이 결과가 출력되도록
- * Car 추상클래스를 상속받아 Bus클래스와 AutoCar클래스를 생성하시오
+ * 자동차,버스,오토카 클래스를 정의하세요.
+ * 자동차클래스에서 상속받은 메소드를 재정의하세요.
+ * 버스와 오토카에 메소드를 추가하세요.
  * */
 public class Quiz2 {
 
 	public static void main(String[] args) {
-		
+
 		Bus bus = new Bus();
 		bus.run();
 		bus.refuel();
 		bus.takePassenger();
 		System.out.println();
-		
+
 		AutoCar autoCar = new AutoCar();
 		autoCar.run();
 		autoCar.refuel();
@@ -24,35 +24,20 @@ public class Quiz2 {
 
 }
 
-abstract class Car2 {
-
-	//추상메소드
+//자동차 클래스
+abstract class Car2 { // 추상클래스로 지정
+	// 추상메소드 선언
 	public abstract void run();
+
 	public abstract void refuel();
 
 }
 
-class AutoCar extends Car2{
+// 버스 클래스
+class Bus extends Car2 { // 상속받기
 
 	@Override
-	public void run() {
-		System.out.println("자동차가 달립니다.");		
-	}
-
-	@Override
-	public void refuel() {
-		System.out.println("휘발유를 주유합니다.");
-	}
-
-	public void load() {
-		System.out.println("짐을 싣습니다.");
-	}
-}
-
-class Bus extends Car2{
-
-	@Override
-	public void run() {
+	public void run() { // 물려받은 추상메소드 구현
 		System.out.println("버스가 달립니다.");
 	}
 
@@ -60,8 +45,28 @@ class Bus extends Car2{
 	public void refuel() {
 		System.out.println("천연 가스를 충전 합니다.");
 	}
-	
+
+	// 버스에 승객을 태우는 메소드 추가
 	public void takePassenger() {
 		System.out.println("승객을 버스에 태웁니다.");
+	}
+}
+
+//오토카 클래스
+class AutoCar extends Car2 { // 상속받기
+
+	@Override
+	public void run() { // 물려받은 추상메소드 구현
+		System.out.println("자동차가 달립니다.");
+	}
+
+	@Override
+	public void refuel() {
+		System.out.println("휘발유를 주유합니다.");
+	}
+
+	// 차에 짐을 싣는 메소드 추가
+	public void load() {
+		System.out.println("짐을 싣습니다.");
 	}
 }

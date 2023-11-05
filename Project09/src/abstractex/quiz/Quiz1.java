@@ -1,48 +1,53 @@
 package abstractex.quiz;
 
 /*
- * 추상클래스 Car 내용을 보고,
- * 테스트 클래스 내용을보고
- * 아래와 같이 출력결과가 나오도록
- * Car를 상속받아서 Sonata, Avante 클래스를 만드시오
+ * 자동차,소나타,아반떼 클래스를 정의하세요.
+ * 자동차클래스에서 상속받은 메소드를 재정의하세요.
  * */
 public class Quiz1 {
 
 	public static void main(String[] args) {
 
-		Car car1 = new Sonata();
-		car1.start();
-		car1.drive();
-		car1.stop();
-		car1.turnOff();
+		Sonata sonata = new Sonata();
+		sonata.start();
+		sonata.drive();
+		sonata.stop();
+		sonata.turnOff();
+		System.out.println();
 
-		Car car2 = new Avante();
-		car2.start();
-		car2.drive();
-		car2.stop();
-		car2.turnOff();
+		Avante avante = new Avante();
+		avante.start();
+		avante.drive();
+		avante.stop();
+		avante.turnOff();
 	}
 }
 
-abstract class Car {
-	
+// 자동차 클래스
+abstract class Car { // 추상클래스로 지정
+
+	// 추상메소드 선언
 	public abstract void start();
+
 	public abstract void drive();
+
 	public abstract void stop();
+
 	public abstract void turnOff();
 
 }
 
-class Avante extends Car{
-	
+// 아반떼 클래스
+class Avante extends Car { // 상속받기
+
 	@Override
-	public void start() {
+	public void start() { // 물려받은 추상메소드 구현
 		System.out.println("Avante 시동을 켭니다.");
 	}
 
 	@Override
 	public void drive() {
-		System.out.println("Avante 달립니다.");		
+		System.out.println("Avante 달립니다.");
 	}
 
 	@Override
@@ -57,16 +62,17 @@ class Avante extends Car{
 
 }
 
-class Sonata extends Car{
+// 소나타 클래스
+class Sonata extends Car { // 상속받기
 
 	@Override
-	public void start() {
+	public void start() { // 물려받은 추상메소드 구현
 		System.out.println("Sonata 시동을 켭니다.");
 	}
 
 	@Override
 	public void drive() {
-		System.out.println("Sonata 달립니다.");		
+		System.out.println("Sonata 달립니다.");
 	}
 
 	@Override
