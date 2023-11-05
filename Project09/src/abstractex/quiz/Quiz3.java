@@ -13,6 +13,7 @@ public class Quiz3 {
 		human.sleep();
 		human.move();
 		human.readBook();
+		System.out.println();
 
 		Tiger tiger = new Tiger();
 		tiger.sleep();
