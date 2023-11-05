@@ -25,7 +25,7 @@ public class Ex4 {
 		customerList.add(customer5);
 
 		System.out.println("====== 회원등급에따라 할인율과 보너스 포인트 계산 =======");
-		for (Customer customer : customerList) { //리스트의 요소를 하나씩 Customer형으로 꺼내기
+		for (Customer customer : customerList) { //리스트의 요소를 꺼내서 부모타입 변수에 저장
 			customer.calcPrice(10000); //실제 인스턴스에따라 재정의된 메소드 호출
 		}
 		
