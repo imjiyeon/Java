@@ -14,7 +14,7 @@ class Parents {
 
 class Child extends Parents{
 
-//	final void method1() { //에러남. final 메소드는 재정의 불가
+//	final void method1() { //에러남. final 메소드는 재정의 할 수 없음
 //	}
 	
 	@Override
