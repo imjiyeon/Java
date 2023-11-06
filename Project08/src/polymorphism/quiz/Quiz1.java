@@ -8,7 +8,7 @@ package polymorphism.quiz;
 public class Quiz1 {
 
 	public static void main(String[] args) {
-		runCar(new Bus());
+		runCar(new Bus()); // Car car = new Bus() 식이 성립됨
 		runCar(new SportsCar());
 	}
 
@@ -27,24 +27,27 @@ public class Quiz1 {
 
 }
 
+// 자동차 클래스
 class Car {
 	public void run() {
 		System.out.println("자동차가 달린다");
 	}
 }
 
-class Bus extends Car {
+// 버스 클래스
+class Bus extends Car { // 상속받기
 
 	@Override
-	public void run() {
+	public void run() { // 메소드 재정의
 		System.out.println("버스가 달린다");
 	}
 
 }
 
-class SportsCar extends Car {
+// 스포츠카 클래스
+class SportsCar extends Car { // 상속받기
 	@Override
-	public void run() {
+	public void run() { // 메소드 재정의
 		System.out.println("스포츠카가 달린다");
 	}
 }
