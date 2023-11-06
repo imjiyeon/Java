@@ -1,21 +1,16 @@
 package ex;
 
+/*
+ * 인터페이스와 형변환
+ * */
 public class Ex2 {
-	
+
 	public static void main(String[] args) {
-		method1(new Calculator()); //인터페이스를 구현한 클래스를 대입
-		Calc calc = method2();
-		System.out.println(calc.add(1, 2));
+		
+		Calc calc = new Calculator(); // 부모타입으로 변수를 형변환시킴
+		
+		System.out.println(calc.add(2, 3));
+		//calc.showInfo(); // 에러남. 자식클래스에서 추가한 기능은 사용할 수 없음
 	}
-	
-	//인터페이스 타입 매개변수
-	static void method1(Calc c) {
-		System.out.println("첫번째 메소드 입니다");
-	}
-	
-	//인터페이스 타입 리턴타입
-	static Calc method2() {
-		return new Calculator();  //인터페이스를 구현한 클래스를 반환
-	}
-	
+
 }
