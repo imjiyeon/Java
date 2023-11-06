@@ -1,7 +1,7 @@
 package ex;
 
 /*
- * 인터페이스 만들기
+ * 계산기 인터페이스 만들기
  * */
 public interface Calc {
 

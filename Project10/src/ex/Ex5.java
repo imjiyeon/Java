@@ -4,37 +4,39 @@ import java.util.Scanner;
 
 /*
  * 고객 상담 전화 배분 프로그램 구현하기
- * - 입력 숫자에 따라 정책 선택
  * */
 public class Ex5 {
 	public static void main(String[] args) {
+		
 		System.out.println("전화 상담 할당 방식을 선택하세요.");
 		System.out.println("1 : 한명씩 차례로 할당 ");
 		System.out.println("2 : 쉬고 있거나 대기가 가장 적은 상담원에게 할당 ");
 		System.out.println("3 : 우선순위가 높은 고객 먼저 할당 ");
 		
 		Scanner scanner = new Scanner(System.in);
-		int num  =  scanner.nextInt(); //문자를 입력받아서 num변수에 저장 (숫자 입력 + 엔터)
+		int num  =  scanner.nextInt(); //문자를 입력받아서 num변수에 저장
 		
 		Scheduler scheduler = null;
 		
-		if(num == 1){ //입력받은 값이 r이면 RoundRobin 클래스 생성
+		//입력받은 숫자에 따라서 정책을 선택함
+		if(num == 1){ //입력받은 값이 1이면 RoundRobin 클래스 생성
 			scheduler = new RoundRobin();
 		}
-		else if(num == 2){ //입력받은 값이 l이면 LeastJob 클래스 생성
+		else if(num == 2){ //입력받은 값이 2이면 LeastJob 클래스 생성
 			scheduler = new LeastJob();
 		}
-		else if(num == 3){ //입력받은 값이 p이면 PriorityAllocation 클래스 생성
+		else if(num == 3){ //입력받은 값이 3이면 PriorityAllocation 클래스 생성
 			scheduler = new PriorityAllocation();
 		}
 		else{
 			System.out.println("지원되지 않는 기능입니다.");
-			return;
 		}
 		
-		scheduler.getNextCall(); //어떤 정책인가와 상관없이 인터페이스에 선언한 메소드 호출
-		scheduler.sendCallToAgent();
-		
+		if(scheduler != null) {
+			scheduler.getNextCall();
+			scheduler.sendCallToAgent();
+		}
+
 	}
 }
 
