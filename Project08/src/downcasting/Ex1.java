@@ -13,6 +13,9 @@ public class Ex1 {
 			Human human = (Human) animal; // Human형 변수로 다운캐스팅
 			human.readBook(); // 객체가 가지고 있는 readBook기능을 사용할 수 있음
 		}
+
+		// 잘못된 경우
+		// Tiger tiger = (Tiger) animal; //컴파일 오류가 안남.
 	}
 
 }
