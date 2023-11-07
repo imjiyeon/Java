@@ -13,7 +13,7 @@ public class Quiz4 {
 		ArrayList<Car2> list = new ArrayList<>(); // 부모타입의 리스트 생성
 
 		list.add(new Bus()); // 버스 객체 추가
-		list.add(new AutoCar()); // 오토카 객체 추카
+		list.add(new AutoCar()); // 오토카 객체 추가
 
 		for (int i = 0; i < list.size(); i++) {
 			Car2 car = list.get(i); // 리스트 안에 저장된 요소 꺼내기
