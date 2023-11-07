@@ -9,13 +9,13 @@ public class Quiz2 {
 
 	public static void main(String[] args) {
 
-		Bus bus = new Bus();
+		Bus bus = new Bus(); // 변수의 자료형으로 Bus만 사용할 수 있음
 		bus.run();
 		bus.refuel();
 		bus.takePassenger();
 		System.out.println();
 
-		AutoCar autoCar = new AutoCar();
+		AutoCar autoCar = new AutoCar(); // 변수의 자료형으로 AutoCar만 사용할 수 있음
 		autoCar.run();
 		autoCar.refuel();
 		autoCar.load();

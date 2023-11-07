@@ -9,13 +9,13 @@ public class Quiz3 {
 
 	public static void main(String[] args) {
 
-		Human human = new Human();
+		Human human = new Human(); // 변수의 자료형으로 Human만 사용할 수 있음
 		human.sleep();
 		human.move();
 		human.readBook();
 		System.out.println();
 
-		Tiger tiger = new Tiger();
+		Tiger tiger = new Tiger(); // 변수의 자료형으로 Tiger만 사용할 수 있음
 		tiger.sleep();
 		tiger.move();
 		tiger.hunting();

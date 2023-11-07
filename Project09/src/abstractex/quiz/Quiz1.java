@@ -8,7 +8,7 @@ public class Quiz1 {
 
 	public static void main(String[] args) {
 
-		Sonata sonata = new Sonata();
+		Sonata sonata = new Sonata(); // 변수의 자료형으로 Car와 Sonata를 사용할 수 있음
 		sonata.start();
 		sonata.drive();
 		sonata.stop();
