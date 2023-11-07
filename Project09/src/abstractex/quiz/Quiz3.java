@@ -27,12 +27,12 @@ public class Quiz3 {
 // 동물 클래스
 abstract class Animal { // 추상클래스로 지정
 
-	// 공통기능은 일반메소드로 선언
+	// 자식클래스에서 공통으로 사용하는 기능은 일반메소드로 선언
 	public void sleep() {
 		System.out.println("밤에는 잠을 잡니다");
 	}
 
-	// 추상메소드 선언
+	// 자식클래스마다 다르게 사용하는 기능은 추상메소드 선언
 	public abstract void move();
 
 }
