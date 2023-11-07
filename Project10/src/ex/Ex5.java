@@ -62,7 +62,7 @@ class LeastJob implements Scheduler {
 
 	@Override
 	public void getNextCall() {
-		System.out.println("상담정화를 순서대로 대기열에서 가져옵니다.");
+		System.out.println("상담전화를 순서대로 대기열에서 가져옵니다.");
 
 	}
 

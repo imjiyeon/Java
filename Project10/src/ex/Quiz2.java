@@ -20,14 +20,17 @@ public class Quiz2 {
 		int num = scanner.nextInt(); // 숫자 입력받기
 
 		DBDriver dbDriver = null;
-		
+
 		// 입력받은 숫자에 따라 데이터베이스 선택
 		if (num == 1) {
 			dbDriver = new MySqlBDriver();
+
 		} else if (num == 2) {
 			dbDriver = new OracleDBDriver();
+			
 		} else if (num == 3) {
 			dbDriver = new PostgresDBDriver();
+			
 		} else {
 			System.out.println("잘못된 숫자를 입력했습니다.");
 		}
