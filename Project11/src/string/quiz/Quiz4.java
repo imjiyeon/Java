@@ -1,7 +1,7 @@
 package string.quiz;
 
 /*
- * 4번 예제의 코드를 함수형태로 바꾸고 호출해보세요
+ * 이전 문제를 함수형태로 바꾸고 호출하세요.
  * */
 public class Quiz4 {
 	static int getCharCount(String s) {
