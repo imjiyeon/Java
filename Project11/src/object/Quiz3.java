@@ -8,7 +8,7 @@ package object;
 public class Quiz3 {
 
 	public static void main(String[] args) {
-		Dog dog = new Dog("멍멍이", "진돗개");
+		Dog dog = new Dog("초코", "진돗개");
 		System.out.println(dog);
 	}
 }
