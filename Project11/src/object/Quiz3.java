@@ -1,4 +1,4 @@
-package object.quiz;
+package object;
 
 class Dog{
 	String name;

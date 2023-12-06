@@ -1,4 +1,4 @@
-package object.quiz;
+package object;
 
 /*
  * 1. 연도,월,일을 멤버로 가지는 Date클래스를 만드세요.
