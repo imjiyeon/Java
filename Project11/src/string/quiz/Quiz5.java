@@ -1,30 +1,31 @@
 package string.quiz;
 
-import java.util.*;
+import java.util.Scanner;
 
 /*
-* Scanner 클래스의 nextLine 메소드를 사용하여 문자열을 입력받고,
-* "END" 또는 "end" 가 입력되면 루프를 종료하세요.
-*
-* while(true)를 사용하여 무한루프를 만드세요.
-* */
-
+ * Scanner 클래스의 nextLine 메소드를 사용하여 문자열을 입력받고,
+ * 문자열을 거꾸로 뒤집어서 출력하세요.
+ * 
+ * ex) "안녕하세요" -> "요세하녕안"
+ * */
 public class Quiz5 {
 
 	public static void main(String[] args) {
-		
-		Scanner sc = new Scanner(System.in);
-		
-		while (true) {
-			
-			System.out.print("문장을 입력하세요:");
-			String line = sc.nextLine(); // 문자열 입력받기
-			
-			if (line.toUpperCase().equals("END")) { // 문자열이 "END" 또는 "end" 라면 루프 종료
-				break;
-			}
-			
+
+		// 문자열 입력받기
+		Scanner scanner = new Scanner(System.in);
+		String str = scanner.nextLine(); 
+
+		// 1.문자열에서 뒤에서부터 한 글자씩 출력
+		for (int i = str.length() - 1; i >= 0; i--) { // 1씩 감소
+			System.out.print(str.charAt(i));
 		}
-		
+
+		// 2.StringBuilder 클래스 사용
+		StringBuilder builder = new StringBuilder(str);
+		builder.reverse(); //문자열을 거꾸로 변경하기
+		System.out.println(builder.toString());
+
 	}
+
 }
