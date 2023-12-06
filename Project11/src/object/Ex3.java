@@ -1,29 +1,5 @@
 package object;
 
-class Student {
-	
-	int id;
-	String name;
-	
-	public Student(int id, String name) {
-		this.id = id;
-		this.name = name;
-	}
-
-	@Override
-	public boolean equals(Object obj) { //함수인자가 Object타입이므로 Student클래스로 형변환 해야한다
-		if(obj instanceof Student) { //obj를 형변환하기전에 실제객체가 Student형인지 확인한다  
-			Student student = (Student)obj; //Object에서 Student로 형변환
-			if(this.id == student.id) { //학번이 같으면 같은 학생으로 판단한다
-				return true;
-			}
-		}
-		return false;
-
-//		return super.equals(obj); // 메모리주소를 비교
-	}	
-
-}
 
 
 /*
@@ -53,4 +29,30 @@ public class Ex3 {
 		//Q. 재정의함수를 주석처리해서 원형메소드로 비교하기 
 
 	}
+}
+
+
+class Student {
+	
+	int id;
+	String name;
+	
+	public Student(int id, String name) {
+		this.id = id;
+		this.name = name;
+	}
+
+	@Override
+	public boolean equals(Object obj) { //함수인자가 Object타입이므로 Student클래스로 형변환 해야한다
+		if(obj instanceof Student) { //obj를 형변환하기전에 실제객체가 Student형인지 확인한다  
+			Student student = (Student)obj; //Object에서 Student로 형변환
+			if(this.id == student.id) { //학번이 같으면 같은 학생으로 판단한다
+				return true;
+			}
+		}
+		return false;
+
+//		return super.equals(obj); // 메모리주소를 비교
+	}	
+
 }
