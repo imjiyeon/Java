@@ -7,17 +7,15 @@ public class Ex2 {
 	
 	public static void main(String[] args) {
 				
-		Integer iNum = Integer.valueOf("100"); //정적메소드를 사용하여 생성자 없이 문자열을 Integer클래스로 저장
-		System.out.println("iNum: " + iNum);
+		// 문자열이나 정수를 사용하여 Integer 객체 생성
+		Integer iNum1 = Integer.valueOf("100"); 
+		Integer iNum2 = Integer.valueOf(100);
 		
-		int num = Integer.parseInt("100"); //문자열을 int값으로 변환
-		System.out.println("num: " + num);
+		// 문자열을 숫자타입으로 변환
+		int num = Integer.parseInt("100");
 		
-		String str1 = iNum.toString(); //int값을 문자열로 변환
-		System.out.println("str1: " + str1);
-		
-		String str2 = Integer.toString(100); //정적 메소드를 사용하여 int값을 문자열로 변환
-		System.out.println("str2: " + str2);
+		// 숫자를 문자열타입으로 변환
+		String str = iNum1.toString();
 
 	}
 	

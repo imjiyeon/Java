@@ -3,18 +3,22 @@ package wrapper;
 import java.util.ArrayList;
 
 /*
- * 리스트에 boolean값 담기
+ * 래퍼 클래스를 사용한 리스트 생성하기
  * */
 public class Ex3 {
 	
 	public static void main(String[] args) {
-		
-		//list는 객체형 자료형만 사용 가능하므로 boolean의 wrapper클래스 사용해야함
+
+		// 리스트는 기초타입을 사용할 수 없기 때문에 'Boolean'과 같은 래퍼클래스를 사용해야함
 		ArrayList<Boolean> list = new ArrayList<Boolean>(); 
 		
-		list.add(true); //list.add(new Boolean(true))로 변환 (오토박싱)
+		// 오토박싱을 통해 boolean 값을 ArrayList에 추가
+		list.add(true); //new Boolean(true)로 변환됨. (오토박싱)
 		list.add(true);
 		list.add(false);
+		
+		boolean b = list.get(0); // 객체.booleanValue()로 변환됨. (언박싱)
+		
 	}
 	
 }
