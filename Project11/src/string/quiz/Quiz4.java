@@ -1,8 +1,7 @@
 package string.quiz;
 
 /*
- * 문자열을 입력받았을때 공백을 제외한 글자수만 세어서 출력하세요
- * "자바 프로그래밍 입문"가 입력되면 공백 문자 2개를 제외하고 9라는 숫자를 출력할 것
+ * 4번 예제의 코드를 함수형태로 바꾸고 호출해보세요
  * */
 public class Quiz4 {
 	static int getCharCount(String s) {

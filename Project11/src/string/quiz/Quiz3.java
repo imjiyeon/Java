@@ -1,21 +1,22 @@
 package string.quiz;
 
 /*
- * 1. 주민등록번호 뒷자리의 맨 첫 번째 숫자는 성별을 나타냅니다. 
- * 2. 주민등록번호를 입력하면 성별을 출력하도록 구현하세요.
- * ex) "881120-1068234" -> "성별은 남자입니다"
- * 1,3 -> 남자
- * 2,4 -> 여자 
+ * 문자열을 입력받았을때 공백을 제외한 글자수만 세어서 출력하세요
+ * "자바 프로그래밍 입문"가 입력되면 공백 문자 2개를 제외하고 9라는 숫자를 출력할 것
  * */
 public class Quiz3 {
-	
+	static int getCharCount(String s) {
+        int realLength = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) != ' ') {  // 공백이 아닌 경우에만 결과값을 증가
+            	realLength++;
+            }
+        }
+        return realLength;
+    }
+
     public static void main(String[] args) {
-    	 String pin = "881120-1068234";  // 1 또는 3이면 남자
-    	 char gender = pin.charAt(7);
-         if(gender == '1' || gender == '3') {
-        	 System.out.println("성별은 남자입니다");
-         }else {
-        	 System.out.println("성별은 여자입니다");
-         }
+    	System.out.println("자바 프로그래밍 입문".length());  // 11 출력
+        System.out.println(getCharCount("자바 프로그래밍 입문"));  // 9 출력
     }
 }

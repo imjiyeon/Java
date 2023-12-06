@@ -1,21 +1,24 @@
 package string.quiz;
 
-/*
- * 4번 예제의 코드를 함수형태로 바꾸고 호출해보세요
- * */
-public class Quiz5 {
-	static int getCharCount(String s) {
-        int realLength = 0;
-        for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) != ' ') {  // 공백이 아닌 경우에만 결과값을 증가
-            	realLength++;
-            }
-        }
-        return realLength;
-    }
+import java.util.*;
 
-    public static void main(String[] args) {
-    	System.out.println("자바 프로그래밍 입문".length());  // 11 출력
-        System.out.println(getCharCount("자바 프로그래밍 입문"));  // 9 출력
-    }
+/*
+* Scanner의 nextLine 메소드를 사용하여 문자열을 계속 입력받다가
+* 만약 "END"라는 문장이 입력되면 루프에서 빠져나와 프로그램을 종료하도록 구현하세요.
+* 
+* 단, end의 대소문자에 상관없이 종료해야 합니다 
+* */
+
+public class Quiz5 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		while (true) {
+			System.out.print("문장을 입력하세요:");
+			String line = sc.nextLine();
+			if (line.toUpperCase().equals("END")) { // 입력문장이 "END" 이면 종료
+				break;
+			}
+		}
+	}
 }
