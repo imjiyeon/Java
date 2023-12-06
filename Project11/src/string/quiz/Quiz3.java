@@ -19,7 +19,7 @@ public class Quiz3 {
             }
         }
 
-    	System.out.println(str.length());  // 11
-        System.out.println(realLength);  // 9
+    	System.out.println(str.length()); // 공백을 포함한 길이는 11
+        System.out.println(realLength);  // 공백을 제거한 길이는 9
     }
 }
