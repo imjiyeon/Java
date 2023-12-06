@@ -2,27 +2,27 @@ package wrapper.quiz;
 
 import java.util.ArrayList;
 
-/*
- * 리스트를 생성하고 a,b,c,d 문자를 저장하세요
- * 그리고 리스트안에 저장된 모든 문자를 꺼내서 출력하세요
+/* <래퍼 클래스를 사용한 리스트 생성하기>
+ * 
+ * 문자를 저장하는 리스트를 생성하고 'a','b','c','d' 를 저장하세요.
+ * 그리고 리스트 안에 저장된 모든 문자를 꺼내서 출력하세요.
  * */
 public class Quiz4 {
 
 	public static void main(String[] args) {
 
-		ArrayList<Character> list = new ArrayList<>(); //char의 wrapper클래스 사용
-		list.add('a');
+		//문자를 저장하는 리스트 생성
+		ArrayList<Character> list = new ArrayList<>(); 
+		
+		//리스트에 문자 추가
+		list.add('a'); //char값으로 객체 생성. (오토박싱)
 		list.add('b');
 		list.add('c');
 		list.add('d');
-		
-		System.out.println(list.get(0));
-		System.out.println(list.get(1));
-		System.out.println(list.get(2));
-		System.out.println(list.get(3));
-		
+
+		//리스트 안에 저장된 문자를 모두 출력
 		for(int i=0;i<list.size();i++) {
-			char ch = list.get(i); //Character값.intValue()로 변환 (언박싱)
+			char ch = list.get(i); //객체 안에서 char값 꺼냄. (언박싱)
 			System.out.println(ch);
 		}
 		
