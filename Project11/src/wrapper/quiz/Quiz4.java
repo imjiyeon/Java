@@ -15,14 +15,14 @@ public class Quiz4 {
 		ArrayList<Character> list = new ArrayList<>(); 
 		
 		//리스트에 문자 추가
-		list.add('a'); //char값으로 객체 생성. (오토박싱)
+		list.add('a'); //list.add(new Character('a'))으로 변환됨. (오토박싱)
 		list.add('b');
 		list.add('c');
 		list.add('d');
 
 		//리스트 안에 저장된 문자를 모두 출력
 		for(int i=0;i<list.size();i++) {
-			char ch = list.get(i); //객체 안에서 char값 꺼냄. (언박싱)
+			char ch = list.get(i); //list.get(i).charValue()으로 변환됨. (언박싱)
 			System.out.println(ch);
 		}
 		

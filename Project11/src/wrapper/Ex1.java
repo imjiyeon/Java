@@ -10,12 +10,14 @@ public class Ex1 {
 		// Integer 클래스
 		Integer iNum1 = new Integer(100); //Integer 클래스의 인스턴스 생성	
 		
-		// 자바9부터 객체를 생성할때 생성자를 사용하지 않고, 자동으로 박싱됨
-		Integer iNum2 = 100; //new Integer(100)와 같음 (오토박싱)
+		// 자바5부터 객체를 생성할때 생성자를 사용하지 않고, 자동으로 박싱됨
+		Integer iNum2 = 100; //new Integer(100)로 변환. (오토박싱)
 		
 		int num1 = iNum1.intValue(); //int값 꺼내기
-		int num2 = iNum1; // iNum1.intValue()와 같음 (언박싱)	
-		int num3 = iNum1 + num2; // Integer가 자동으로 int로 변경되고, 덧셈이 수행됨 
+		int num2 = iNum1; // iNum1.intValue()로 변환. (언박싱)	
+		
+		// 참조형과 기본형간의 연산 가능.
+		int num3 = iNum1 + 100; // iNum1.intValue() + num2. 값이 변환되고 덧셈이 수행됨
 
 		System.out.println("num1: " + num1);
 		System.out.println("num2: " + num2);

@@ -17,7 +17,7 @@ public class Ex3 {
 		list.add(true);
 		list.add(false);
 		
-		boolean b = list.get(0); // 객체.booleanValue()로 변환됨. (언박싱)
+		boolean b = list.get(0); // list.get(0).booleanValue()으로 변환됨. (언박싱)
 		
 	}
 	
