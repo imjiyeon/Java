@@ -1,8 +1,8 @@
 package string.quiz;
 
 /*
- * 먼저 문자열 "a:b:c:d"을 만들고
- * 이 문자열을 "a#b#c#d"로 바꿔서 출력해주세요.
+ * 1. 문자열 "a:b:c:d"을 만드세요.
+ * 2. 문자열을 "a#b#c#d"로 변경하세요.
  * */
 
 public class Quiz1 {
