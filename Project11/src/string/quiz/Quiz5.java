@@ -16,15 +16,22 @@ public class Quiz5 {
 		Scanner scanner = new Scanner(System.in);
 		String str = scanner.nextLine(); 
 
-		// 1.문자열에서 뒤에서부터 한 글자씩 출력
-		for (int i = str.length() - 1; i >= 0; i--) { // 1씩 감소
+		// 1-1.문자열에서 뒤에서부터 한 글자씩 출력
+		int i = str.length() - 1;
+		while(i>=0) {
 			System.out.print(str.charAt(i));
+			i--;
 		}
-
-		// 2.StringBuilder 클래스 사용
-		StringBuilder builder = new StringBuilder(str);
-		builder.reverse(); //문자열을 거꾸로 변경하기
-		System.out.println(builder.toString());
+		
+//		// 1-2.
+//		for (int j = str.length() - 1; j >= 0; j--) { // 1씩 감소
+//			System.out.print(str.charAt(j));
+//		}
+//
+//		// 2.StringBuilder 클래스 사용
+//		StringBuilder builder = new StringBuilder(str);
+//		builder.reverse(); //문자열을 거꾸로 변경하기
+//		System.out.println(builder.toString());
 
 	}
 
