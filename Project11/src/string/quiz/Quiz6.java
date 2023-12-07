@@ -31,7 +31,7 @@ public class Quiz6 {
 			}
 			
 			//3.
-			if (line.equals("end") || line.equals("end")) {
+			if (line.equals("end") || line.equals("END")) {
 				break;
 			}
 			
