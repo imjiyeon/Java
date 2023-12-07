@@ -13,7 +13,7 @@ public class Ex2 {
 		
 		printer.setMaterial(p1); //매개변수가 자동으로 형변환됨
 		
-		Powder p2 = (Powder)printer.getMaterial(); //재료를 꺼낼때는 직접 형변환을 해야함
+		Powder p2 = (Powder)printer.getMaterial(); //재료를 꺼낼때는 직접 형변환을 해야함..
 		
 		p2.doPrinting();
 	}
