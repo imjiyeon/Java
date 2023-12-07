@@ -21,7 +21,7 @@ public class Quiz6 {
 			String line = sc.nextLine(); // 문자열 입력받기
 			
 			//1.
-			if (line.toUpperCase().equals("END")) { // 문자열이 "END" 또는 "end" 라면 루프 종료
+			if (line.toLowerCase().equals("end")) { // 문자열이 "END" 또는 "end" 라면 루프 종료
 				break;
 			}
 			
