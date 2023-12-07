@@ -20,5 +20,7 @@ public class Quiz2 {
 		float fNum = Float.parseFloat("10.0"); //"10.0" -> 10.0
 		double dNum = Double.parseDouble("10.0");
 		
+		Double double1 = Double.parseDouble("10.0"); // 오토박싱됨
+		
 	}
 }
