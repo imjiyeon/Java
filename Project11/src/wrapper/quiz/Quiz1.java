@@ -3,7 +3,7 @@ package wrapper.quiz;
 /*
  * <wrapper 클래스 생성하기>
  * 
- * 모든 기본 데이터 타입에 대한 래퍼 클래스를 선언하고 값을 대입하세요.
+ * 모든 기본 데이터 타입에 대한 래퍼 클래스의 변수를 선언하고, 값을 대입하세요.
  * (boolean, byte, char, short, long, float, double)
  * */
 public class Quiz1 {
