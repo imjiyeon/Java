@@ -21,5 +21,14 @@ public class Quiz3 {
 		
 		String str4 = Boolean.toString(true); // true -> "true"
 		
+		
+		String str5 = String.valueOf(10);
+		
+		String str6 = String.valueOf(1.123);
+		
+		String str7 = String.valueOf('c');
+		
+		String str8 = String.valueOf(true);
+		
 	}
 }
