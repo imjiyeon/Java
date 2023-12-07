@@ -57,5 +57,5 @@ class ThreeDPrinter2 {
 	public void setMaterial(Plastic material) {
 		this.material = material;
 	}
-
+	
 }
