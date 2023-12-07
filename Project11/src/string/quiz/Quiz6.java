@@ -35,6 +35,9 @@ public class Quiz6 {
 				break;
 			}
 			
+			//break: 반복문 종료 
+			//continue: 반복문 스킵
+			
 		}
 		
 	}
