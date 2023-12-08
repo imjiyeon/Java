@@ -12,20 +12,22 @@ public class Quiz2 {
 
 	public static void main(String[] args) {
 		
+		//문자를 저장하는 리스트 생성
 		ArrayList<Character> list = new ArrayList<Character>();
 		
-		list.add('A');
+		list.add('A'); //문자 추가
 		list.add('B');
 		list.add('C');
 		
 		System.out.println("리스트 요소 삭제 전: " + list);
 		
+		//리스트 안에 'A'가 있는지 확인 
 		for(int i=0; i<list.size(); i++){
 			
 			char ch = list.get(i);
 			
-			if(ch=='A') {
-				list.remove(i);
+			if(ch == 'A') {
+				list.remove(i); //해당 문자가 A라면 리스트에서 삭제
 			}
 		}
 		
