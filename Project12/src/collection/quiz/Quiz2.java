@@ -29,6 +29,7 @@ public class Quiz2 {
 			if(ch == 'A') {
 				list.remove(i); //해당 문자가 A라면 리스트에서 삭제
 			}
+
 		}
 		
 		System.out.println("리스트 요소 삭제 후: " + list);
