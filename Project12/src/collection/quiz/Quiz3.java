@@ -17,30 +17,35 @@ public class Quiz3 {
 		list.add(new Book(1, "자바프로그래밍 입문"));
 		list.add(new Book(2, "스프링부트"));
 		list.add(new Book(3, "엘라스틱서치"));
-		
-		//리스트 요소 하나씩 출력
+
+		// 리스트 요소 하나씩 출력
 		System.out.println(list.get(0));
 		System.out.println(list.get(1));
 		System.out.println(list.get(2));
-		
-		System.out.println("=== 일반 for문 사용 ===");
-		for(int i=0; i<list.size(); i++){
+
+		// 일반 for문 사용
+		for (int i = 0; i < list.size(); i++) {
 			Book book = list.get(i);
 			System.out.print(book);
 		}
-		
-		System.out.println();
-		System.out.println("=== 람다식 for문 사용 ===");
-		for(Book book : list){ //(배열에서 꺼낸 값을 저장할 변수 : 배열)
+
+		// 람다식 for문 사용
+		for (Book book : list) { // (배열에서 꺼낸 값을 저장할 변수 : 배열)
 			System.out.print(book);
 		}
-		
-		list.remove(0); //중간에 있던 요소가 삭제하면 배열은 연속된 구조이기 때문에 뒤에 있던 요소가 앞으로 한칸 이동한다
-		list.remove(0);
-		list.remove(0);		
-		//리스트 전체 출력
+
+		// 리스트 전체 출력
 		System.out.println();
 		System.out.println("모든 요소 삭제: " + list);
+
+		// 리스트 삭제
+//		list.remove(0);
+//		list.remove(1);
+//		list.remove(2);
+
+//		list.remove(0); //중간에 있던 요소가 삭제하면 배열은 연속된 구조이기 때문에 뒤에 있던 요소가 앞으로 한칸 이동한다
+//		list.remove(0);
+//		list.remove(0);		
 
 	}
 }
@@ -59,5 +64,5 @@ class Book {
 	public String toString() {
 		return "Book [bookNumber=" + bookNumber + ", bookTitle=" + bookTitle + "]";
 	}
-	
+
 }
