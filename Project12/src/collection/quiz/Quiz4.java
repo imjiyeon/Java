@@ -21,10 +21,17 @@ public class Quiz4 {
 		System.out.println(hashSet); //추가한 순서대로 저장되지 않는다
 		System.out.println("Set의 크기: " + hashSet.size());
 		
+		//Iterator를 사용해서 set을 순회
 		Iterator<Integer> ir = hashSet.iterator();
 		while(ir.hasNext()) {
 			int i = ir.next();
 			System.out.println(i);
 		}
+		
+		//포문을 사용해서 set을 순회
+		for(int i : hashSet) {
+			System.out.println(i);
+		}
+		
 	}
 }
