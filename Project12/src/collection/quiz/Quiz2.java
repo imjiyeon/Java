@@ -5,7 +5,8 @@ import java.util.ArrayList;
 /*
  * Character타입의 Arraylist 생성하세요
  * 문자 3개를 추가하세요 ('A','B','C')
- * 만약 리스트에 문자 A가 존재한다면 해당요소를 삭제하세요
+ * 리스트에 'A'라는 문자가 있는지 확인하고,
+ * 있다면 리스트에서 삭제하세요.
  * */
 public class Quiz2 {
 
