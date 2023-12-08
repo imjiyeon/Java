@@ -14,7 +14,9 @@ public class Quiz3 {
 
 	public static void main(String[] args) {
 		ArrayList<Book> list = new ArrayList<Book>();
-		list.add(new Book(1, "자바프로그래밍 입문"));
+		
+		Book book1 = new Book(1, "자바프로그래밍 입문");
+		list.add(book1);
 		list.add(new Book(2, "스프링부트"));
 		list.add(new Book(3, "엘라스틱서치"));
 
