@@ -1,10 +1,13 @@
 package innerclass;
 
 /*
- * 익명클래스
+ * 익명클래스 사용하기
  * */
 
-//인터페이스를 상속받아서 구현클래스 만들기
+//Runnable: 스레드를 구현할 때 사용하는 인터페이스
+//스레드: 하나의 프로그램에서 여러작업을 동시에 실행하는 것
+
+//Runnable 인터페이스를 상속받아서 구현 클래스 만들기
 class RunnableChild implements Runnable {
 	@Override
 	public void run() {
@@ -16,18 +19,10 @@ public class Ex6 {
 
 	public static void main(String[] args) {
 		
-		//1.미리 구현한 클래스로 객체 생성
-		Runnable child = new RunnableChild();
+		//미리 구현한 클래스를 사용하여 객체 생성
+		RunnableChild child = new RunnableChild();
 		child.run(); //인터페이스 사용
 		
-		//2.익명클래스로 구현과 동시에 객체 생성
-		Runnable runnerble = new Runnable() {
-			@Override
-			public void run() {
-				System.out.println("running...");
-			}
-		};
-		runnerble.run(); //인터페이스 사용
 	}
 
 }
