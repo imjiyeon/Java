@@ -12,7 +12,7 @@ class RunnableChild implements Runnable {
 	}
 }
 
-public class Ex5 {
+public class Ex6 {
 
 	public static void main(String[] args) {
 		

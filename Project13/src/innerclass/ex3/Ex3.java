@@ -1,4 +1,4 @@
-package innerclass;
+package innerclass.ex3;
 
 /*
  * 내부클래스 종류와 제약사항 (1)
