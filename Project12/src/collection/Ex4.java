@@ -1,69 +1,40 @@
 package collection;
 
-import java.util.ArrayList;
-//import collection.Member;
+import java.util.HashSet;
+import java.util.Iterator;
 
 /*
- * ArrayList를 활용해 회원관리 프로그램 구현하기
+ * Set을 사용하여 문자열 여러개를 저장하는 예제를 만든다
  * */
 public class Ex4 {
 
 	public static void main(String[] args) {
-		MemberArrayList memberArrayList = new MemberArrayList();
-		Member member1 = new Member(1001, "둘리");
-		Member member2 = new Member(1002, "또치");
-		Member member3 = new Member(1003, "도우너");
-		Member member4 = new Member(1004, "고길동");
-
-		// 회원 4명 추가
-		memberArrayList.addMember(member1);
-		memberArrayList.addMember(member2);
-		memberArrayList.addMember(member3);
-		memberArrayList.addMember(member4);
-		memberArrayList.showAllMember();
-
-		// 아이디로 4번째 회원 삭제
-		memberArrayList.removeMember(1004);
-		memberArrayList.showAllMember();
-	}
-}
-
-//회원관리 클래스
-class MemberArrayList {
-
-	// 회원 목록
-	ArrayList<Member> list; // 리스트 선언
-
-	public MemberArrayList() {
-		list = new ArrayList<Member>(); // 리스트 생성
-	}
-
-	// 리스트에 회원을 추가하는 메소드
-	public void addMember(Member member) {
-		list.add(member);
-	}
-
-	// 아이디로 회원을 삭제하는 메소드
-	public boolean removeMember(int memberId) {
-		for (int i = 0; i < list.size(); i++) {
-			Member member = list.get(i);
-			int id = member.memberId;
-			if (id == memberId) {
-				list.remove(i);
-				System.out.println(memberId + "번 회원을 삭제하였습니다");
-				return true; // 삭제에 성공했으면 true 반환
-			}
+		HashSet<String> hashSet = new HashSet<>(); //HashSet 선언 및 생성
+		
+		hashSet.add("둘리"); //회원 추가
+		hashSet.add("또치");
+		hashSet.add("도우너");
+		hashSet.add("도우너"); //중복된 값은 추가 불가
+		System.out.println("set 목록: " + hashSet + " 크기: " + hashSet.size()); //추가된 순서와 상관없이 출력됨
+		
+		hashSet.remove("도우너"); //리스트와 삭제 방법이 다름. 순서가 없는 set은 인덱스가 없으므로 인자로 회원이름을 넣음
+		System.out.println("set 목록: " + hashSet + " 크기: " + hashSet.size());
+		
+		//set은 index 순서가 없기때문에 get메소드로 자료를 꺼낼수없음
+		//컬렉션을 순회하는 Iterator클래스를 사용함
+		System.out.print("Iterator로 회원 출력: ");
+		Iterator<String> ir = hashSet.iterator(); //Iterator클래스 꺼내기
+		while(ir.hasNext()) { //다음 요소가 있으면
+			String member = ir.next(); //다음요소를 가져옴
+			System.out.print(member + " ");
 		}
-		System.out.println(memberId + "번 회원이 존재하지 않습니다");
-		return false; // 삭제에 실패했으면 false 반환
-	}
-
-	// 전체 회원을 출력하는 메소드
-	public void showAllMember() {
-		for (int i = 0; i < list.size(); i++) {
-			Member member = list.get(i);
-			System.out.println(member);
-		}
+		
 		System.out.println();
+		System.out.print("람다식 for문으로 회원 출력: ");
+		for(String member : hashSet) {
+			System.out.print(member + " ");
+		}
+
 	}
+
 }
