@@ -1,7 +1,7 @@
 package collection;
 
 import java.util.ArrayList;
-import collection.Member;
+//import collection.Member;
 
 /*
  * ArrayList를 활용해 회원관리 프로그램 구현하기
