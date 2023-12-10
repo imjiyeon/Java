@@ -1,7 +1,7 @@
 package innerclass.ex1;
 
 /*
- * A클래스와 B클래스를 분리하기
+ * 클래스 만들고 사용하기
  * */
 class A {
 	int num = 10;

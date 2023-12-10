@@ -1,7 +1,7 @@
 package innerclass;
 
 /*
- * 내부클래스 종류와 유효범위
+ * 내부클래스 종류와 제약사항 (2)
  * */
 class OutClass2 {
 	
