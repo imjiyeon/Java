@@ -2,6 +2,7 @@ package map;
 
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Set;
 
 //HashMap 클래스를 사용하여 회원 목록 관리하기
 public class Ex3 {
@@ -34,9 +35,8 @@ public class Ex3 {
 		System.out.println(map);
 
 		// 회원 목록 순회하기
-		Iterator<Integer> keys = map.keySet().iterator(); // keySet에서 Iterator클래스 꺼내기
-		while (keys.hasNext()) { // 다음 key가 있으면
-			int key = keys.next(); // key 꺼내기
+		Set<Integer> keyset = map.keySet();
+		for (int key : keyset) { // 다음 key가 있으면
 			System.out.println("[Key]:" + key + " [Value]:" + map.get(key)); // 키로 회원 조회
 		}
 
