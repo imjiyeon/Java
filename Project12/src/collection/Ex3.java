@@ -43,7 +43,7 @@ class MemberArrayList {
 		list.add(member);
 	}
 
-	// 아이디로 회원을 삭제하는 메소드
+	// Q.아이디로 회원을 삭제하는 메소드
 	public boolean removeMember(int memberId) {
 		for (int i = 0; i < list.size(); i++) {
 			Member member = list.get(i);
@@ -58,7 +58,7 @@ class MemberArrayList {
 		return false; // 삭제에 실패했으면 false 반환
 	}
 
-	// 전체 회원을 출력하는 메소드
+	// Q.전체 회원을 출력하는 메소드
 	public void showAllMember() {
 		for (int i = 0; i < list.size(); i++) {
 			Member member = list.get(i);
