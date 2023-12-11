@@ -23,9 +23,15 @@ public class Quiz3 {
 		map.put("영어", 100.0f);
 		
 		// map 순회
-		Iterator<String> keys = map.keySet().iterator();
+		Set<String> set = map.keySet();
+		Iterator<String> keys = set.iterator();
 		while (keys.hasNext()) {
 			String key = keys.next();
+			System.out.println("[과목명]:" + key);
+			System.out.println("[점수]:" + map.get(key));
+		}
+		
+		for(String key : set) {
 			System.out.println("[과목명]:" + key);
 			System.out.println("[점수]:" + map.get(key));
 		}
