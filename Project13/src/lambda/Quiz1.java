@@ -1,4 +1,4 @@
-package lambda.quiz;
+package lambda;
 
 /*
  * 다음 코드를 람다식으로 변경하세요.
