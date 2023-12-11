@@ -41,7 +41,7 @@ class MemberHashMap {
 		map.put(member.memberId, member);
 	}
 	
-	// 아이디로 회원을 삭제하는 메소드
+	// Q.아이디로 회원을 삭제하는 메소드
 	public boolean removeMember(int memberId) {
 		if(map.containsKey(memberId)) {
 			map.remove(memberId);
@@ -52,7 +52,7 @@ class MemberHashMap {
 		return false;
 	}
 
-	// 전체 회원을 출력하는 메소드
+	// Q.전체 회원을 출력하는 메소드
 	public void showAllMember() {
 		Iterator<Integer> keys = map.keySet().iterator();
 		while (keys.hasNext()) {
