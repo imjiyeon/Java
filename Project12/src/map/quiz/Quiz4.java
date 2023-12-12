@@ -35,31 +35,40 @@ public class Quiz4 {
 		map.put(1003, new Student(1003, "또치", 80, 50, 50));
 
 		// 학생별 총점과 평균 구하기
-		Set<Integer> keys = map.keySet();
-		for(int key : keys) {
+		// 학생을 하나씩 꺼내야함
+		// 학생을 꺼내려면 키를 알아야 함
+
+		Set<Integer> keys = map.keySet(); // 키목록 꺼내기
+
+		// 키를 사용하여 map을 순회
+		for (int key : keys) {
+			// 학생객체 꺼내기*
 			Student student = map.get(key);
+			// 총점 구하기
 			int sum = student.kor + student.math + student.eng;
+			// 평균 구하기
 			double avg = sum / 3.0;
-			System.out.println(student.studentName + "학생의 총점: " + sum + ", 평균: " + avg );
+
+			System.out.println(student.studentName + "학생의 총점: " + sum + ", 평균: " + avg);
 		}
-		
+
 		System.out.println();
-		
+
 		// 과목별 총점과 평균 구하기
 		int korSum = 0;
 		int mathSum = 0;
 		int engSum = 0;
 
-		for(int key : keys) {
+		for (int key : keys) {
 			Student student = map.get(key);
 			korSum = korSum + student.kor;
 			mathSum = mathSum + student.math;
 			engSum = engSum + student.eng;
 		}
-		
-		System.out.println("국어의 총점: " + korSum + ", 평균: " + (korSum/3.0));
-		System.out.println("수학의 총점: " + mathSum + ", 평균: " + (mathSum/3.0));
-		System.out.println("영어의 총점: " + engSum + ", 평균: " + (engSum/3.0));
+
+		System.out.println("국어의 총점: " + korSum + ", 평균: " + (korSum / 3.0));
+		System.out.println("수학의 총점: " + mathSum + ", 평균: " + (mathSum / 3.0));
+		System.out.println("영어의 총점: " + engSum + ", 평균: " + (engSum / 3.0));
 
 	}
 }
