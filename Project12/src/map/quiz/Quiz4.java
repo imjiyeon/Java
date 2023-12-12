@@ -77,9 +77,9 @@ public class Quiz4 {
 class Student {
 	int studentId; // 학번
 	String studentName; // 이름
-	int kor;
-	int math;
-	int eng;
+	int kor; // 국어점수
+	int math; // 수학점수
+	int eng; // 영어점수
 
 	public Student(int studentId, String studentName, int kor, int math, int eng) {
 		super();
