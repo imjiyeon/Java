@@ -45,11 +45,11 @@ public class Quiz4 {
 		
 		System.out.println();
 		
+		// 과목별 총점과 평균 구하기
 		int korSum = 0;
 		int mathSum = 0;
 		int engSum = 0;
-		
-		// 과목별 총점과 평균 구하기
+
 		for(int key : keys) {
 			Student student = map.get(key);
 			korSum = korSum + student.kor;
