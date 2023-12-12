@@ -42,7 +42,7 @@ public class Quiz4 {
 
 		// 키를 사용하여 map을 순회
 		for (int key : keys) {
-			// 학생객체 꺼내기*
+			// 학생객체 꺼내기. 객체를 여러번 사용해야하기 때문에, 변수에 저장해야함.
 			Student student = map.get(key);
 			// 총점 구하기
 			int sum = student.kor + student.math + student.eng;
