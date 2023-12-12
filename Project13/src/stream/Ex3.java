@@ -2,25 +2,49 @@ package stream;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-//스트림의 특징
+/*
+ * 스트림의 연산 - 중간연산
+ * */
 public class Ex3 {
 
 	public static void main(String[] args) {
+
+		// 리스트 생성
+		List<Integer> list = Arrays.asList(1, 1, 2, 3, 5, 4);
+
+		// 리스트로부터 스트림 생성
+		Stream<Integer> stream1 = list.stream();
 		
-		//한번 생성하고 사용한 스트림은 재사용할 수 없다
-		List<Integer> list = Arrays.asList(5,1,2,4,3);		
-		Stream<Integer> stream = list.stream(); //리스트에서 스트림 생성
-		int sum = stream.mapToInt(n->n.intValue()).sum(); //integer->int로 변환하고 합을 구함	
-//		stream.count(); //에러남. 이미 스트림이 소모되어 닫혔음
+		// 중간연산으로 중복을 제거하고 출력
+		stream1.distinct().forEach(n -> System.out.print(n + " "));
+
+		// 중간연산으로 2의 배수만 추출하고, 최종연산으로 요소를 하나씩 출력
+		Stream<Integer> stream2 = list.stream(); // 새로운 스트림 생성
+		stream2.filter(n -> n % 2 == 0).forEach(n -> System.out.print(n + " "));
+
+		// 중간연산으로 요소를 3개만 출력
+		Stream<Integer> stream3 = list.stream();
+		stream3.limit(3).forEach(n -> System.out.print(n + " "));
 		
-		//스트림 연산은 기존자료를 변경하지 않는다
-		list.stream().sorted().forEach(n->System.out.println(n)); //정렬
-		System.out.println("스트림 정렬 후 리스트: " + list); //원본데이터는 그대로
+		// 중간연산으로 순서대로 정렬하고 출력
+		Stream<Integer> stream4 = list.stream();
+		stream4.sorted().forEach(n -> System.out.print(n + " "));
 		
-		//중간연산은 여러번 적용 할 수 있고, 최종연산은 마지막에 한번만 적용된다
-		list.stream().filter(n->n >=3).sorted().forEach(n->System.out.println(n)); 
+		// Stream<Integer>을 기본형 스트림 IntStream 으로 변경
+		Stream<Integer> stream5 = list.stream();
+		IntStream intStream = stream5.mapToInt(n -> n.intValue());
+		System.out.println(intStream.sum()); // Stream은 sum, count 같은 함수를 사용할 수 없음
+
+		// 리스트 생성
+		List<String> strList = Arrays.asList("aaa", "bbb", "ccc");
+
+		// 중간연산으로 요소를 대문자로 변경하고 출력
+		Stream<String> stream6 = strList.stream(); // 새로운 스트림 생성
+		stream6.map(s -> s.toUpperCase()).forEach(s -> System.out.print(s + " "));
+
 	}
 
 }
