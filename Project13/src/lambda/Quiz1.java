@@ -28,8 +28,10 @@ public class Quiz1 {
 		// 구현 클래스 사용
 		MyNumber number1 = new MyNumberImpl();
 		System.out.println(number1.max(10, 20));
+		
+		// Q.익명클래스 사용
 
-		// 람다식 함수 사용
+		// Q.람다식 함수 사용
 		MyNumber number2 = (x, y) -> x > y ? x : y;
 		System.out.println(number2.max(10, 20));
 	}
