@@ -8,15 +8,16 @@ public class Quiz3 {
 
 	public static void main(String[] args) {
 		
-		Object x = new Integer(0);
-		System.out.println( (String)x ); // Integer클래스를 String클래스로 형변환
+		Object obj = new Integer(0);
+		String str = (String ) obj; // Integer클래스를 String클래스로 형변환
 
 //		try {
-//			Object x = new Integer(0);
-//			System.out.println( (String)x );
+//			Object obj = new Integer(0);
+//			String str = (String ) obj;
 //		} catch (ClassCastException e) {
 //			System.out.println(e);
 //		}
+		
 	}
 
 }

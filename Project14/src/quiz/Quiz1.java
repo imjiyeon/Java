@@ -9,6 +9,7 @@ public class Quiz1 {
 	public static void main(String[] args) {
 
 		int num = 0/0;
+		
 //		try {
 //			int num = 0/0;
 //		} catch (ArithmeticException e) {

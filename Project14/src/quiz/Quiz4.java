@@ -7,10 +7,10 @@ package quiz;
 public class Quiz4 {
 
 	public static void main(String[] args) {
-		
-		String str= "1.23";
-		int num= Integer.parseInt(str); // "1.23"을 정수로 변환할때 Exception 발생
-		
+
+		String str = "1.23";
+		int num = Integer.parseInt(str); // "1.23"을 정수로 변환할때 Exception 발생
+
 //		try {
 //			String str= "1.23";
 //			int num= Integer.parseInt(str);
