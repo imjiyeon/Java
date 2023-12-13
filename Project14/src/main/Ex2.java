@@ -13,6 +13,8 @@ public class Ex2 {
 		// 에러가 발생하면 프로그램이 갑자기 종료됨
 
 		System.out.println("프로그램이 정상 종료됩니다."); // 마지막 문장 실행 안됨
+		
+		// bin 폴더에서 .class 파일 지우고 실행하면 ClassNotFoundException 에러가 발생됨
 	}
 
 }
