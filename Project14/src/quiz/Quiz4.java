@@ -9,11 +9,11 @@ public class Quiz4 {
 	public static void main(String[] args) {
 
 		String str = "1.23";
-		int num = Integer.parseInt(str); // "1.23"을 정수로 변환할때 Exception 발생
+		int num = Integer.parseInt(str);
 
 //		try {
 //			String str= "1.23";
-//			int num= Integer.parseInt(str);
+//			int num= Integer.parseInt(str); // 실수값을 정수로 변환하려고 해서 에러남
 //		}catch (NumberFormatException e) {
 //			System.out.println(e);
 //		}

@@ -11,8 +11,8 @@ public class Quiz6 {
 		Book book = new Book();
 		
 //		try {
-//			Book book = new Book();
-//		} catch (NoClassDefFoundError e) {
+//			Book book = new Book(); // 클래스를 찾을 수 없어서 에러남
+//		} catch (NoClassDefFoundError e) { 
 //			System.out.println(e);
 //		}		
 		

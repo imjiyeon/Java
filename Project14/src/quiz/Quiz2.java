@@ -15,7 +15,7 @@ public class Quiz2 {
 //			String s = null;
 //			System.out.println(s.length());
 //		}catch (NullPointerException e) {
-//			System.out.println(e);
+//			System.out.println(e); // 빈객체는 사용할 수 없어서 에러남
 //		}
 
 	}
