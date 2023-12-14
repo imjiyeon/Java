@@ -19,15 +19,19 @@ public class Ex03 {
 		try {
 			// input.txt파일과 연결된 입력 스트림 생성
 			fis = new FileInputStream("input.txt");
+			
 			System.out.println(fis.read()); // 65
 			System.out.println(fis.read()); // 66
 			System.out.println(fis.read()); // 67
 
-			fis = new FileInputStream("input.txt"); // 입력 스트림 다시 생성
+			// 입력 스트림 다시 생성
+			fis = new FileInputStream("input.txt"); 
+			
 			System.out.println();
 			System.out.println((char) fis.read()); // A. int->char
 			System.out.println((char) fis.read()); // B
 			System.out.println((char) fis.read()); // C
+			
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
