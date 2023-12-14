@@ -20,10 +20,12 @@ public class Quiz3 {
 		list.add(new Order(1007, 2023, 650));
 		
 		// 모든 거래번호를 한줄에 나열하세요.
+		// -> 1001 1002 1003 1004 1005 1006 1007
 		Stream<Order> stream1 = list.stream();
 		stream1.map(o -> o.orderNo).forEach(s-> System.out.print(s + " "));
 		
 		// 2022년도의 거래 총금액과 건수를 출력하세요
+		// -> 총금액: 650, 거래건수: 3
 		Stream<Order> stream2 = list.stream();
 		int sum1 = stream2.filter(o -> o.year == 2022).mapToInt(o -> o.price).sum();
 		System.out.println("2022년도의 거래 총금액: " + sum1);
@@ -33,6 +35,7 @@ public class Quiz3 {
 		System.out.println("2022년도의 거래건수: " + count1);
 		
 		// 2023년도의 거래 총금액과 건수를 출력하세요
+		// -> 총금액: 2150, 거래건수: 4
 		Stream<Order> stream4 = list.stream();
 		int sum2 = stream4.filter(o -> o.year == 2023).mapToInt(o -> o.price).sum();
 		System.out.println("2023년도의 거래 총금액: " + sum2);
