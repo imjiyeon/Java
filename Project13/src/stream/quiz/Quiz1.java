@@ -2,6 +2,7 @@ package stream.quiz;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.OptionalInt;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -28,11 +29,15 @@ public class Quiz1 {
 		// 결과: 1
 		Stream<String> stream3 = Arrays.stream(arr);
 		stream3.map(s -> s.length()).sorted().limit(1).forEach(s -> System.out.println(s));
+		
+		Stream<String> stream4 = Arrays.stream(arr);
+		OptionalInt min = stream4.mapToInt(s -> s.length()).min();
+		System.out.println(min.getAsInt());
 
 		// 4.중복을 제거한 리스트를 만드세요.
 		// 결과: [aaa, b, ccccc]
-		Stream<String> stream4 = Arrays.stream(arr);
-		List<String> list = stream4.distinct().collect(Collectors.toList());
+		Stream<String> stream5 = Arrays.stream(arr);
+		List<String> list = stream5.distinct().collect(Collectors.toList());
 		System.out.println("중복을 제거한 리스트: " + list);
 
 	}
