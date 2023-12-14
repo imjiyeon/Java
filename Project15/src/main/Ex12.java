@@ -16,20 +16,26 @@ public class Ex12 {
 		long start = 0;
 		long end = 0;
 		
-		try {		
-			FileInputStream fis = new FileInputStream("a.txt"); //기반 스트림 생성
-			FileOutputStream fos = new FileOutputStream("copy2.txt"); //기반 스트림 생성
+		try {
+			//기반 스트림 생성
+			FileInputStream fis = new FileInputStream("a.txt");
+			FileOutputStream fos = new FileOutputStream("copy2.txt"); 
 			
-			BufferedInputStream bis = new BufferedInputStream(fis); //버퍼링 보조스트림 생성
-			BufferedOutputStream bos = new BufferedOutputStream(fos); //버퍼링 보조스트림 생성
+			//버퍼링 보조스트림 생성
+			BufferedInputStream bis = new BufferedInputStream(fis); 
+			BufferedOutputStream bos = new BufferedOutputStream(fos); 
 			
 			// 복사 시간 측정하기
-			start = System.currentTimeMillis(); //복사 시작 시간
+			start = System.currentTimeMillis();
+			
+			//8kb를 한꺼번에 읽어서 복사하는 중
 			int i;
-			while ((i = bis.read()) != -1) { //8kb를 한꺼번에 읽어서 복사하는 중
+			while ((i = bis.read()) != -1) { 
 				bos.write(i);
 			}
-			end = System.currentTimeMillis(); //복사 종료 시간
+			
+			end = System.currentTimeMillis();
+			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

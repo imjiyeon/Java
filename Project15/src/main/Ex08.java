@@ -9,6 +9,8 @@ import java.io.IOException;
 public class Ex08 {
 
 	public static void main(String[] args) {
+		
+		// reader.txt 파일 먼저 만들기
 
 		try {
 			FileReader fr = new FileReader("reader.txt"); //문자 기반 입력 스트림 생성
@@ -26,7 +28,5 @@ public class Ex08 {
 		}
 	}
 	
-	/*
-	 * 문자 기반 스트림은 한글도 읽을 수 있다
-	 * */
+	/* 문자 기반 스트림은 한글도 읽을 수 있다 */
 }
