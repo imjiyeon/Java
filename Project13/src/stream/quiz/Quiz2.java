@@ -16,7 +16,7 @@ public class Quiz2 {
 		// 결과: file1.txt file3.txt file5.txt
 		Stream<String> stream = Arrays.stream(arr);		
 		stream
-				.filter(s -> s.endsWith(".txt"))
+				.filter(s -> s.endsWith(".txt")) //문자열이 .txt로 끝나는지 확인
 				.forEach(s -> System.out.print(s + " "));
 
 		// 2.확장자별로 파일의 개수를 구하세요
@@ -47,7 +47,8 @@ public class Quiz2 {
 		Stream<String> stream5 = Arrays.stream(arr);
 		stream5
 				.map(s -> {
-					String[] strArr = s.split("\\."); // .을 구분자 사용. 점은 특수기호로 표현해야함
+					// .을 구분자를 사용하여 문자열을 자름. (점은 특수기호로 표현해야함)
+					String[] strArr = s.split("\\."); 
 					return strArr[1];
 				})
 				.distinct()
