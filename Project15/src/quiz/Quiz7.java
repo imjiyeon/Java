@@ -5,7 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /*
- * 다운로드 폴더에 있는 파일의 목록을 읽어서 텍스트 파일(quiz7.txt)에 출력하세요.
+ * 다운로드 폴더에 있는 파일의 목록을 읽어서 텍스트 파일에 출력하세요.
  * (파일 내용 보기)
  * */
 public class Quiz7 {
