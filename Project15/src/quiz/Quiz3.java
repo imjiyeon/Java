@@ -1,24 +1,29 @@
 package quiz;
 
-import java.io.FileWriter;
-import java.io.IOException;
+import java.util.Scanner;
 
 /*
- * FileWriter을 사용하여 quiz3.txt 텍스트파일에 숫자 1부터 10 중에서 짝수를 출력하세요. 
+ * <Scanenr 사용>
+ * 
+ * 무한루프를 사용하여 문자열을 계속 입력 받습니다.
+ * 문자열을 입력받다가 "STOP"이 입력되면 루프를 종료하세요.
+ * 단, "STOP"의 대소문자는 구분하지 않습니다.
  * */
+
 public class Quiz3 {
 
-	public static void main(String[] args) throws IOException {
-	
-		FileWriter fw = new FileWriter("quiz3.txt");
+	public static void main(String[] args){
 		
-		for(int i=1; i<11; i++) {
-			if(i%2==0) {
-				fw.write(i+" ");
+		Scanner scanner = new Scanner(System.in);
+		
+		while(true) {
+			System.out.println("문자를 입력하세요:");
+			String str = scanner.nextLine();
+			if(str.toUpperCase().equals("STOP")) {
+				break;
 			}
 		}
 		
-		fw.flush();
-		
+		System.out.println("프로그램이 종료되었습니다");
 	}
 }

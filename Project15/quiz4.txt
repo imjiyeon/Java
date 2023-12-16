@@ -1,8 +1,1 @@
-Test_권동혁
-Test_김상현
-Test_남택호
-Test_서정국
-Test_석용욱
-Test_신한빈
-Test_이준기
-Test_장승훈
+ABCDEFGHIJKLMNOPQRSTUVWXYZ

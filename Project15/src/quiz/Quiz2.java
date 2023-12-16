@@ -1,28 +1,27 @@
 package quiz;
 
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.util.Scanner;
 
 /*
- *  FileOutputStream을 사용하여 quiz2.txt 텍스트파일에 문자 A-Z까지 출력하세요. 
- *  (파일 내용 보기)
+ * <Scanenr 사용>
+ * 
+ * Scanenr를 사용하여 두자리 정수(10~99)를 입력받으세요. 
+ * 십의자리와 일의자리의 합을 구하세요.
  * */
+
 public class Quiz2 {
 
-	public static void main(String[] args) throws IOException {
-		
-		try{
-			FileOutputStream fos = new FileOutputStream("quiz2.txt");
-			byte data = 65; //'A'의 아스키 값
-			
-			for(int i = 0; i < 26; i++){  
-				fos.write(data); // A-Z 출력
-				data++;
-			}
+	public static void main(String[] args) {
 
-		}catch(IOException e) {
-			e.printStackTrace();
-		}
+		Scanner scanner = new Scanner(System.in);
 
+		int i = scanner.nextInt();
+
+		int num1 = i / 10;
+		int num2 = i % 10;
+
+		int sum = num1 + num2;
+
+		System.out.println("십의자리와 일의자리의 합은 " + sum + "입니다");
 	}
 }

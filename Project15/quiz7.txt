@@ -1,0 +1,5 @@
+desktop.ini
+noname.pdf
+임지연.pdf
+훈련생자료
+훈련생자료.zip
