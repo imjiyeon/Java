@@ -3,28 +3,33 @@ package main;
 import java.io.IOException;
 
 /*
- * 표준입력으로 화면에서 문자 하나 입력받기
+ * 표준 입출력 사용하기
  * */
 public class Ex01 {
-	
+
 	public static void main(String[] args) {
 
+		// 1.표준 출력으로 화면에 내용 출력하기
+		System.out.println("안녕하세요");
+
+		// 2.표준 입력으로 문자 하나 입력받기
 		System.out.println("알파벳 하나를 쓰고 [Enter]를 누르세요");
 
 		try {
-			
-			// 화면에서 입력이 들어오기를 기다림 -> 입력이 들어오면 변수에 값을 대입함
-			int i = System.in.read(); 
 
-			// read()는 바이트를 읽어들여서 숫자로 저장함. 그래서 문자를 아스키코드로 저장 
-			System.out.println(i);
-			
-			// 문자로 사용하려면 형 변환해야함
-			System.out.println((char) i); 
+			// 문자를 입력받아 변수에 값을 저장
+			int i = System.in.read(); // a 입력
+
+			// read() 메소드는 입력되 데이터를 바이트 값으로 저장함.
+			// 그래서 문자를 아스키코드로 변환함
+			System.out.println(i); // a->97
+
+			// 문자로 사용하려면 형 변환 필요
+			System.out.println((char) i);
 
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
-	
+
 }
