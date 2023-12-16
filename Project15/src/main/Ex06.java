@@ -5,7 +5,6 @@ import java.io.IOException;
 
 /*
  *  FileOutputStream 사용하기
- *  (output.txt)
  * */
 public class Ex06 {
 
