@@ -10,7 +10,7 @@ public class Ex02 {
 	public static void main(String[] args) {
 
 		// Scanner 객체 생성
-		// 표준입력 클래스를 인자로 사용 (화면에서 입력을 받겠다는 뜻) -> 입출력 대상을 지정하는 것
+		// 표준입력을 인자로 사용 (화면에서 입력을 받겠다는 뜻) -> 입력 대상을 지정
 		Scanner scanner = new Scanner(System.in);
 
 		// 문자열 입력받기

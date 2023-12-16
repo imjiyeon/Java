@@ -12,7 +12,7 @@ public class Ex01 {
 		// 1.표준 출력으로 화면에 내용 출력하기
 		System.out.println("안녕하세요");
 
-		// 2.표준 입력으로 문자 하나 입력받기
+		// 2.표준 입력으로 문자 입력받기
 		System.out.println("알파벳 하나를 쓰고 [Enter]를 누르세요");
 
 		try {
