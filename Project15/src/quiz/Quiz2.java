@@ -18,6 +18,7 @@ public class Quiz2 {
 		int i = scanner.nextInt();
 
 		int num1 = i / 10; // 십의자리
+		
 		int num2 = i % 10; // 일의자리
 
 		int sum = num1 + num2;
