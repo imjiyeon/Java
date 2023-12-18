@@ -19,9 +19,8 @@ public class Ex11 {
 		
 		try {
 
-			//파일 입력 스트림 생성
+			//입출력 스트림 생성
 			FileInputStream fis = new FileInputStream("a.txt"); 
-			//파일 출력 스트림 생성
 			FileOutputStream fos = new FileOutputStream("copy.txt"); 
 			
 			//복사 되는 시간 측정하기
@@ -30,8 +29,11 @@ public class Ex11 {
 			start = System.currentTimeMillis(); 
 			
 			//한문자씩 읽어서 복사하는 중
-			int i;
-			while ((i = fis.read()) != -1) { 
+			while (true) { 
+				int i = fis.read();
+				if(i == -1) {
+					break;
+				}
 				fos.write(i);
 			}
 			
