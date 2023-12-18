@@ -1,30 +1,41 @@
 package quiz;
 
-import java.io.File;
-import java.io.FileWriter;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
 
 /*
- * 다운로드 폴더에 있는 파일의 목록을 읽어서 텍스트 파일에 출력하세요.
- * (파일 내용 보기)
+ * FileOutputStream와 보조스트림을 사용하여
+ * 파일에 "프로그래밍"을 출력하세요.
  * */
 public class Quiz6 {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 
-		File dir = new File("C:\\Users\\imjiyeon\\Downloads");
-		File[] files = dir.listFiles(); // 폴더 밑에 있는 파일 목록
+		try {
+			// 기반 스트림 생성
+			FileOutputStream fos = new FileOutputStream("quiz66.txt");
 
-		FileWriter fw = new FileWriter("quiz6.txt");
+			// 보조스트림 생성
+			OutputStreamWriter osw = new OutputStreamWriter(fos);
 
-		for (int i = 0; i < files.length; i++) {
-			File file = files[i];
-			String filename = file.getName();
-			fw.write(filename);
-			fw.write("\n");
+			osw.write('프');
+			osw.write('로');
+			osw.write('그');
+			osw.write('래');
+			osw.write('밍');
+
+			// OutputStreamWriter도 버퍼를 사용함. 버퍼를 비워야 내용이 한번에 출력됨
+			osw.flush();
+
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 
-		fw.flush();
-
 	}
+
 }

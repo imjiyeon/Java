@@ -27,9 +27,9 @@ public class Ex09 {
 			char[] arr = { 'a', 'b', 'c' };
 			fw.write(arr);
 
-			// 버퍼: 데이터를 임시로 저장하는 공간. 데이터를 효율적으로 처리하기 위해 일정량을 모았다가 한번에 처리
-			// filewriter의 버퍼크기 : 8kb
-			fw.flush(); // 버퍼에 남아있는 데이터 강제로 출력하기. 이부분이 없으면 데이터가 출력안될 수 있음
+			// filewriter는 버퍼를 사용하여, 데이터를 모았다가 한번에 출력함
+			// 버퍼: 데이터를 임시로 저장하는 공간
+			fw.flush(); // 버퍼에 남아있는 데이터 강제로 출력. 이부분이 없으면 데이터가 출력안될 수 있음
 
 		} catch (IOException e) {
 			e.printStackTrace();
