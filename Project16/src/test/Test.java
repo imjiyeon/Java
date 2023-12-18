@@ -77,9 +77,11 @@ public class Test {
 
 		addScoreForStudent(student4, korean, 89);
 		addScoreForStudent(student4, math, 95);
+		addScoreForStudent(student4, dance, 40);
 
 		addScoreForStudent(student5, korean, 85);
 		addScoreForStudent(student5, math, 56);
+		addScoreForStudent(student5, dance, 80);
 
 		// 과목별 성적 출력
 		GradeReport gradeReport = new GradeReport();

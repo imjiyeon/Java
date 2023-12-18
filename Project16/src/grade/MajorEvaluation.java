@@ -15,7 +15,7 @@ public class MajorEvaluation implements GradeEvaluation {
 			grade = "B";
 		else if (point >= 70 && point <= 79)
 			grade = "C";
-		else if (point >= 55 && point <= 69)
+		else if (point >= 60 && point <= 69)
 			grade = "D";
 		else
 			grade = "F";

@@ -31,7 +31,7 @@ public class GradeReport {
 
 	public void makeHeader(Subject subject) {
 		buffer.append(GradeReport.LINE);
-		buffer.append("  " + subject.getSubjectName());
+		buffer.append("  " + subject.subjectName);
 		buffer.append(GradeReport.TITLE);
 		buffer.append(GradeReport.HEADER);
 		buffer.append(GradeReport.LINE);
@@ -39,7 +39,7 @@ public class GradeReport {
 
 	public void makeBody(Subject subject) {
 
-		ArrayList<Student> studentList = subject.getStudentList();
+		ArrayList<Student> studentList = subject.studentList;
 
 		for (int i = 0; i < studentList.size(); i++) {
 			Student student = studentList.get(i);
@@ -61,18 +61,18 @@ public class GradeReport {
 		for (int i = 0; i < scoreList.size(); i++) {
 
 			Score score = scoreList.get(i);
-			if (score.getSubject().getSubjectId() == subject.getSubjectId()) { // 학점 산출할 과목
+			if (score.subject.subjectId == subject.subjectId) { // 학점 산출할 과목
 				String grade;
 
-				if (subject.getGradeType() == Define.TYPE1) { // 필수 과목인 경우
+				if (subject.gradeType == Define.TYPE1) { // 필수 과목인 경우
 					GradeEvaluation gradeEvaluation = new MajorEvaluation();
-					grade = gradeEvaluation.getGrade(score.getPoint());
+					grade = gradeEvaluation.getGrade(score.point);
 
 				} else { // 교양 과목인 경우
 					GradeEvaluation gradeEvaluation = new PassFailEvaluation();
-					grade = gradeEvaluation.getGrade(score.getPoint());
+					grade = gradeEvaluation.getGrade(score.point);
 				}
-				buffer.append(score.getPoint());
+				buffer.append(score.point);
 				buffer.append(":");
 				buffer.append(grade);
 				buffer.append(" | ");
