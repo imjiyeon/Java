@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 
 /*
+ * <보조스트림>
+ * 
  * FileOutputStream와 보조스트림을 사용하여
  * 파일에 "프로그래밍"을 출력하세요.
  * */

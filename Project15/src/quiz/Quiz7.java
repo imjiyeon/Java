@@ -5,6 +5,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /*
+ * <파일 클래스>
+ * 
  * 다운로드 폴더에 있는 파일의 목록을 읽어서 텍스트 파일에 출력하세요.
  * (파일 내용 보기)
  * */

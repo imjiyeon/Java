@@ -5,6 +5,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /*
+ * <파일 클래스>
+ * 
  * 이전 예제를 함수형태로 변경하세요.
  * */
 public class Quiz8 {
