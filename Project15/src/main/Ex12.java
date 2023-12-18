@@ -7,7 +7,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /*
- * 보조스트림을 사용해서 파일 복사하기
+ * 보조스트림 사용하기 (2)
+ * - 보조스트림으로 파일 복사하기
  * */
 public class Ex12 {
 

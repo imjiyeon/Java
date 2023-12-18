@@ -5,7 +5,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /*
- * 기반스트림만 사용해서 파일 복사하기
+ * 보조스트림 사용하기 (2)
+ * - 기반스트림으로 파일 복사하기
  * */
 public class Ex11 {
 

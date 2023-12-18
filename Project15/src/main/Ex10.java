@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /*
- * 보조스트림 사용하기
+ * 보조스트림 사용하기 (1)
  * */
 public class Ex10 {
 
@@ -18,20 +18,20 @@ public class Ex10 {
 			FileInputStream fis = new FileInputStream("reader.txt");
 
 			// 보조스트림 생성
-			InputStreamReader isr = new InputStreamReader(fis);
+			InputStreamReader isr = new InputStreamReader(fis); 
 
-			// 보조스트림으로 파일 읽기
-			int i;
-			while ((i = isr.read()) != -1) {
-				System.out.print((char) i);
+			// 보조스트림으로 파일 내용 읽기
+			while (true) {
+				int i = isr.read(); // 바이트 읽은 내용을 문자로 변환하여 가져옴
+				if (i == -1) {
+					break;
+				}
+				System.out.print((char) i); // 한글을 제대로 읽음
 			}
 
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
-		// FileInputStream은 1 바이트 단위로 데이터를 읽지만, 
-		// 보조스트림을 사용하면 2 바이트 문자도 읽을 수 있다
 
 	}
 }
