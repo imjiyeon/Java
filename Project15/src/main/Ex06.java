@@ -4,7 +4,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /*
- *  FileOutputStream 사용하기
+ * <바이트 단위 스트림>
+ * FileOutputStream 사용하기
  * */
 public class Ex06 {
 

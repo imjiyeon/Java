@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /*
+ * <문자 단위 스트림>
  * FileReader로 읽기
  * */
 public class Ex08 {
@@ -23,9 +24,9 @@ public class Ex08 {
 				}
 				System.out.print((char) i); // 한글은 1byte로 표현할 수 없어서 모두 깨짐
 			}
-			
+
 			System.out.println();
-			
+
 			// 문자 기반 입력 스트림 생성
 			FileReader fr = new FileReader("reader.txt");
 

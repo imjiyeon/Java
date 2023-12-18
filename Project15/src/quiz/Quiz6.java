@@ -1,40 +1,32 @@
 package quiz;
 
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.io.OutputStreamWriter;
 
 /*
- * <보조스트림>
+ * <문자 스트림>
  * 
- * FileOutputStream와 보조스트림을 사용하여
- * 파일에 "프로그래밍"을 출력하세요.
+ * FileWriter를 사용하여 파일에 구구단을 출력하세요.
  * */
 public class Quiz6 {
 
 	public static void main(String[] args) {
-
 		try {
-			// 기반 스트림 생성
-			FileOutputStream fos = new FileOutputStream("quiz66.txt");
+			
+			// 출력 스트림 생성
+			FileWriter fw = new FileWriter("quiz6.txt");
 
-			// 보조스트림 생성
-			OutputStreamWriter osw = new OutputStreamWriter(fos);
+			// Writer는 문자열 출력 가능
+			for (int i = 2; i <= 9; i++) {
+				for (int j = 1; j <= 9; j++) {
+					fw.write(i + "*" + j + "=" + i * j + "\n"); // 줄바꿈은 특수기호로 처리
+				}
+				fw.write("\n");
+			}
+			
+			fw.flush();
 
-			osw.write('프');
-			osw.write('로');
-			osw.write('그');
-			osw.write('래');
-			osw.write('밍');
-
-			// OutputStreamWriter도 버퍼를 사용함. 버퍼를 비워야 내용이 한번에 출력됨
-			osw.flush();
-
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 

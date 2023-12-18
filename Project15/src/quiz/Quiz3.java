@@ -3,7 +3,7 @@ package quiz;
 import java.util.Scanner;
 
 /*
- * <Scanenr 사용>
+ * <Scanner>
  * 
  * 무한루프를 사용하여 문자열을 계속 입력 받습니다.
  * 문자열을 입력받다가 "STOP"이 입력되면 루프를 종료하세요.

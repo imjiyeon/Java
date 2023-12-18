@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 /*
+ * <바이트 단위 스트림>
  * 배열을 사용해서 파일 읽기
  * */
 public class Ex05 {

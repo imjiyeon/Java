@@ -5,7 +5,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 /*
- *  InputStream 사용하기
+ * <바이트 단위 스트림>
+ * InputStream 사용하기
  * */
 public class Ex03 {
 

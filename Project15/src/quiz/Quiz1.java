@@ -3,9 +3,9 @@ package quiz;
 import java.util.Scanner;
 
 /*
- * <Scanenr 사용>
+ * <Scanner>
  * 
- * Scanenr를 사용하여 배열에 숫자 5개를 입력하세요.
+ * Scanner를 사용하여 배열에 숫자 5개를 입력하세요.
  * 배열의 모든 요소의 합을 구하세요
  * */
 

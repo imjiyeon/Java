@@ -4,6 +4,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /*
+ * <문자 단위 스트림>
  * FileWriter로 쓰기
  * */
 public class Ex09 {
@@ -13,16 +14,16 @@ public class Ex09 {
 		try {
 			// 문자 기반 출력 스트림 생성
 			FileWriter fw = new FileWriter("writer.txt");
-			
+
 			// 문자 하나 출력
 			fw.write('A');
-			
+
 			// 문자열 출력
 			fw.write("안녕하세요");
-			
+
 			// 특수기호 출력
 			fw.write('\n');
-			
+
 			// 배열 출력
 			char[] arr = { 'a', 'b', 'c' };
 			fw.write(arr);

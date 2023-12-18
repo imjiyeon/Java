@@ -3,9 +3,9 @@ package quiz;
 import java.util.Scanner;
 
 /*
- * <Scanenr 사용>
+ * <Scanner>
  * 
- * Scanenr를 사용하여 두자리 정수(10~99)를 입력받으세요. 
+ * Scanner를 사용하여 두자리 정수(10~99)를 입력받으세요. 
  * 십의자리와 일의자리의 합을 구하세요.
  * */
 

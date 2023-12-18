@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 /*
+ * <바이트 단위 스트림>
  * 파일 끝까지 읽기
  * */
 public class Ex04 {
