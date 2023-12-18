@@ -1,5 +1,23 @@
 desktop.ini
+Epic Pen Setup.exe
+ICanZoomit_0.489.zip
+ICanZoomit_0.63
+====>
+en-US
+====>
+ICanZoomit.resources.dll
+
+ICanZoomit.exe
+Shortcut.pdf
+단축키.pdf
+
+ICanZoomit_0.63.zip
 noname.pdf
+XPPenWin_3.4.13.231129
+====>
+XPPenWin_3.4.13.231129.exe
+
+XPPenWin_3.4.13.231129.zip
 임지연.pdf
 훈련생자료
 ====>

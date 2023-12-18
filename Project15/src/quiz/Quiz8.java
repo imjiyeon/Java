@@ -39,7 +39,7 @@ public class Quiz8 {
 			}
 
 			fw.write("\n");
-			fw.flush();
 		}
+		fw.flush();
 	}
 }

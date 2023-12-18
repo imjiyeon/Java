@@ -11,13 +11,13 @@ import java.io.IOException;
 public class Quiz6 {
 
 	public static void main(String[] args) throws IOException {
-		
+
 		File dir = new File("C:\\Users\\imjiyeon\\Downloads");
-		File[] files = dir.listFiles(); //폴더 밑에 있는 파일 목록
-		
+		File[] files = dir.listFiles(); // 폴더 밑에 있는 파일 목록
+
 		FileWriter fw = new FileWriter("quiz6.txt");
-		
-		for(int i=0;i<files.length;i++) {
+
+		for (int i = 0; i < files.length; i++) {
 			File file = files[i];
 			String filename = file.getName();
 			fw.write(filename);
@@ -25,6 +25,6 @@ public class Quiz6 {
 		}
 
 		fw.flush();
-		
+
 	}
 }
