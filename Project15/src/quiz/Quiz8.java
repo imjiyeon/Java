@@ -14,7 +14,9 @@ public class Quiz8 {
 
 	public static void main(String[] args) throws IOException {
 
-		File dir = new File("C:\\Users\\imjiyeon\\Downloads");
+//		File dir = new File("C:\\Users\\imjiyeon\\Downloads");
+		
+		File dir = new File("e:\\Users\\205-T\\Downloads");
 		File[] files = dir.listFiles(); // 폴더 밑에 있는 파일 목록
 
 		FileWriter fw = new FileWriter("quiz8.txt");
