@@ -13,25 +13,36 @@ public class Quiz9 {
 
 	public static void main(String[] args) throws IOException {
 
-//		String filepath = "C:\\Users\\그린302\\Downloads\\Exam";
-		String filepath = "C:\\Users\\imjiyeon\\Downloads";
+		// 디렉토리 경로
+		String filepath1 = "e:\\Users\\205-T\\Downloads";
+
+		String filepath2 = "D:\\imjiyeon\\tools";
+
+		// 출력 스트림
 		FileWriter fw = new FileWriter("quiz9.txt");
 
-		printFileList(filepath, fw);
+		// 함수 호출
+		printFileList(filepath2, fw);
 
 	}
 
+	// 디렉토리 밑에 있는 파일 목록을 출력하는 메소드
+	// 매개변수: 디렉토리 경로, 출력 스트림
 	public static void printFileList(String filepath, FileWriter fw) throws IOException {
 
+		// 파일 생성
 		File dir = new File(filepath);
-		File[] files = dir.listFiles(); // 폴더 밑에 있는 파일 목록
+
+		// 폴더 밑에 있는 파일 목록 꺼내기
+		File[] files = dir.listFiles();
 
 		for (int i = 0; i < files.length; i++) {
 			File file = files[i]; // 배열에서 파일 꺼내기
-			String filename = file.getName(); // 파일 이름
+			String filename = file.getName(); // 파일 이름 꺼내기
 			fw.write(filename); // 파일 이름 출력
 			fw.write("\n");
 		}
+
 		fw.flush();
 	}
 }

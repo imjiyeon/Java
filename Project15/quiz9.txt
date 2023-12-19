@@ -1,0 +1,9 @@
+DBeaver.lnk
+exerd
+eXERD.lnk
+HeidiSQL.lnk
+Visual Studio Code.lnk
+vs-workspace
+workspace
+ZoomIt
+ZoomIt.exe
