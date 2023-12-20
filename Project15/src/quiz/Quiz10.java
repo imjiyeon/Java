@@ -47,13 +47,14 @@ public class Quiz10 {
 			String filename = file.getName();
 
 			StringBuilder builder = new StringBuilder();
-			
-			for(int j =0 ; j < level; j++) {
+
+			// 들여쓰기로 계층구조 표시
+			for (int j = 0; j < level; j++) {
 				builder.append("\t");
 			}
-			
+
 			builder.append(filename);
-			
+
 			// 파일 이름 출력
 			fw.write(builder.toString());
 
