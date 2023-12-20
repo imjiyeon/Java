@@ -91,12 +91,12 @@ public class Test {
 
 	}
 
-	// 과목별 점수를 추가하는 메소드
+	// 학생의 점수를 추가하는 메소드
 	public static void addScoreForStudent(Student student, Subject subject, int point) {
 
-		Score score = new Score(student.studentId, subject, point);
+		Score score = new Score(student.studentId, subject, point); // 점수 생성
 
-		student.addSubjectScore(score);
+		student.scoreList.add(score); // 점수 추가
 
 	}
 }
