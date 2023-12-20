@@ -1,9 +1,11 @@
 package grade;
 
 /*
- * 필수 과목 학점 정책
+ * 필수 과목의 학점을 계산하는 클래스
  * */
-public class MajorEvaluation implements GradeEvaluation {
+public class MajorEvaluation implements GradeEvaluation { // 상속받기
+
+	// 점수에 따라 학점을 A~F 로 부여하기
 
 	@Override
 	public String getGrade(int point) {
@@ -21,5 +23,5 @@ public class MajorEvaluation implements GradeEvaluation {
 			grade = "F";
 		return grade;
 	}
-	
+
 }
