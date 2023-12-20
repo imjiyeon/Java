@@ -10,20 +10,16 @@ public class Subject {
 	
 	String subjectName; // 과목 이름
 	int subjectId; // 과목 고유 번호
-	int gradeType; // 학점 평가 정책
+	int gradeType; // 과목 종류 (1: 필수, 2: 교양)
 
 	// 이 과목을 수강하는 학생 리스트
-	ArrayList<Student> studentList = new ArrayList<Student>();
+	public ArrayList<Student> studentList;
 
 	public Subject(String subjectName, int subjectId, int gradeType) {
 		this.subjectName = subjectName;
 		this.subjectId = subjectId;
 		this.gradeType = gradeType;
-	}
-	
-	// 수강 신청 메소드
-	public void register(Student student) {
-		studentList.add(student);
+		studentList = new ArrayList<Student>(); // 리스트 생성
 	}
 
 }
