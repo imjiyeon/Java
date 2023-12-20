@@ -64,7 +64,7 @@ public class GradeReport {
 			if (score.subject.subjectId == subject.subjectId) { // 학점 산출할 과목
 				String grade;
 
-				if (subject.gradeType == Define.TYPE1) { // 필수 과목인 경우
+				if (subject.subjectType == Define.TYPE1) { // 필수 과목인 경우
 					GradeEvaluation gradeEvaluation = new MajorEvaluation();
 					grade = gradeEvaluation.getGrade(score.point);
 
