@@ -82,8 +82,9 @@ public class Test {
 
 		// 과목별로 학점 리포트 출력하기
 		GradeReport gradeReport = new GradeReport();
-		String report = gradeReport.getReport(subjectList);
-		System.out.println(report);
+		gradeReport.printReport(korean);
+		gradeReport.printReport(math);
+		gradeReport.printReport(dance);
 
 	}
 
