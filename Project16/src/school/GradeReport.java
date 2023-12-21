@@ -30,6 +30,7 @@ public class GradeReport {
 			makeFooter();
 		}
 
+		// 버퍼 하나에 모든 내용 작성 (국어, 수학, 댄스)
 		return buffer.toString(); // 문자열 반환
 	}
 
