@@ -34,9 +34,9 @@ public class Test {
 		// 과목 리스트 만들기
 		ArrayList<Subject> subjectList = new ArrayList<Subject>();
 
-		Subject korean = new Subject("국어", Define.KOREAN, 1);
-		Subject math = new Subject("수학", Define.MATH, 1);
-		Subject dance = new Subject("댄스", Define.DANCE, 2);
+		Subject korean = new Subject("국어", Define.KOREAN, Define.TYPE1);
+		Subject math = new Subject("수학", Define.MATH, Define.TYPE1);
+		Subject dance = new Subject("댄스", Define.DANCE, Define.TYPE2);
 
 		subjectList.add(korean);
 		subjectList.add(math);
