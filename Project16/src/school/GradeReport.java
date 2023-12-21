@@ -13,10 +13,10 @@ import util.Define;
 public class GradeReport {
 
 	// 리포트에 들어갈 헤더
-	public static final String TITLE = " 수강생 학점 \t\t\n";
-	public static final String HEADER = " 이름 | 학번 | 점수 \n";
-	public static final String LINE = "---------------------\n";
-	private StringBuffer buffer;
+	static final String TITLE = " 수강생 학점 \t\t\n";
+	static final String HEADER = " 이름 | 학번 | 점수 \n";
+	static final String LINE = "---------------------\n";
+	StringBuffer buffer;
 
 	// 과목별로 리포트를 만드는 함수
 	public void printReport(Subject subject) {
