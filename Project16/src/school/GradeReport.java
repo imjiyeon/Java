@@ -23,6 +23,7 @@ public class GradeReport {
 	}
 
 	// 과목별 리포트 만들기
+	// 매개변수: 과목 리스트
 	public String getReport(ArrayList<Subject> subjectList) {
 		for (Subject subject : subjectList) {
 			makeHeader(subject);
