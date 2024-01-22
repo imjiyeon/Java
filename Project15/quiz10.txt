@@ -852,6 +852,7 @@ colorful-brushstroke-design-vector-set
 	License premium.txt
 
 colorful-brushstroke-design-vector-set.zip
+Comp 20.zip
 cowboy.png
 crop effect (1).mp4
 crop effect (2).mp4
@@ -934,6 +935,7 @@ GAIN(가인) 'Carnival' Preview 01 공개...올누드 연상 파격 (The Last Da
 GOMPLAYERGLOBALSETUP_CHROME.EXE
 Graffiti.png
 GTQ시험진행자료 (1).pdf
+GTQ시험진행자료 (3).pdf
 GTQ시험진행자료.pdf
 hand-painted-teal-colour-watercolour-design
 	hand_painted_teal_colour_watercolour_design_3005.eps
@@ -982,17 +984,20 @@ KOASGTQ_file_for_KOAS4.2.zip
 KOAS_SeatInfo (1).txt
 KOAS_SeatInfo (2).txt
 KOAS_SeatInfo (3).txt
+KOAS_SeatInfo (4).txt
 KOAS_SeatInfo.txt
 KSbiz_Installer_32bit.exe
 KSCertRelay_nx_Installer_32bit.exe
 light sample.aep
 logo-social.png
+lombok.jar
 luma 1.mp4
 luma 2.mp4
 magnify.ai
 magnify_boy.ai
 Mask transition.mp4
 Mask_Final.mp4
+masterpiece.psd
 Matte source.mp4
 MisterHorseProductManagerSetup_2.1.0 (1).exe
 MisterHorseProductManagerSetup_2.1.0 (2).exe
@@ -1011,6 +1016,7 @@ Motion Tools 2 (1).7z
 Motion Tools 2.7z
 motion tracker_ball.mp4
 NewJeans(뉴진스) - Super Shy @인기가요 inkigayo 20230716 (1).mp4
+notice.hwp
 npp.8.5.8.Installer.x64.exe
 P20180403_214258006_3BA9DB44-C158-4A58-A1EF-BE04DFBA5BA2.JPG
 paper-texture.jpg
@@ -1123,6 +1129,18 @@ source monitor_sample-20230801T235613Z-001
 	source monitor_sample.zip
 
 source monitor_sample-20230801T235613Z-001.zip
+startbootstrap-simple-sidebar-gh-pages
+	assets
+		favicon.ico
+
+	css
+		styles.css
+
+	index.html
+	js
+		scripts.js
+
+
 Super Shy - 뉴진스(NewJeans) [뮤직뱅크-Music Bank] - KBS 230714 방송.mp4
 Super Shy - 뉴진스(NewJeans) [뮤직뱅크-Music Bank] - KBS 230721 방송.mp4
 T23022000586C0296EE8.jpg
@@ -1263,6 +1281,8 @@ ZoomIt.zip
 브랜드 홍보영상 가편집 제출_이한준.mp4
 브랜드 홍보영상_김지원.mp4
 브랜드홍보영상_장세빈.mp4
+비행기 (1).zip
+비행기.zip
 사운드 디자인_소스
 	01.jpg
 	02.jpg
@@ -1300,6 +1320,22 @@ ZoomIt.zip
 쇼릴_피드백_남윤식 (1).mp4
 쇼릴_피드백_남윤식.mp4
 쇼릴_피드백_남윤식_1.mp4
+쇼핑몰 세부 제작_-최민규.jpg
+쇼핑몰 세부 제작_김규리.jpg
+쇼핑몰 세부 제작_김수현.jpg
+쇼핑몰 세부 제작_김진.jpg
+쇼핑몰 세부 제작_김현서.jpg
+쇼핑몰 세부 제작_박진영.jpg
+쇼핑몰 세부 제작_오명선.jpg
+쇼핑몰 세부 제작_윤다희.jpg
+쇼핑몰 세부 제작_최광현.jpg
+쇼핑몰 세부 제작_최다슬.jpg
+쇼핑몰사이트구축_김현서.jpg
+쇼핑몰사이트구축_박진영.jpg
+쇼핑몰사이트구축_최다슬.jpg
+쇼핑몰사이트운영_김규리.jpg
+쇼핑몰사이트운영_김수현.png
+쇼핑몰사이트운영_김현서.jpg
 수정) 문화가 있는 날 홍보영상_김지원.mp4
 스냅샷_완성.mp4
 스마트문화앱콘텐츠 설계_평가지.pdf
@@ -1330,8 +1366,24 @@ ZoomIt.zip
 	8.jpg
 	9.jpg
 
+안진영_에프터 이펙트 과제
+	안진영_에프터 이펙트 과제.png
+	안진영_에프터 이펙트 과제_1.mp4
+
+안진영_에프터 이펙트 과제.zip
+안진영_포토샵 과제.psd
+양근선_비행기
+	양근선_비행기.jpg
+	양근선_비행기.mp4
+
+양근선_비행기.zip
+양근선_포토샵.psd
 업 Up (2009) 오프닝.mp4
 업스케일링.mp4
+여준수-비행기
+	비행기.mp4
+	비행기.png
+
 연령고지.mp4
 영상CG작업_프리미어[0][0].png
 예능 영상편집_남윤식.mp4
@@ -1351,6 +1403,17 @@ ZoomIt.zip
 윤식이 노래 길이조절.mp3
 음식 퀴즈.pdf
 음식 퀴즈2.pdf
+이세현_애프터이펙트
+	이세현_애프터이펙트 과제.jpg
+	이세현_애프터이펙트 과제.mp4
+
+이세현_애프터이펙트 (1).zip
+이세현_애프터이펙트.zip
+이세현_포토샵 과제.psd
+이철현_Comp 20
+	Comp 20.mp4
+	Comp 20.png
+
 인터뷰.mp4
 인포그래픽 가편집_전지선.mp4
 인포그래픽 수정_김지원.mp4
@@ -1358,6 +1421,10 @@ ZoomIt.zip
 인포그래픽_정범식.mp4
 인포그래픽최종_장세빈.mp4
 일러스트레이션_이예진.pdf
+임민지_비행기 (1)
+	비행기.mp4
+	비행기.PNG
+
 자리바꾸기5
 	data
 
@@ -1479,6 +1546,7 @@ ZoomIt.zip
 
 특수영상 합성-20230728T010713Z-001.zip
 평가포기확인서_양식.hwp
+포토샵 과제물_임민지.psd
 포트폴리오 가편집.mp4
 포트폴리오 계획서_남윤식.pdf
 포트폴리오 쇼릴 폴더_장세빈-20231010T001047Z-001.zip
