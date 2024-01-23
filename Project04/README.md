@@ -1,8 +1,8 @@
-## Chapter4
+## 4장. 제어문
 
 ```
-조건문 - conditional
-반복문 - loop
+- 조건문 (conditional)
+- 반복문 (loop)
 ```
 
 ## 단축키
