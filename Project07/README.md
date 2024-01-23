@@ -1,11 +1,8 @@
-# Chapter7
-
-
-## 배열
+## 7장. 배열
 
 ```
-배열,다차원배열 - array
-ArrayList,배열응용프로그램 - arraylist
+- 배열,다차원배열 (array)
+- ArrayList,배열응용프로그램 (arraylist)
 ```
 
 ## 단축키
