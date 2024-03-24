@@ -14,6 +14,10 @@ public class Quiz8 {
 		System.out.println((int) (i - f));
 		System.out.println((int) (i * f));
 		System.out.println((int) (i / f));
+		
+		//풀이
+		float result = i + f; // 오른쪽식에서 int와 float를 계산할때, 자동형변환규칙에 의해 int가 float으로 변경
+		//결과는 float이 되었고, 그결과를 int형으로 강제 형변환한 것 
 
 	}
 }

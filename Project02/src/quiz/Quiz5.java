@@ -11,7 +11,7 @@ public class Quiz5 {
 	public static void main(String[] args) {
 		// 정답:
 		String name = "임지연";
-		int age = 32;
+		int age = 33;
 		char gender = 'F';
 		boolean isMarried = false;
 	}

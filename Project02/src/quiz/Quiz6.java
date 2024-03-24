@@ -12,5 +12,6 @@ public class Quiz6 {
 		short s = 10;
 		int i = 20;
 		int sum = s + i; // 두 수의 결과를 저장하려면 변수를 최소 int형으로 선언해야한다
+		System.out.println("두수의 합: " + sum);
 	}
 }
