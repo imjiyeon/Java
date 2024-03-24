@@ -1,7 +1,7 @@
 package main;
 
 /*
- * 논리형 연습
+ * 논리 자료형
  * */
 public class Ex07 {
 
@@ -10,7 +10,7 @@ public class Ex07 {
 		boolean isMarried = true; //논리형 변수를 선언하고 참값 대입
 		System.out.println(isMarried);
 		
-//		isMarried = 1; //자료형이 맞지않는 값을 저장하면 에러가 발생한다
+//		isMarried = 1; //자료형이 맞지않는 값을 저장하면 에러 발생
 		
 	}
 }

@@ -7,9 +7,9 @@ package quiz;
 public class Quiz2 {
 	public static void main(String[] args) {
 
-		int gameLevel;
-		gameLevel = 10;
-		System.out.println(gameLevel);
+		int gameLevel; //
+		gameLevel = 10; //
+		System.out.println(gameLevel); //
 
 		// 정답:
 //			int gameLevel; //게임레벨을 의미하는 변수 선언
