@@ -1,19 +1,18 @@
 package quiz;
 
 /*
- * 삼항연산자
- * 1. 숫자 5가 숫자3보다 크면, 문자 '오' 아니면 문자 '삼' 출력하세요
- * 2. 코드를 보고 예상 결과와 풀이과정을 주석으로 작성하세요
+ * <삼항연산자>
  * */
-public class Quiz9 {
+public class Quiz09 {
 
 	public static void main(String[] args) {
-		//정답
+		
+		// 5가 3보다 크면, 문자 '오'를 출력하고, 아니면 문자 '삼'을 출력하세요
 		char ch;
 		ch = (5 > 3) ? '오': '삼';
 		System.out.println(ch);
 		
-		//정답
+		//다음 코드를 보고 풀이과정과 예상결과값을 주석으로 작성하세요
 		int x = 10;
 		int y = 20;		
 		int result = (x>10) ? y+10: y-10; //

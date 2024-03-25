@@ -17,8 +17,10 @@ public class Ex3 {
 		System.out.println(result2); // 결과가 8
 		System.out.println(result3); // 결과가 20
 		System.out.println(result4); // 몫이 5
-		System.out.println(result5); // 나머지가 0 -> 이 결과의 의미는 무엇일까? -> 10은 짝수다. 
+		System.out.println(result5); // 나머지가 0 
+		// 이 결과의 의미는 무엇일까? -> 10은 짝수이다
+	    // 반대로 나머지가 1이라면? oo는 홀수이다
 		
-		//나머지 연산자는 숫자가 짝수인지 홀수인지 확인하는 문제에서 많이 사용한다
+		//나머지 연산자는 숫자가 짝수인지 홀수인지 확인하는 문제에서 많이 사용!
 	}
 }
