@@ -24,6 +24,8 @@ public class Ex05 {
 		System.out.print("안녕하세요");
 		System.out.print(ch4);
 		System.out.print("저는둘리입니다");
+
+		System.out.print("\n안녕하세요\t저는둘리입니다");
 		
 		//String형은 문자열 저장 가능
 		String str = "안녕하세요"; //텍스트를 큰따음표로 감싸야함
