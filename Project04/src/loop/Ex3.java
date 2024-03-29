@@ -7,6 +7,7 @@ public class Ex3 {
 
 	public static void main(String[] args) {
 		//반복문없이 처리
+		// 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10
 		int sum = 0;
 		sum = sum + 1;
 		sum = sum + 2;

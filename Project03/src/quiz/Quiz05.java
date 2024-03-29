@@ -10,7 +10,7 @@ public class Quiz05 {
 
 	public static void main(String[] args) {
 		
-		int myAge = 30;
+		int myAge = 33;
 		
 		boolean result1 = (myAge <= 40);
 		boolean result2 = (myAge == 40);
