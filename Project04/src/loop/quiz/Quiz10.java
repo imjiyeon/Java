@@ -1,27 +1,39 @@
 package loop.quiz;
 
-
-//*
-//**
-//***
-//****
-//*****
-
-/* 중첩 반복문을 사용해서 직각삼각형을 그려보세요
-* */
+// *
+// **
+// ***
+// ****
+// *****
+// 중첩 반복문을 사용해서 직각삼각형을 그려보세요
 public class Quiz10 {
 
 	public static void main(String[] args) {
-		
-		for(int i=1; i<=5; i++) {
-			
-			for(int j=1; j<=i; j++) {
+
+		// 반복문 없이 작성
+		System.out.println("*");
+		System.out.println("**");
+		System.out.println("***");
+		System.out.println("***");
+		System.out.println("*****");
+
+		// 반복문을 사용하여 작성(1)
+		for (int i = 1; i <= 5; i++) { //삼각형의 높이
+
+			// 삼각형의 길이
+			System.out.print("??"); // *의 개수는 높이와 같음
+		}
+
+		// 반복문을 사용하여 작성(2)
+		for (int i = 1; i <= 5; i++) {
+
+			for (int j = 1; j <= i; j++) { // 외부포문의 i를 사용함
 				System.out.print("*");
 			}
-			
+
 			System.out.println();
 		}
-		
+
 	}
 }
 
