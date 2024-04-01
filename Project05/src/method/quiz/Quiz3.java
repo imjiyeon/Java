@@ -9,7 +9,10 @@ public class Quiz3 {
 	
 	//n1부터 n2까지의 합을 구하는 함수 선언 
 	public static int hap(int n1, int n2) {
-		int result = 0;	
+		
+		int result = 0;	// 합계를 저장할 변수
+
+		// i를 n1으로 초기화, i가 n2가 될 때까지 반복
 		for(int i=n1; i<=n2; i++) {
 			result = result + i;	
 		}
