@@ -12,6 +12,7 @@ public class Quiz5 {
 	//두 수를 나누는 메소드를 선언
 	public static void divide(int n1, int n2){	
 		// 2.조건문 추가
+		// 조건문이 계산식 뒤에 있으면, 0으로 나누는 계산을 하고 에러남
 		if(n2 == 0) {	//나누는 수가 0이라면 함수를 강제로 종료
 			System.out.println("나누는 수는 0이 될 수 없습니다");
 			return;
