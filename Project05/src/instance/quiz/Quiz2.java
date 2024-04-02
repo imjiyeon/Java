@@ -25,7 +25,7 @@ public class Quiz2 {
 
 class Order {
 	int orderNo; // 주문번호
-	String orderDate; // 주문일자. 날짜는 Date 클래스를 많이 사용하지만, 여기서는 일단 String으로
+	String orderDate; // 주문일자. 날짜는 Date 클래스를 사용하지만, 일단 String으로
 	String customerName;// 주문자이름
 	String address; // 배송지
 
