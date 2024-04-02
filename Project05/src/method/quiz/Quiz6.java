@@ -35,6 +35,12 @@ public class Quiz6 {
 			System.out.println(n1+"/"+n2+"="+result);
 			break;	
 		}
+
+		// if문 사용
+		if(oper == '+') {
+			result = n1 + n2;
+			System.out.println(n1+"+"+n2+"="+result);
+		}
 	}
 	
 	public static void main(String[] args) {
