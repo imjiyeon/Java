@@ -20,14 +20,14 @@ public class Quiz2 {
 	}
 }
 
+// 직원 클래스
 class Employee{
-	String name;
-	int age;
-	int salary;
-	int year;
+	String name; //이름
+	int age; //나이
+	int salary; //월급
+	int year; //근속년수
 	
 	public Employee(String name, int age, int salary, int year) {
-		super();
 		this.name = name;
 		this.age = age;
 		this.salary = salary;
@@ -35,14 +35,13 @@ class Employee{
 	}
 
 }
-
+// 부서 클래스
 class Department{
-	Employee head;
-	Employee senior;
-	Employee junior;
+	Employee head; //부서장
+	Employee senior; //수석연구원
+	Employee junior; //책임연구원
 	
 	public Department(Employee head, Employee senior, Employee junior) {
-		super();
 		this.head = head;
 		this.senior = senior;
 		this.junior = junior;
