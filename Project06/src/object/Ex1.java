@@ -71,13 +71,13 @@ class Student {
 		this.money = money;
 	}
 
-	// 버스에 타서 요금 1000원을 지불하는 메소드
+	// 버스에 타서 요금을 지불하는 메소드
 	public void takeBus(Bus bus) {
 		bus.take(1000); // 1000원 지불
 		this.money = this.money - 1000; // 가진돈 1000원을 잃음
 	}
 
-	// 지하철에 타서 요금 1500원을 지불하는 메소드
+	// 지하철에 타서 요금을 지불하는 메소드
 	public void takeSubway(Subway subway) {
 		subway.take(1500); // 1500원 지불
 		this.money = this.money - 1500; // 가진돈 1500원을 잃음
