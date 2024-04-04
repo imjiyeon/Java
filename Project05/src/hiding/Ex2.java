@@ -21,7 +21,7 @@ public class Ex2 {
 	}
 }
 
-// 이름이 중복되니까 "2"를 붙여주세요!
+// 두번째 날짜 클래스. 이름이 중복되니까 "2"를 붙여주세요!
 class MyDate2 {
 	// private 멤버변수
 	private int month; // 월
