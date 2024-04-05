@@ -19,9 +19,9 @@ public class Ex1 {
 }
 // 학생 클래스
 class Student {
-	static int count = 0; //공통속성
-	int studentID;
-	String studentName;
+	static int count = 0; //학생의 수(공통속성)
+	int studentID; //학번
+	String studentName; //이름
 	
 	public Student() {
 		count++; //학생이 생성될 때마다 증가
