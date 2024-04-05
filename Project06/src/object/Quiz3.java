@@ -74,6 +74,16 @@ class Customer {
 		this.money = this.money - 4500;
 	}
 
+	// 카페에서 커피를 사고 커피값을 지불하는 메소드
+	public void buyCoffe(Cafe cafe, int price) {
+		if (money < price) {
+			System.out.println(name + "의 소지금이 적어 커피를 살 수 없습니다..");
+			return;
+		}
+		cafe.sellCoffee(price);
+		this.money = this.money - price;
+	}
+
 	public void showInfo() {
 		System.out.println(name + "의 남은 돈은 " + money + "입니다.");
 	}

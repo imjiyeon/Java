@@ -17,7 +17,7 @@ public class Ex1 {
 		System.out.println(Student.count); //클래스로 count변수를 직접 사용
 	}
 }
-
+// 학생 클래스
 class Student {
 	static int count = 0; //공통속성
 	int studentID;

@@ -41,7 +41,7 @@ class Taxi {
 // 학생클래스 구현하기
 class Student2 {
 	String studentName; // 학생이름
-	int money; // 가진돈
+	int money; // 소지금
 
 	// 학생이름과 가진돈을 초기화하는 생성자
 	public Student2(String studentName, int money) {
@@ -51,10 +51,12 @@ class Student2 {
 
 	// 지하철에 타서 요금 10000원을 지불하는 메소드
 	public void takeTaxi(Taxi taxi) {
+
 		if (money < 10000) {
 			System.out.println("소지금이 적어 택시를 탈 수 없습니다..");
 			return;
 		}
+
 		taxi.take(10000); // 10000원 지불
 		this.money = this.money - 10000; // 가진돈 10000원을 잃음
 	}
