@@ -12,7 +12,7 @@ public class Ex1 {
 		
 		Student student2 = new Student(); 
 		student2.studentName = "또치";
-		System.out.println(student2.studentName + " 학번:" + student2.studentID); //학번을 확인해보면 순서대로 학번을 부여받음
+		System.out.println(student2.studentName + " 학번:" + student2.studentID);
 
 		System.out.println(Student.count); //클래스로 count변수를 직접 사용
 	}

@@ -33,8 +33,8 @@ class Cafe {
 	}
 
 	// 손님에게 커피를 파는 메소드
-	public void sellCoffee(int money) {
-		this.money = this.money + money;
+	public void sellCoffee(int price) {
+		this.money = this.money + price;
 	}
 
 	public void showInfo() {
