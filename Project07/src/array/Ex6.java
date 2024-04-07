@@ -7,14 +7,18 @@ public class Ex6 {
 
 	public static void main(String[] args) {
 
-		Book[] library = new Book[5]; // 5개 크기의 객체 배열 생성
+		// 5개 크기의 객체 배열 생성
+		Book[] library = new Book[5]; 
 
 		for (int i = 0; i < library.length; i++) {
 			System.out.print(library[i] + " "); // 참조변수의 초기값은 null
 		}
 		System.out.println();
 
-//		library[0].showBookInfo(); //참조변수가 null일때 사용하면 에러남
+		// 객체바열은 바로 사용할 수 없음
+		// 인스턴스를 넣은 후에 사용해야 함
+		// 참조변수가 null일때 사용하면 에러남
+//		library[0].showBookInfo(); 
 
 		// 각요소에 인스턴스를 생성하고 저장
 		library[0] = new Book("태백산맥", "조정래");
