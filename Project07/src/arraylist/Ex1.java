@@ -1,6 +1,6 @@
 package arraylist;
 
-import java.util.ArrayList;
+import java.util.ArrayList; // import문 선언하기
 
 /*
  * Arraylist 클래스 사용하기

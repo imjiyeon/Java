@@ -1,50 +1,38 @@
 package array;
 
 /*
- * 객체 배열 만들기
+ * 2차원 배열 만들기
  * */
 public class Ex7 {
 
 	public static void main(String[] args) {
+		
+		int[][] arr = {{2,4,6},{3,6,9}}; //2차원 배열 생성 및 초기화
+		int[][] arr1 = new int[2][3]; //위와 같음
+		//첫번째 행은 2,4,6 값을 저장한다
+		//두번째 행은 3,6,9 값을 저장한다
+		
+		//3개의 배열이 생성됨
+		//arr; 크기가 2인 1차원 배열을 참조한다
+		//arr[0]; 크기가 3인 첫번째 2차원 배열을 참조한다 {2,4,6}
+		//arr[1]; 크기가 3인 두번째 2차원 배열을 참조한다 {3,6,9}
 
-		Book[] library = new Book[5]; // 5개 크기의 객체 배열 생성
-
-		for (int i = 0; i < library.length; i++) {
-			System.out.print(library[i] + " "); // 참조변수의 초기값은 null
-		}
-		System.out.println();
-
-//		library[0].showBookInfo(); //참조변수가 null일때 사용하면 에러남
-
-		// 각요소에 인스턴스를 생성하고 저장
-		library[0] = new Book("태백산맥", "조정래");
-		library[1] = new Book("데미안", "헤르만 헤세");
-		library[2] = new Book("어떻게 살 것인가", "유시민");
-		library[3] = new Book("토지", "박경리");
-		library[4] = new Book("어린왕자", "생텍쥐페리");
-
-		// 각 요소의 주소 출력하기
-		for (int i = 0; i < library.length; i++) {
-			System.out.print(library[i] + " ");
-		}
-		// 각 요소의 정보 출력하기
-		for (int i = 0; i < library.length; i++) {
-			library[i].showInfo();
+		//배열의 요소 출력
+		for(int i=0; i<arr.length; i++){ //i는 행 인덱스(0~1)
+			for(int j=0; j<arr[i].length; j++){ //j는 열 인덱스(0~2)
+				System.out.print(arr[i][j] + " ");
+			}
+			System.out.println();
 		}
 
-	}
-}
-
-class Book {
-	String bookName; // 제목
-	String author; // 저자
-
-	public Book(String bookName, String author) {
-		this.bookName = bookName;
-		this.author = author;
+		System.out.println("======================");
+		//배열의 인덱스를 출력
+		for(int i=0; i<arr.length; i++){ //행
+			for(int j=0; j<arr[i].length; j++){ //열
+				System.out.print("["+i+","+j+"] ");
+			}
+			System.out.println();
+		}
 	}
 
-	public void showInfo() {
-		System.out.println(bookName + "," + author);
-	}
 }

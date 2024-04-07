@@ -1,27 +1,31 @@
 package array;
 
-import java.util.Arrays;
-
 /*
- * 람다식 포문 사용하기
+ * 배열 복사하기
+ * 
+ * abcde 목록을 가진 배열에서 "abc" 만 추출하여 새로운 배열로 만들기
+ * 원본배열 : {'a' ,'b', 'c', 'd', 'e'}
+ * 새배열 : {'a' ,'b', 'c'}
  * */
 public class Ex5 {
 
 	public static void main(String[] args) {
-		int[] arr = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
-		// 람다식을 사용한 반복문은 간결한 코드를 작성할 수 있음
-		// 람다식 포문을 사용하면 배열을 순회하며 각 요소를 처리함
-		for (int value : arr) { // (배열에서 꺼낸 값을 저장할 변수 : 배열)
-			System.out.print(value + " ");
+		// 배열을 복사하여 새로운 배열 만들기
+		char[] srcArr = { 'a', 'b', 'c', 'd', 'e' }; // 원본배열
+		char[] newArr = new char[3]; // 새로운배열
+
+		// 배열 복사하기
+		System.arraycopy(srcArr, 0, newArr, 0, 3); // 원본배열, 시작위치, 새배열, 시작위치, 개수
+
+		System.out.print("원본배열: ");
+		for (int i = 0; i < srcArr.length; i++) {
+			System.out.print(srcArr[i] + " ");
 		}
 		System.out.println();
-		for (int i = 0; i < 10; i++) {
-			System.out.print(arr[i] + " ");
+		System.out.print("새로운배열: ");
+		for (int i = 0; i < newArr.length; i++) {
+			System.out.print(newArr[i] + " ");
 		}
-		System.out.println();
-		// 배열의 요소를 한번에 출력
-		System.out.println(arr); // arr은 참조변수이므로 주소가 출력됨
-		System.out.println(Arrays.toString(arr)); // Arrays 클래스의 메소드 사용
 	}
 }

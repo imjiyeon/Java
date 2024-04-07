@@ -1,29 +1,50 @@
 package array;
 
 /*
- * 배열을 복사하여 새로운 배열 만들기
- * abcde 목록을 가진 배열에서 "abc" 만 추출하여 새로운 배열을 만든다
- * 원본배열 : {'a' ,'b', 'c', 'd', 'e'}
- * 새배열 : {'a' ,'b', 'c'}
+ * 객체 배열 만들기
  * */
 public class Ex6 {
 
 	public static void main(String[] args) {
-		
-		char[] srcArr = {'a' ,'b', 'c', 'd', 'e'}; //원본배열
-		char[] newArr = new char[3]; //새로운배열
-		
-		//배열 복사하기
-		System.arraycopy(srcArr, 0, newArr, 0, 3); //원본배열, 시작위치, 새배열, 시작위치, 개수
-		
-		System.out.print("원본배열: ");
-		for(int i=0; i<srcArr.length; i++){
-			System.out.print(srcArr[i] + " ");
+
+		Book[] library = new Book[5]; // 5개 크기의 객체 배열 생성
+
+		for (int i = 0; i < library.length; i++) {
+			System.out.print(library[i] + " "); // 참조변수의 초기값은 null
 		}
 		System.out.println();
-		System.out.print("새로운배열: ");
-		for(int i=0; i<newArr.length; i++){
-			System.out.print(newArr[i] + " ");
+
+//		library[0].showBookInfo(); //참조변수가 null일때 사용하면 에러남
+
+		// 각요소에 인스턴스를 생성하고 저장
+		library[0] = new Book("태백산맥", "조정래");
+		library[1] = new Book("데미안", "헤르만 헤세");
+		library[2] = new Book("어떻게 살 것인가", "유시민");
+		library[3] = new Book("토지", "박경리");
+		library[4] = new Book("어린왕자", "생텍쥐페리");
+
+		// 각 요소의 주소 출력하기
+		for (int i = 0; i < library.length; i++) {
+			System.out.print(library[i] + " ");
 		}
+		// 각 요소의 정보 출력하기
+		for (int i = 0; i < library.length; i++) {
+			library[i].showInfo();
+		}
+
+	}
+}
+
+class Book {
+	String bookName; // 제목
+	String author; // 저자
+
+	public Book(String bookName, String author) {
+		this.bookName = bookName;
+		this.author = author;
+	}
+
+	public void showInfo() {
+		System.out.println(bookName + "," + author);
 	}
 }
