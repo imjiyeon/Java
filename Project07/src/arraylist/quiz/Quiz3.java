@@ -2,12 +2,12 @@ package arraylist.quiz;
 
 import java.util.ArrayList;
 
-/*
- * 문자열형(String) 리스트를 생성하세요.
- * 문자열 5개를 추가하세요 ("AA","BB","CC","DD","EE")
- * 반복문을 사용하여 리스트의 요소를 출력하세요.
- * 리스트에 저장된 모든 문자열을 삭제하세요.
- * */
+
+//  문자열형(String) 리스트를 생성하세요.
+//  문자열 5개를 추가하세요 ("AA","BB","CC","DD","EE")
+//  반복문을 사용하여 리스트의 요소를 출력하세요.
+//  리스트에 저장된 모든 문자열을 삭제하세요.
+
 public class Quiz3 {
 
 	public static void main(String[] args) {
