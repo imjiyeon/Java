@@ -7,7 +7,7 @@ public class Ex3 {
 
 	public static void main(String[] args) {
 
-		// 3개 크기의 정수형 배열 생성
+		// 10개 크기의 정수형 배열 생성
 		int[] intArr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
 		// 배열의 요소를 직접 하나씩 출력하기
