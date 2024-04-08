@@ -32,5 +32,9 @@ public class Quiz4 {
 		}
 
 		System.out.println(Arrays.toString(arr));
+
+		// 배열의 요소를 한번에 출력
+//		System.out.println(arr); // arr은 참조변수이므로 주소가 출력됨
+//		System.out.println(Arrays.toString(arr)); // Arrays 클래스의 메소드 사용
 	}
 }
