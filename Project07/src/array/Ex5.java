@@ -1,5 +1,7 @@
 package array;
 
+import java.util.Arrays;
+
 /*
  * 배열 복사하기
  * 
@@ -16,16 +18,12 @@ public class Ex5 {
 		char[] newArr = new char[3]; // 새로운배열
 
 		// 배열 복사하기
-		System.arraycopy(srcArr, 0, newArr, 0, 3); // 원본배열, 시작위치, 새배열, 시작위치, 개수
+		// 원본배열, 시작위치, 새배열, 시작위치, 개수
+		System.arraycopy(srcArr, 0, newArr, 0, 3);
 
-		System.out.print("원본배열: ");
-		for (int i = 0; i < srcArr.length; i++) {
-			System.out.print(srcArr[i] + " ");
-		}
-		System.out.println();
-		System.out.print("새로운배열: ");
-		for (int i = 0; i < newArr.length; i++) {
-			System.out.print(newArr[i] + " ");
-		}
+		System.out.println("원본배열: " + Arrays.toString(srcArr));
+
+		System.out.println("새로운배열: " + Arrays.toString(newArr));
+
 	}
 }
