@@ -16,6 +16,8 @@ public class Ex4 {
 			System.out.print(value + " ");
 		}
 
+		System.out.println();
+
 		// 기존 포문
 		for (int i = 0; i < 10; i++) {
 			System.out.print(arr[i] + " ");
