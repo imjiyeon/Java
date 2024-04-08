@@ -1,4 +1,4 @@
-package array;
+package array.quiz;
 
 //  5개 크기의 정수형 배열을 생성하고, 다음과 같이 초기화하세요
 //  {5, 20, 100, 30, 77}
