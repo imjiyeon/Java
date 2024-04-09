@@ -32,6 +32,7 @@ public class Quiz4 {
 	}
 }
 
+// 학생 클래스
 class Student {
 	int studentID; //학번
 	String studentName; //이름
