@@ -13,6 +13,7 @@ public class Ex4 {
 		
 		// 둘리 학생 생성
 		Student student1 = new Student("둘리");
+
 		// 둘리가 수강하는 과목을 추가
 		student1.subjectList.add(new Subject("국어", 100)); 
 		student1.subjectList.add(new Subject("수학", 50));
@@ -20,6 +21,7 @@ public class Ex4 {
 
 		// 도우너 학생 생성
 		Student student2 = new Student("도우너");
+		
 		// 도우너가 수강하는 과목을 추가
 		student2.subjectList.add(new Subject("국어", 70));
 		student2.subjectList.add(new Subject("영어", 85));
@@ -43,8 +45,8 @@ class Subject {
 
 // 학생 클래스
 class Student {
-	String studentName;
-	ArrayList<Subject> subjectList; // 수강과목 리스트
+	String studentName; // 학생의이름
+	ArrayList<Subject> subjectList; // 수강 과목 리스트
 
 	public Student(String studentName) {
 		this.studentName = studentName;
