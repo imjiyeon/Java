@@ -1,9 +1,9 @@
 package inheritance;
 
-/*
- * 아래 그림은 몬스터과 슬라임 클래스의 상속관계를 표현한 것입니다.
- * 다음과 같이 클래스를 구현하고, 객체를 생성하세요.
- * */
+
+//  아래 그림은 몬스터과 슬라임 클래스의 상속관계를 표현한 것입니다.
+//  다음과 같이 클래스를 구현하고, 객체를 생성하세요.
+
 public class Quiz4 {
 
 	public static void main(String[] args) {
