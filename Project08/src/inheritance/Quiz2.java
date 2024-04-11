@@ -46,7 +46,7 @@ class BasicTV {
 }
 // 스마트티비 클래스
 class SmartTV extends BasicTV {
-	String ip; //스마트티비에 필요한 속성 추가
+	String ip; //아이피
 
 	public void showInfo() {
 		System.out.println("----- TV 현재 상태 -----");
