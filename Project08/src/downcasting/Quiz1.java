@@ -2,64 +2,38 @@ package downcasting;
 
 import java.util.ArrayList;
 
-/*
- * 사람, 학생, 회사원 클래스를 정의하세요.
- * Person형 리스트를 생성하고 학생과 회사원을 저장하세요.
- * 리스트에 저장된 사람을 모두 꺼내서, 메소드를 호출하세요.
- * */
-public class Quiz1 {
-	public static void main(String[] args) {
-		
-		ArrayList<Person> list = new ArrayList<Person>();
-		list.add(new Student("둘리")); //학생 추가
-		list.add(new Employee("또치")); //회사원 추가
+//리스트를 하나 생성하세요
+//리스트에 사람, 호랑이, 독수리를 하나씩 추가하세요
+//
+//반복문으로 리스트에 저장된 요소를 하나씩 꺼내서
+//사람이라면 readBook() 메소드 호출하세요
+//호랑이이라면 hunting() 메소드 호출
+//독수리라면 flying() 메소드 호출
 
-		for (Person person : list) {
-			
-			person.eat(); //부모가 물려준 eat메소드 호출
-			
-			if (person instanceof Student) { //인스턴스의 타입이 Student형이라면
-				Student student = (Student) person; //Student형으로 다운캐스팅
-				student.study();
-				
-			} else if (person instanceof Employee) {
-				Employee employee = (Employee) person;
-				employee.work();
+public class Quiz1 {
+
+	public static void main(String[] args) {
+		// 사람,호랑이,독수리를 담을 배열 생성
+		ArrayList<Animal> aniList = new ArrayList<Animal>(); // 베열의 자료형은 Animal로 지정
+		aniList.add(new Human()); // 리스트에 사람 추가
+		aniList.add(new Tiger()); // 리스트에 호랑이 추가
+		aniList.add(new Eagle()); // 리스트에 독수리 추가
+
+		for (int i = 0; i < aniList.size(); i++) {
+
+			Animal ani = aniList.get(i); // 배열의 요소를 꺼내서 Animal형 변수에 저장
+
+			if (ani instanceof Human) { // 인스턴스의 타입이 Human형이면
+				Human h = (Human) ani; // Human형으로 다운캐스팅
+				h.readBook();
+			} else if (ani instanceof Tiger) { // 인스턴스의 타입이 Tiger형이면
+				Tiger t = (Tiger) ani; // Tiger형으로 다운캐스팅
+				t.hunting();
+			} else if (ani instanceof Eagle) { // 인스턴스의 타입이 Eagle형이면
+				Eagle e = (Eagle) ani; // Eagle형으로 다운캐스팅
+				e.flying();
 			}
 		}
 	}
-}
 
-class Person {
-	String name;
-
-	public Person(String name) {
-		this.name = name;
-	}
-
-	public void eat() {
-		System.out.println(name + "가 밥을 먹는다");
-	}
-}
-
-class Student extends Person {
-
-	public Student(String name) {
-		super(name);
-	}
-
-	public void study() {
-		System.out.println(name + " 학생이 공부를 한다");
-	}
-}
-
-class Employee extends Person {
-
-	public Employee(String name) {
-		super(name);
-	}
-
-	public void work() {
-		System.out.println(name + " 회사원이 일을 한다");
-	}
 }
