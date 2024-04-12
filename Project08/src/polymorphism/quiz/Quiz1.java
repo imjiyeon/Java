@@ -8,22 +8,23 @@ package polymorphism.quiz;
 public class Quiz1 {
 
 	public static void main(String[] args) {
-		runCar(new Bus()); // Car car = new Bus() 식이 성립됨
-		runCar(new SportsCar());
+		runCar(new Bus()); // Car car = new Bus()
+		runCar(new SportsCar()); // Car car = new SportsCar()
 	}
 
-	public static void runCar(Car car) { // 자식클래스인 버스,스포츠카를 받을 수 있음
+	// 1. 부모 타입의 매개변수를 사용해서 자식클래스인 버스와 스포츠카를 받기
+	public static void runCar(Car car) {
 		car.run(); // 재정의된 메소드가 호출됨
 	}
 
-	// 만약 다형성을 활용하지 않는다면 각 클래스를 매개변수로 사용하는 메소드를 만들어야함
-//	public static void runCar(Bus bus) {
-//		bus.run();
-//	}
-//
-//	public static void runCar(SportsCar sportsCar) {
-//		sportsCar.run();
-//	}
+	// 2. 또는 각 클래스 타입의 매개변수로 메소드를 만들기
+	public static void runCar(Bus bus) {
+		bus.run();
+	}
+
+	public static void runCar(SportsCar sportsCar) {
+		sportsCar.run();
+	}
 
 }
 
@@ -35,19 +36,17 @@ class Car {
 }
 
 // 버스 클래스
-class Bus extends Car { // 상속받기
-
+class Bus extends Car {
 	@Override
-	public void run() { // 메소드 재정의
+	public void run() { // 물려받은 메소드 재정의
 		System.out.println("버스가 달린다");
 	}
-
 }
 
 // 스포츠카 클래스
-class SportsCar extends Car { // 상속받기
+class SportsCar extends Car {
 	@Override
-	public void run() { // 메소드 재정의
+	public void run() { // 물려받은 메소드 재정의
 		System.out.println("스포츠카가 달린다");
 	}
 }

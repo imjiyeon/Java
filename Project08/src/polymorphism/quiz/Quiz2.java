@@ -15,7 +15,8 @@ public class Quiz2 {
 
 	public static void main(String[] args) {
 
-		ArrayList<Customer> customerList = new ArrayList<Customer>(); // 자료형을 Customer로 지정한다
+		// 자료형을 Customer로 지정
+		ArrayList<Customer> customerList = new ArrayList<Customer>();
 
 		customerList.add(new Customer("둘리"));
 		customerList.add(new GoldCustomer("또치"));
@@ -25,9 +26,6 @@ public class Quiz2 {
 
 		for (Customer customer : customerList) {
 			customer.calcPrice(10000);
-		}
-
-		for (Customer customer : customerList) {
 			customer.showInfo();
 		}
 
