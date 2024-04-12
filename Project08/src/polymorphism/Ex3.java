@@ -9,7 +9,7 @@ public class Ex3 {
 		
 		moveAnimal(new Human()); //Animal 클래스의 자식클래스를 매개변수로 사용
 		moveAnimal(new Tiger()); //Animal animal = new Tiger() 식이 성립됨
-		moveAnimal(new Eagle());
+		moveAnimal(new Eagle()); //Animal animal = new Eagle()
 	}
 	
 	public static void moveAnimal(Animal animal) { //자식클래스인 사람,호랑이,독수리를 받을 수 있음
