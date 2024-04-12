@@ -8,14 +8,15 @@ public class Ex1 {
 	public static void main(String[] args) {
 
 		Animal animal = new Human(); // animal변수를 형변환 시킴
+//		animal.readBook(); //에러남
 
 		if (animal instanceof Human) { // 실제 인스턴스의 타입이 Human형인지 확인
 			Human human = (Human) animal; // Human형 변수로 다운캐스팅
 			human.readBook(); // 객체가 가지고 있는 readBook기능을 사용할 수 있음
 		}
 
-		// 잘못된 경우
-		// Tiger tiger = (Tiger) animal; //컴파일 오류가 안남.
+		// 타입을 확인해야하는 이유
+		// Tiger tiger = (Tiger) animal; //컴파일오류는 안나고 런타임오류가 남
 	}
 
 }
