@@ -9,8 +9,10 @@ import java.util.ArrayList;
  * */
 public class Quiz2 {
 	public static void main(String[] args) {
-		
+
+		// Person 타입의 리스트를 생성하면, 학생과 회사원 저장 가능
 		ArrayList<Person> list = new ArrayList<Person>();
+
 		list.add(new Student("둘리")); //학생 추가
 		list.add(new Employee("또치")); //회사원 추가
 
@@ -44,6 +46,7 @@ class Person {
 
 class Student extends Person {
 
+	// 상속받으면 에러남. 이름을 초기화하는 생성자를 만들어야함
 	public Student(String name) {
 		super(name);
 	}
