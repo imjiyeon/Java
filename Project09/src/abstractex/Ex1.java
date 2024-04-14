@@ -7,7 +7,7 @@ public class Ex1 {
 
 	public static void main(String[] args) {
 
-		// Computer computer = new Computer(); //에러남. 추상클래스로는 인스턴스를 생성할수없다
+		// Computer computer = new Computer(); //에러남. 추상클래스는 인스턴스 생성 못함 
 		DeskTop desktop = new DeskTop();
 		NoteBook notebook = new NoteBook();
 
@@ -34,9 +34,10 @@ abstract class Computer { // 추상클래스로 지정
 		System.out.println("전원을 끕니다.");
 	}
 
-	// 추상메소드 선언
+	// 컴퓨터마다 화면을 표시하는 방법이 다르니까 추상메소드로 선언
 	public abstract void display(); // 바디없음
 
+	// 컴퓨터마다 타이핑을 하는 방법이 다르니까 추상메소드로 선언
 	public abstract void typing();
 }
 

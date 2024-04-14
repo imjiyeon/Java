@@ -16,22 +16,18 @@ public class Ex2 {
 
 //동물 클래스
 abstract class Animal { // 추상클래스로 지정
-	String kind; // 동물의 종
 
 	// 공통기능은 일반메소드로 선언
 	public void breathe() {
 		System.out.println("숨을 쉽니다");
 	}
 
-	// 추상메소드 선언 (동물마다 고유의 소리를 냄)
+	// 동물마다 내는 소리가 다르니까 추상메소드로 선언 
 	public abstract void sound();
 }
 
 //고양이 클래스
 class Cat extends Animal { // 상속받기
-	public Cat() {
-		this.kind = "포유류";
-	}
 
 	@Override
 	public void sound() { // 물려받은 추상메소드 구현
@@ -41,9 +37,6 @@ class Cat extends Animal { // 상속받기
 
 // 강아지 클래스
 class Dog extends Animal { // 상속받기
-	public Dog() {
-		this.kind = "포유류";
-	}
 
 	@Override
 	public void sound() { // 물려받은 추상메소드 구현
