@@ -1,26 +1,19 @@
 package finalex;
 
 /*
- * final 메소드
+ * Define 클래스에서 값 가져오기
  * */
-class Parents {
+public class Ex2 {
 
-	final void method1() { //fianl 메소드 선언	
+	public static void main(String[] args) {
+		
+		System.out.println("최소값은? " + Define.MIN);
+		
+		System.out.println("최대값은? " + Define.MAX);
+		
+		System.out.println("영어 과목의 코드는? " + Define.ENG);
+		
+		System.out.println("수학 과목의 코드는? " + Define.MATH);
+		
 	}
-	
-	void method2() {
-	}
-}
-
-class Child extends Parents{
-
-//	final void method1() { //에러남. final 메소드는 재정의 할 수 없음
-//	}
-	
-	@Override
-	void method2() {
-		// TODO Auto-generated method stub
-		super.method2();
-	}
-
 }
