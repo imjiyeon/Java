@@ -13,7 +13,7 @@ public class Ex5 {
 		
 		String str2 = new String("test");
 		
-		if(str1.equals(str2)) { //내용 비교
+		if(str1.equals(str2)) { //주소 대신 문자열의 내용을 비교
 			System.out.println("str1와 str2은 같은 문자열입니다");
 		}
 	}

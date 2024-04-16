@@ -1,23 +1,5 @@
 package object;
 
-class Book {
-	int bookNumber;
-	String bookTitle;
-
-	public Book(int number, String title) {
-		super();
-		this.bookNumber = number;
-		this.bookTitle = title;
-	}
-
-	//generate-tostring 메뉴를 사용하면 재정의된 tostring함수가 만들어짐 
-	//클래스 멤버변수를 사용해서 자동으로 문자열이 생성됨
-//	@Override
-//	public String toString() {
-//		return "Book [bookNumber=" + bookNumber + ", bookTitle=" + bookTitle + "]";
-//	}
-
-}
 
 /*
  * Object의 toString메소드 사용하기
@@ -39,4 +21,23 @@ public class Ex4 {
 		//두 참조변수는 같은 인스턴스를 바라보기 때문에 같은 주소가 출력된다
 		//단, toString메소드는 내부적으로 주소를 16진수로 변환하기 때문에 다르게 보인다
 	}
+}
+
+class Book {
+	int bookNumber;
+	String bookTitle;
+
+	public Book(int number, String title) {
+		super();
+		this.bookNumber = number;
+		this.bookTitle = title;
+	}
+
+	//source > generate tostring 메뉴를 사용하면 재정의된 tostring함수가 만들어짐 
+	//클래스 멤버변수를 사용해서 자동으로 문자열이 생성됨
+//	@Override
+//	public String toString() {
+//		return "Book [bookNumber=" + bookNumber + ", bookTitle=" + bookTitle + "]";
+//	}
+
 }
