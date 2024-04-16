@@ -10,7 +10,7 @@ class Book {
 		this.bookTitle = title;
 	}
 
-	//generate-tostring 메뉴를 사용하면 재정의된 tostring함수가 만들어짐 
+	//source > generate tostring 메뉴를 사용하면 재정의된 tostring함수가 만들어짐
 	//클래스 멤버변수를 사용해서 자동으로 문자열이 생성됨
 //	@Override
 //	public String toString() {
