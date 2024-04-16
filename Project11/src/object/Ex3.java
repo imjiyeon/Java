@@ -29,11 +29,11 @@ public class Ex3 {
 	}
 }
 
-
+// 학생 클래스
 class Student {
 	
-	int id;
-	String name;
+	int id; // 학번
+	String name; //학생의 이름
 	
 	public Student(int id, String name) {
 		this.id = id;
