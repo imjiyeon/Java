@@ -39,7 +39,7 @@ class NewCalculator implements Calc { // 인터페이스 상속받기
 		}
 	}
 
-	// 첫번째숫자가 두번째숫자보다 더 작을 경우 에러코드 반환
+	// 첫번째숫자가 두번째숫자보다 더 작으면 에러코드 반환
 	@Override
 	public int divide(int num1, int num2) {
 		if (num1 > num2) {
