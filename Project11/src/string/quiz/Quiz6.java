@@ -18,19 +18,20 @@ public class Quiz6 {
 			
 			System.out.print("문장을 입력하세요:");
 			String line = sc.nextLine(); // 문자열 입력받기
-			
+
 			//1.
-			if (line.toLowerCase().equals("end")) { // 문자열이 "END" 또는 "end" 라면 루프 종료
-				break;
-			}
-			
-			//2.
-			if (line.equalsIgnoreCase("end")) {
-				break;
-			}
-			
-			//3.
+			// 문자열이 "END" 또는 "end" 라면 루프 종료
 			if (line.equals("end") || line.equals("END")) {
+				break;
+			}
+
+			//2.
+			if (line.toLowerCase().equals("end")) {
+				break;
+			}
+
+			//3.
+			if (line.equalsIgnoreCase("end")) {
 				break;
 			}
 			
