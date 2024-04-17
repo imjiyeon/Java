@@ -1,34 +1,32 @@
 package wrapper.quiz;
 
-/*
- * <wrapper 클래스 메소드 사용하기>
+import java.util.ArrayList;
+
+/* <래퍼 클래스를 사용한 리스트 생성하기>
  * 
- * 정수 10을 문자열 변수에 저장하세요.
- * 실수 1.123을 문자열 변수에 저장하세요.
- * 문자 c를 문자열 변수에 저장하세요.
- * boolean타입의 true 값을 문자열 변수에 저장하세요.
+ * 문자를 저장하는 리스트를 생성하고 'a','b','c','d' 를 저장하세요.
+ * 그리고 리스트 안에 저장된 모든 문자를 꺼내서 출력하세요.
+ * 
+ * 오토박싱, 언박싱이 발생한 부분을 찾아서 주석을 달아보세요~
  * */
 public class Quiz3 {
 
 	public static void main(String[] args) {
-		
-		// 숫자를 문자열로 변환하려면 "toString" 메소드를 사용해야함	
-		String str1 = Integer.toString(10); // 10 -> "10"
 
-		String str2 = Double.toString(1.123); // 1.123 -> "1.123"
+		//문자를 저장하는 리스트 생성
+		ArrayList<Character> list = new ArrayList<>(); 
 		
-		String str3 = Character.toString('c'); // 'c' -> "c"
-		
-		String str4 = Boolean.toString(true); // true -> "true"
-		
-		
-		String str5 = String.valueOf(10);
-		
-		String str6 = String.valueOf(1.123);
-		
-		String str7 = String.valueOf('c');
-		
-		String str8 = String.valueOf(true);
+		//리스트에 문자 추가
+		list.add('a'); //list.add(new Character('a'))으로 변환됨. (오토박싱)
+		list.add('b');
+		list.add('c');
+		list.add('d');
+
+		//리스트 안에 저장된 문자를 모두 출력
+		for(int i=0;i<list.size();i++) {
+			char ch = list.get(i); //list.get(i).charValue()으로 변환됨. (언박싱)
+			System.out.println(ch);
+		}
 		
 	}
 }

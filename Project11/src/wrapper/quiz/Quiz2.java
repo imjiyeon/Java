@@ -3,24 +3,32 @@ package wrapper.quiz;
 /*
  * <wrapper 클래스 메소드 사용하기>
  * 
- * 문자열 "10"을 byte, short, int, long 으로 변환하세요.
- * 문자열 "10.0" 을 float, double 로 변환하세요.
+ * 정수 10을 문자열 변수에 저장하세요.
+ * 실수 1.123을 문자열 변수에 저장하세요.
+ * 문자 c를 문자열 변수에 저장하세요.
+ * boolean타입의 true 값을 문자열 변수에 저장하세요.
  * */
-
 public class Quiz2 {
 
 	public static void main(String[] args) {
+		
+		// 숫자를 문자열로 변환하려면 "toString" 메소드를 사용해야함	
+		String str1 = Integer.toString(10); // 10 -> "10"
 
-		// 문자열을 숫자로 변환하려면 "parse" 메소드를 사용해야함	
-		byte bNum = Byte.parseByte("10"); //"10" -> 10
-		short sNum = Short.parseShort("10");
-		int iNum = Integer.parseInt("10");
-		long lNum = Long.parseLong("10");
+		String str2 = Double.toString(1.123); // 1.123 -> "1.123"
 		
-		float fNum = Float.parseFloat("10.0"); //"10.0" -> 10.0
-		double dNum = Double.parseDouble("10.0");
+		String str3 = Character.toString('c'); // 'c' -> "c"
 		
-		Double double1 = Double.parseDouble("10.0"); // 오토박싱됨
+		String str4 = Boolean.toString(true); // true -> "true"
+		
+		
+		String str5 = String.valueOf(10);
+		
+		String str6 = String.valueOf(1.123);
+		
+		String str7 = String.valueOf('c');
+		
+		String str8 = String.valueOf(true);
 		
 	}
 }
