@@ -17,13 +17,14 @@ public class Quiz3 {
 		
 		// 재정의된 함수가 호출되어 강아지의 이름과 품종이 출력됨
 		System.out.println(dog.toString());
-		System.out.println(dog);
+		System.out.println(dog); //dog.toString()과 같음
 	}
 }
 
+// 강아지 클래스
 class Dog{
-	String name;
-	String type;
+	String name; //이름
+	String type; //품종
 	
 	Dog(String name, String type){
 		this.name = name;

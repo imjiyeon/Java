@@ -2,12 +2,11 @@ package string.quiz;
 
 import java.util.*;
 
-/*
-* Scanner 클래스의 nextLine 메소드를 사용하여 문자열을 입력받고,
-* "END" 또는 "end" 가 입력되면 루프를 종료하세요.
-*
-* while(true)를 사용하여 무한루프를 만드세요.
-* */
+
+// Scanner 클래스의 nextLine 메소드를 사용하여 문자열을 입력받고,
+// "END" 또는 "end" 가 입력되면 루프를 종료하세요.
+//
+// while(true)를 사용하여 무한루프를 만드세요.
 
 public class Quiz6 {
 
