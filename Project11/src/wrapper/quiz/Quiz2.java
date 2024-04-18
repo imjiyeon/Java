@@ -1,13 +1,13 @@
 package wrapper.quiz;
 
-/*
- * <wrapper 클래스 메소드 사용하기>
- * 
- * 정수 10을 문자열 변수에 저장하세요.
- * 실수 1.123을 문자열 변수에 저장하세요.
- * 문자 c를 문자열 변수에 저장하세요.
- * boolean타입의 true 값을 문자열 변수에 저장하세요.
- * */
+
+//  <wrapper 클래스 메소드 사용하기>
+//
+//  정수 10을 문자열 변수에 저장하세요.
+//  실수 1.123을 문자열 변수에 저장하세요.
+//  문자 c를 문자열 변수에 저장하세요.
+//  boolean타입의 true 값을 문자열 변수에 저장하세요.
+
 public class Quiz2 {
 
 	public static void main(String[] args) {

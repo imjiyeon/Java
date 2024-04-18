@@ -17,7 +17,7 @@ public class Ex2 {
 		int num2 = iNum1; // iNum1.intValue()로 변환. (언박싱)	
 		
 		// 참조형과 기본형간의 연산 가능.
-		int num3 = iNum1 + 100; // iNum1.intValue() + num2. 값이 변환되고 덧셈이 수행됨
+		int num3 = iNum1 + 100; // iNum1.intValue() + 100. 값이 변환되고 덧셈이 수행됨
 
 		System.out.println("num1: " + num1);
 		System.out.println("num2: " + num2);

@@ -1,11 +1,10 @@
 package wrapper.quiz;
 
-/*
- * <wrapper 클래스 메소드 사용하기>
- * 
- * 문자열 "10"을 byte, short, int, long 으로 변환하세요.
- * 문자열 "10.0" 을 float, double 로 변환하세요.
- * */
+
+//  <wrapper 클래스 메소드 사용하기>
+//
+//  문자열 "10"을 byte, short, int, long 으로 변환하세요.
+//  문자열 "10.0" 을 float, double 로 변환하세요.
 
 public class Quiz1 {
 
