@@ -2,7 +2,9 @@ package collection;
 
 import java.util.ArrayList;
 
-// ArrayList 클래스를 사용하여 회원 목록을 관리한다.
+/*
+ *  List를 사용하여 쇼핑몰 회원 관리하기
+ * */
 public class Ex2 {
 	
 	public static void main(String[] args) {

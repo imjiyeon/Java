@@ -6,7 +6,7 @@ import java.util.Iterator;
 /*
  * Map를 활용해 회원관리 프로그램 구현하기
  * */
-public class Ex4 {
+public class Quiz5 {
 
 	public static void main(String[] args) {
 		MemberHashMap memberHashMap = new MemberHashMap();

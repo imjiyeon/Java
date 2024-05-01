@@ -1,4 +1,4 @@
-package map.quiz;
+package map;
 
 import java.util.HashMap;
 import java.util.Iterator;

@@ -1,4 +1,4 @@
-package collection.quiz;
+package collection;
 
 import java.util.HashSet;
 import java.util.Iterator;
@@ -9,7 +9,7 @@ import java.util.Iterator;
  * set의 크기를 출력하세요
  * Iterator를 이용하여 set의 요소를 하나씩 출력하세요
  * */
-public class Quiz4 {
+public class Quiz5 {
 
 	public static void main(String[] args) {
 		HashSet<Integer> hashSet = new HashSet<>();

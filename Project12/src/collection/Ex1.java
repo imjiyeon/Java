@@ -2,6 +2,9 @@ package collection;
 
 import java.util.ArrayList;
 
+/*
+ * List 사용하기
+ * */
 public class Ex1 {
 
 	public static void main(String[] args) {

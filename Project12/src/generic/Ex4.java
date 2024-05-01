@@ -16,11 +16,12 @@ public class Ex4 {
 		Integer i = list1.get(0); //값을 꺼낼 때 형변환 할 필요 없음
 		System.out.println(i); 
 		
-		//불리언을 사용하는 리스트 생성
-		ArrayList<Boolean> list2 = new ArrayList<>();
-		list2.add(true);
-		Boolean bool = list2.get(0);
-		System.out.println(bool);
+		//문자열을 사용하는 리스트 생성
+		ArrayList<String> list2 = new ArrayList<>();
+		list2.add("aaa");
+		String str = list2.get(0);
+		System.out.println(str);
+
 	}
 
 }
