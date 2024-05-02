@@ -22,8 +22,8 @@ public class Ex3 {
 		System.out.println("두번째 인스턴스 내부클래스: " + instanseInner2.i1 + ", " + instanseInner2.i2);
 		// i2는 외부클래스의 멤버변수라고 보면됨
 
-		// 정적 내부 클래스의 인스턴스 생성
-		Outer.StaticInner staticInner = new Outer.StaticInner(); // 객체를 생성하지 않고 사용 가능
+		// 정적 내부 클래스의 인스턴스 생성. Outer 객체를 없이 사용 가능
+		Outer.StaticInner staticInner = new Outer.StaticInner();
 		staticInner.i1 = 300;
 		staticInner.i2 = 300;
 	}
