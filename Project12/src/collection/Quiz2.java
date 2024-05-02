@@ -23,7 +23,7 @@ public class Quiz2 {
 		//리스트 안에 'A'가 있는지 확인 
 		for(int i=0; i<list.size(); i++){
 			
-			char ch = list.get(i);
+			char ch = list.get(i); //오토박싱
 			
 			if(ch == 'A') {
 				list.remove(i); //해당 문자가 A라면 리스트에서 삭제
