@@ -2,20 +2,19 @@ package collection;
 
 import java.util.ArrayList;
 
-/*
- * Character타입의 Arraylist 생성하세요
- * 문자 3개를 추가하세요 ('A','B','C')
- * 리스트에 'A'라는 문자가 있는지 확인하고,
- * 있다면 리스트에서 삭제하세요.
- * */
+
+//  Character타입의 Arraylist 생성하세요
+//  문자 3개를 추가하세요 ('A','B','C')
+//  리스트에 'A'라는 문자가 있는지 확인하고,
+//  있다면 리스트에서 삭제하세요.
+
 public class Quiz2 {
 
 	public static void main(String[] args) {
-		
-		//문자를 저장하는 리스트 생성
+
 		ArrayList<Character> list = new ArrayList<Character>();
 		
-		list.add('A'); //문자 추가
+		list.add('A');
 		list.add('B');
 		list.add('C');
 		

@@ -12,7 +12,7 @@ class Powder {
 	}
 
 	public String toString() {
-		return "자료는 Powder 입니다";
+		return "재료는 Powder 입니다";
 	}
 
 }
@@ -25,7 +25,7 @@ class Plastic {
 	}
 
 	public String toString() {
-		return "자료는 Plastic 입니다";
+		return "재료는 Plastic 입니다";
 	}
 
 }
@@ -59,3 +59,6 @@ class ThreeDPrinter2 {
 	}
 	
 }
+
+
+
