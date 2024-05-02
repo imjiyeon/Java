@@ -25,6 +25,7 @@ public class Quiz4 {
 		memberArrayList.addMember(member4);
 		memberArrayList.showAllMember();
 
+		System.out.println("MemberArrayList에 1004번 회원이 있으면 삭제하세요!");
 		// 아이디로 4번째 회원 삭제
 		memberArrayList.removeMember(1004);
 		memberArrayList.showAllMember();

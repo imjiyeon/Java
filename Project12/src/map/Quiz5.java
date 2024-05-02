@@ -9,6 +9,7 @@ import java.util.Iterator;
 public class Quiz5 {
 
 	public static void main(String[] args) {
+		System.out.println("MemberArrayList를 생성하고 4명의 회원을 추가하세요!");
 		MemberHashMap memberHashMap = new MemberHashMap();
 		Member member1 = new Member(1001, "둘리");
 		Member member2 = new Member(1002, "또치");
@@ -21,6 +22,7 @@ public class Quiz5 {
 		memberHashMap.addMember(member4);
 		memberHashMap.showAllMember();
 		
+		System.out.println("MemberArrayList에 1004번 회원이 있으면 삭제하세요!");
 		memberHashMap.removeMember(1004);
 		memberHashMap.showAllMember();
 	}
