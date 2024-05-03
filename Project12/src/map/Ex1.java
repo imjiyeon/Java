@@ -13,7 +13,7 @@ public class Ex1 {
 	public static void main(String[] args) {
 
 		// int형 키, String형 value를 저장하는 맵 생성
-		HashMap<Integer, String> map = new HashMap<>();
+		HashMap<Integer, String> map = new HashMap<>();  // 뒤는 타입 생략 가능
 
 		// 데이터 추가
 		map.put(1, "사과"); // key, value 쌍으로 값 추가

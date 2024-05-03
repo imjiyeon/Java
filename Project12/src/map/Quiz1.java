@@ -17,7 +17,7 @@ public class Quiz1 {
 	public static void main(String[] args) {
 
 		// Character형 키, String형 value를 저장하는 맵 생성
-		HashMap<Character, String> map = new HashMap<>(); // 뒤는 타입 생략 가능
+		HashMap<Character, String> map = new HashMap<>();
 
 		// 데이터 추가
 		map.put('a', "사과");
