@@ -46,6 +46,13 @@ public class Ex1 {
 		Collection<String> values = map.values();
 		System.out.println("값 목록: " + values);
 
+		// 특정키값이 존재하는지 확인하기
+		if (map.containsKey(1)) {
+			System.out.println("map에 1라는 키가 있습니다");
+		} else {
+			System.out.println("map에 1라는 키가 없습니다");
+		}
+
 	}
 
 }

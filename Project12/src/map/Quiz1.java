@@ -4,9 +4,14 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Set;
 
-/*
- * Character형 키, String형 value를 가지는 HashMap 객체 생성하기
- * */
+
+//문자타입 key, 문자열타입 value를 가지는 HashMap을 생성하세요.
+//다음과 같이 데이터 3개를 추가하세요.
+//{'a', "사과"}, {'b', "바나나"}, {'c', "코코넛"}
+//키값이 b인 요소의 값을 조회하세요
+//바나나를 블루베리로 변경하세요
+//사과를 삭제하세요
+
 public class Quiz1 {
 
 	public static void main(String[] args) {
@@ -32,13 +37,7 @@ public class Quiz1 {
 		map.remove('a');
 		System.out.println("hashmap : " + map);
 
-		// map 순회하기
-		Iterator<Character> keys = map.keySet().iterator(); // keySet에서 Iterator클래스 꺼내기
-		while (keys.hasNext()) { // 다음 key가 있으면
-			Character key = keys.next(); // key를 꺼내서
-			System.out.println("[Key]:" + key + " [Value]:" + map.get(key)); // 키에 일치하는 값 꺼내기
-		}
-
+		// 추가설명
 		// 특정키값이 존재하는지 확인하기
 		if (map.containsKey('b')) {
 			System.out.println("map에 b라는 키가 있습니다");
