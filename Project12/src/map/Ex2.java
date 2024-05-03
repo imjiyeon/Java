@@ -4,48 +4,61 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Set;
 
-/*
- * Character형 키, String형 value를 가지는 HashMap 객체 생성하기
- * */
-public class Ex2 {
+//HashMap 클래스를 사용하여 회원 목록 관리하기
+public class Ex3 {
 
 	public static void main(String[] args) {
 
-		// Character형 키, String형 value를 저장하는 맵 생성
-		HashMap<Character, String> map = new HashMap<>(); // 뒤는 타입 생략 가능
+		// 회원목록을 저장하는 map 생성
+		HashMap<Integer, Member> map = new HashMap<>();
 
-		// 데이터 추가
-		map.put('a', "사과");
-		map.put('b', "바나나");
-		map.put('c', "코코넛");
-		System.out.println("hashmap : " + map);
+		// 회원 추가
+		Member member1 = new Member(1001, "둘리");
+		Member member2 = new Member(1002, "또치");
+		Member member3 = new Member(1003, "도우너");
+		map.put(member1.memberId, member1);
+		map.put(member2.memberId, member2);
+		map.put(member3.memberId, member3);
 
-		// 키로 데이터 조회
-		String value = map.get('b'); // 키값 b로 값을 조회
-		System.out.println("key: b, value: " + value);
+		// 회원 조회
+		System.out.println(map.get(1001));
+		System.out.println(map.get(1002));
+		System.out.println(map.get(1003));
 
-		// 데이터 수정
-		map.replace('b', "블루베리");
-		System.out.println("hashmap : " + map);
+		// 1번째 회원 삭제
+		map.remove(1001);
 
-		// 데이터 삭제
-		map.remove('a');
-		System.out.println("hashmap : " + map);
+		// 전체 회원 수 출력
+		System.out.println("전체 회원 수: " + map.size());
 
-		// map 순회하기
-		Iterator<Character> keys = map.keySet().iterator(); // keySet에서 Iterator클래스 꺼내기
-		while (keys.hasNext()) { // 다음 key가 있으면
-			Character key = keys.next(); // key를 꺼내서
-			System.out.println("[Key]:" + key + " [Value]:" + map.get(key)); // 키에 일치하는 값 꺼내기
+		// 전체 회원 목록 출력
+		System.out.println(map);
+
+		// 회원 목록 순회하기
+		Set<Integer> keyset = map.keySet();
+		for (int key : keyset) { // 다음 key가 있으면
+			System.out.println("[Key]:" + key + " [Value]:" + map.get(key)); // 키로 회원 조회
 		}
 
-		// 특정키값이 존재하는지 확인하기
-		if (map.containsKey('b')) {
-			System.out.println("map에 b라는 키가 있습니다");
-		} else {
-			System.out.println("map에 b라는 키가 없습니다");
-		}
+	}
 
+}
+
+//쇼핑몰 회원 클래스 만들기
+class Member {
+
+	int memberId; // 회원아이디
+	String memeberName; // 회원이름
+
+	public Member(int memberId, String memeberName) {
+		super();
+		this.memberId = memberId;
+		this.memeberName = memeberName;
+	}
+
+	@Override
+	public String toString() {
+		return "Member [memberId=" + memberId + ", memeberName=" + memeberName + "]";
 	}
 
 }

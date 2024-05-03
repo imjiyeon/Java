@@ -5,27 +5,47 @@ import java.util.Iterator;
 import java.util.Set;
 
 /*
- * String형 키, int형 value를 가지는 HashMap 객체를 생성하세요.
- * 다음과 같이 데이터 3개를 추가하세요. {"국어", 80},  {"수학", 90}, {"영어", 100}
- * map의 요소를 하나씩 출력하세요.
- * map의 크기를 출력하세요.
+ * Character형 키, String형 value를 가지는 HashMap 객체 생성하기
  * */
 public class Quiz1 {
 
 	public static void main(String[] args) {
-		HashMap<String, Integer> map = new HashMap<>();
-		map.put("국어", 80);
-		map.put("수학", 90);
-		map.put("영어", 100);
-		
-		//키값으로 map의 요소 조회하기
-		System.out.println("key: 국어, value: " + map.get("국어"));
-		System.out.println("key: 수학, value: " + map.get("수학"));
-		System.out.println("key: 영어, value: " + map.get("영어"));
-		
-		//map 크기 구하기
-		int size = map.size();
-		System.out.println("map 크기: " + size);
+
+		// Character형 키, String형 value를 저장하는 맵 생성
+		HashMap<Character, String> map = new HashMap<>(); // 뒤는 타입 생략 가능
+
+		// 데이터 추가
+		map.put('a', "사과");
+		map.put('b', "바나나");
+		map.put('c', "코코넛");
+		System.out.println("hashmap : " + map);
+
+		// 키로 데이터 조회
+		String value = map.get('b'); // 키값 b로 값을 조회
+		System.out.println("key: b, value: " + value);
+
+		// 데이터 수정
+		map.replace('b', "블루베리");
+		System.out.println("hashmap : " + map);
+
+		// 데이터 삭제
+		map.remove('a');
+		System.out.println("hashmap : " + map);
+
+		// map 순회하기
+		Iterator<Character> keys = map.keySet().iterator(); // keySet에서 Iterator클래스 꺼내기
+		while (keys.hasNext()) { // 다음 key가 있으면
+			Character key = keys.next(); // key를 꺼내서
+			System.out.println("[Key]:" + key + " [Value]:" + map.get(key)); // 키에 일치하는 값 꺼내기
+		}
+
+		// 특정키값이 존재하는지 확인하기
+		if (map.containsKey('b')) {
+			System.out.println("map에 b라는 키가 있습니다");
+		} else {
+			System.out.println("map에 b라는 키가 없습니다");
+		}
+
 	}
 
 }
