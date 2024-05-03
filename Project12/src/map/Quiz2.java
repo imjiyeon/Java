@@ -29,13 +29,15 @@ public class Quiz2 {
 
 		map.remove("영어");
 		System.out.println("영어점수 삭제 후: " + map);
-		
-		//키값으로 map의 요소 조회하기
+
+		// map의 요소를 하나씩 출력하기
 		System.out.println("key: 국어, value: " + map.get("국어"));
 		System.out.println("key: 수학, value: " + map.get("수학"));
-		System.out.println("key: 영어, value: " + map.get("영어"));
-		
-		//map 크기 구하기
+
+		// map을 한번에 출력하기
+		System.out.println(map);
+
+		// map 크기 구하기
 		int size = map.size();
 		System.out.println("map 크기: " + size);
 	}
