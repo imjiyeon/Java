@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.Set;
 
 //HashMap 클래스를 사용하여 회원 목록 관리하기
-public class Ex3 {
+public class Ex2 {
 
 	public static void main(String[] args) {
 
