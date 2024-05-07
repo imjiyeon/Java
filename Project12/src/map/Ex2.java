@@ -36,6 +36,8 @@ public class Ex2 {
 
 		// 회원 목록 순회하기
 		Set<Integer> keyset = map.keySet();
+
+		// 변수 : 자료구조 (배열,리스트,set O map X)
 		for (int key : keyset) { // 다음 key가 있으면
 			System.out.println("[Key]:" + key + " [Value]:" + map.get(key)); // 키로 회원 조회
 		}
