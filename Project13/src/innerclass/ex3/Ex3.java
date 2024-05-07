@@ -1,7 +1,7 @@
 package innerclass.ex3;
 
 /*
- * 내부클래스 종류와 제약사항 (1)
+ * 인스턴스 내부 클래스와 정적 내부 클래스
  */
 public class Ex3 {
 
@@ -31,12 +31,14 @@ public class Ex3 {
 
 class Outer {
 
+	// 인스턴스 내부 클래스
 	// 인스턴스 클래스는 인스턴스변수와 정적변수를 모두 가질 수 있음
 	class InstanseInner {
 		int i1 = 100;
 		static int i2 = 200; // 단, 외부 객체없이는 사용할 수 없기때문에 정적변수는 외부 객체에 종속됨
 	}
 
+	// 정적 내부 클래스
 	// 정적 클래스는 인스턴스변수와 정적변수를 모두 가질 수 있음
 	static class StaticInner {
 		int i1 = 100;

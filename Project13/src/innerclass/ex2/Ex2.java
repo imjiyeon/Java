@@ -1,7 +1,7 @@
 package innerclass.ex2;
 
 /*
- * B 클래스를 A 클래스의 내부 클래스로 정의하기
+ * 내부 클래스 만들기
  * */
 class A { //외부 클래스
 

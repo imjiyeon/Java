@@ -1,7 +1,7 @@
 package innerclass.ex1;
 
 /*
- * 클래스 만들고 사용하기
+ * 일반적인 클래스 만들기
  * */
 class A {
 	int num = 10;
