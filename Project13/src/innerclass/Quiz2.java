@@ -5,7 +5,7 @@ import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 
 /*
- * 다음 코드를 익명클래스를 사용해서 다시 작성하세요.
+ * 다음 코드를 익명클래스로 변경하세요.
  * */
 public class Quiz2 {
 	public static void main(String[] args) {
@@ -19,11 +19,11 @@ public class Quiz2 {
 		
 		frame.setVisible(true);
 
-//		// 미리 구현한 클래스로 키 이벤트 등록
+//		// 미리 구현한 클래스로 키 이벤트 등록하기
 //		MyFocusListener listener = new MyFocusListener();
 //		textArea.addFocusListener(listener);
 
-		// 익명클래스로 키 이벤트 등록
+		// Q.익명클래스를 사용하여 키이벤트를 등록하세요
 		textArea.addFocusListener(new FocusListener() {
 			@Override
 			public void focusGained(FocusEvent e) {
