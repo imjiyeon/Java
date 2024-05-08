@@ -1,37 +1,42 @@
 package lambda;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
 /*
- * 람다식 활용하기 (1)
+ * 람다식 함수 활용하기
  * */
-
-//함수형 인터페이스 선언
-interface StringConcat {
-	
-	// 두 문자열을 연결하는 메소드 선언
-	public void makeString(String s1, String s2); 
-}
-
-//구현 클래스 만들기
-class StringConcatImpl implements StringConcat {
-
-	@Override
-	public void makeString(String s1, String s2) {
-		System.out.println(s1 + "," + s2);
-	}
-
-}
-
 public class Ex3 {
-
 	public static void main(String[] args) {
 
-		// 구현 클래스 사용하기
-		StringConcat concat1 = new StringConcatImpl();
-		concat1.makeString("Hello", "World");
+		// 문자열 리스트 생성
+		List<String> list = new ArrayList<>();
 
-		// 람다식 함수 사용하기
-		StringConcat concat2 = (str1, str2) -> System.out.println(str1 + "," + str2);
-		concat2.makeString("Hello", "World");
+		// 문자열 추가
+		list.add("add");
+		list.add("ccc");
+		list.add("bbb");
+
+		// 리스트를 순서대로 정렬하기
+
+		// Collections.sort(): 리스트의 데이터를 순서대로 정렬하는 기능
+		// 인자: 문자열 리스트, 리스트 정렬하는 로직을 가지고 있는 Comparator 클래스
+
+		// 익명 클래스 사용
+		Collections.sort(list, new Comparator<String>() {
+			@Override
+			public int compare(String o1, String o2) {
+				return o1.compareTo(o2); // 알파벳 순정렬. (비교해서 작은 알파벳이 앞으로 옴)
+			}
+		});
+		System.out.println("리스트 역정렬: " + list);
+
+		// 람다식으로 인터페이스 구현하기
+		Collections.sort(list, (s1, s2) -> s1.compareTo(s2));
+		System.out.println("리스트 순정렬: " + list);
+		
 	}
 
 }
