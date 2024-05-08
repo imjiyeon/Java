@@ -55,10 +55,10 @@ class MemberHashMap {
 
 	// 전체 회원을 출력하는 메소드
 	public void showAllMember() {
-		Iterator<Integer> keys = map.keySet().iterator();
-		while (keys.hasNext()) {
-			int key = keys.next();
-			Member member = map.get(key);
+
+		Collection<Member> values = map.values();
+
+		for(Member member : vlaues) {
 			System.out.println(member);
 		}
 		System.out.println();
