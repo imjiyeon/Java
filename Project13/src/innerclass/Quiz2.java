@@ -4,9 +4,12 @@ import java.awt.*;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 
-/*
- * 다음 코드를 익명클래스로 변경하세요.
- * */
+// 두가지 방법으로 addFocusListener 이벤트를 등록해주세요~
+// 1. 일반 클래스 사용
+// 2. 익명클래스 사용
+// textarea 안으로 마우스가 들어오면 "텍스트에 포커스가 되었습니다!!" 출력..
+// textarea 밖으로 마우스가 벗어나면 "텍스트에 포커스가 벗어났습니다!" 출력..
+
 public class Quiz2 {
 	public static void main(String[] args) {
 		// 화면 생성
