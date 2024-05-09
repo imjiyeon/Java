@@ -21,7 +21,7 @@ public class Ex3 {
 
 		// 리스트를 순서대로 정렬하기
 
-		// Collections.sort(): 리스트의 데이터를 순서대로 정렬하는 기능
+		// Collections.sort(): 리스트의 요소를 순서대로 정렬하는 메소드
 		// 인자: 문자열 리스트, 리스트 정렬하는 로직을 가지고 있는 Comparator 클래스
 
 		// 익명 클래스 사용
@@ -31,11 +31,11 @@ public class Ex3 {
 				return o1.compareTo(o2); // 알파벳 순정렬. (비교해서 작은 알파벳이 앞으로 옴)
 			}
 		});
-		System.out.println("리스트 역정렬: " + list);
+		System.out.println("리스트 순정렬: " + list);
 
 		// 람다식으로 인터페이스 구현하기
 		Collections.sort(list, (s1, s2) -> s1.compareTo(s2));
-		System.out.println("리스트 순정렬: " + list);
+		System.out.println("리스트 역정렬: " + list);
 		
 	}
 

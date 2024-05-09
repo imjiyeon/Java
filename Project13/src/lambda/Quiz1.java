@@ -27,10 +27,10 @@ public class Quiz1 {
 
 }
 
-//함수형 인터페이스 선언
+//함수형 인터페이스
 interface MyNumber {
 	
-	// 더 큰 값을 구하는 메소드 선언
+	// 더 큰 값을 구하는 메소드
 	int max(int x, int y);
 }
 
