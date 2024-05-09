@@ -22,11 +22,11 @@ public class Quiz2 {
 		
 		frame.setVisible(true);
 
-//		// 미리 구현한 클래스로 키 이벤트 등록하기
+		// 미리 구현한 클래스로 키이벤트 등록하기
 //		MyFocusListener listener = new MyFocusListener();
 //		textArea.addFocusListener(listener);
 
-		// Q.익명클래스를 사용하여 키이벤트를 등록하세요
+		// 익명클래스로 키 이벤트 등록하기
 		textArea.addFocusListener(new FocusListener() {
 			@Override
 			public void focusGained(FocusEvent e) {
