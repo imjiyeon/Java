@@ -34,7 +34,7 @@ interface Hello {
 	void helloPrint();
 }
 
-//구현 클래스 만들기
+//Q.Hello의 구현 클래스 만들기
 class HelloImpl implements Hello {
 
 	@Override
