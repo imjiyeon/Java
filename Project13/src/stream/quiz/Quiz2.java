@@ -4,6 +4,24 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
+// 다음과 같이 쇼핑몰의 거래내역을 저장하는 클래스를 만드세요
+// 속성: 주문번호, 주문연도, 거래내역(만원단위)
+// [orderNo=1001, year=2022, price=300]
+// [orderNo=1002, year=2022, price=150]
+// [orderNo=1003, year=2022, price=200]
+// [orderNo=1004, year=2023, price=500]
+// [orderNo=1005, year=2023, price=400]
+// [orderNo=1006, year=2023, price=600]
+// [orderNo=1007, year=2023, price=650]
+//
+// 1.모든 거래번호를 한줄에 나열하세요.
+// 결과: 1001 1002 1003 1004 1005 1006 1007
+// 2.2022년도의 거래 총금액과 건수를 출력하세요
+// 결과: 총금액:650, 거래건수:3
+// 3.2023년도의 거래 총금액과 건수를 출력하세요
+// 결과: 총금액:2150, 거래건수:4
+
+
 public class Quiz2 {
 
 	public static void main(String[] args) {
@@ -23,6 +41,7 @@ public class Quiz2 {
 		// -> 1001 1002 1003 1004 1005 1006 1007
 		Stream<Order> stream1 = list.stream();
 		stream1.map(o -> o.orderNo).forEach(s-> System.out.print(s + " "));
+		System.out.println();
 		
 		// 2022년도의 거래 총금액과 건수를 출력하세요
 		// -> 총금액: 650, 거래건수: 3
