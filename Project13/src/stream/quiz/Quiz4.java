@@ -51,13 +51,20 @@ public class Quiz4 {
 
 		System.out.println("총 여행 비용: " + total);
 
-		System.out.println("== 20세 이상 고객 명단 ==");
+		// filter: 조건을 만족하는 요소만 추출 (나이가 20살 이상인)
 
-		// 순정렬(작은거 > 큰거) 도우너:25 둘리:40
+		System.out.println("== 20세 이상 고객 명단 ==");
 		customerList.stream()
 				.filter(c -> c.age >= 20)
-				.forEach(c -> System.out.println(c.name));
-
+				// 순정렬(작은거 > 큰거) 도우너:25 둘리:40
+				.sorted((c1, c2) -> {
+					if(c1.age > c2.age) {
+						return 1;
+					} else {
+						return -1;
+					}
+				})
+				.forEach(c -> System.out.println(c.name + ", " +c.age));
 	}
 }
 
