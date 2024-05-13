@@ -17,6 +17,13 @@ import java.util.stream.Stream;
 
 public class Quiz2 {
 
+	// filter 함수의 인자는 Predicate
+	// Predicate 인터페이스를 람다식 함수로 구현하기
+	// 1.추상메소드 구현한다 2.람다식함수로 바꾼다
+//	boolean test(S s) {
+//		return s.endsWith(".txt");
+//	}
+
 	public static void main(String[] args) {
 
 		// 파일 목록 생성

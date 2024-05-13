@@ -24,6 +24,19 @@ import java.util.stream.Stream;
 
 public class Quiz3 {
 
+	// map 함수의 인자는 Function
+	// 인터페이스를 구현하는 방법은 3가지
+	// 함수형 인터페이스는 람다식 함수로 구현 가능
+	// Function 인터페이스를 람다식 함수로 구현하기
+	// 1.추상메소드 구현한다 2.람다식함수로 바꾼다
+
+	// 이함수는 요소를 다른값으로 바꿔서 반환하는 함수
+	// 리턴타입 R? 제네릭 타입이라는거. 여러분들이 정해주시면 됨
+
+//	R apply(T t) { //요소는 주문 객체
+//		return t.orderNo; //주문 번호로 바꿔서 반환
+//	}
+
 	public static void main(String[] args) {
 		
 		// 거래내역 리스트 생성
