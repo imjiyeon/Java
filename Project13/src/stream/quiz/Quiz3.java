@@ -33,8 +33,20 @@ public class Quiz3 {
 	// 이함수는 요소를 다른값으로 바꿔서 반환하는 함수
 	// 리턴타입 R? 제네릭 타입이라는거. 여러분들이 정해주시면 됨
 
+	// 이 추상메소드의 기능은 map()의 기능과 같다
 //	R apply(T t) { //요소는 주문 객체
 //		return t.orderNo; //주문 번호로 바꿔서 반환
+//	}
+
+	// 이 추상메소드의 기능은 filter()의 기능과 같다
+
+	// 주문일자가 2022년도면 true를 반환
+//	boolean test(T t) { //t는 주문 객체
+//		if(t.year == 2022) {
+//			return true;
+//		} else {
+//			return false;
+//		}
 //	}
 
 	public static void main(String[] args) {
