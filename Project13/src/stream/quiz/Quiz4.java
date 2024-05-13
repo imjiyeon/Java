@@ -38,9 +38,13 @@ public class Quiz4 {
 		customerList.add(customer3);
 
 		System.out.println("== 고객 명단 ==");
+
+		// forEach: 특정작업을 반복적으로 수행 (고객의 정보에서 이름만 출력)
 		customerList.stream()
 				.forEach(c -> System.out.println(c.name));
 
+		// mapToInt: 값을 변환하고, 기본형 스트림 반환 (Customer 객체 -> 여행비용)
+		// sum: 스트림 요소의 합 구하기 (여행비용의 합계)
 		int total = customerList.stream()
 				.mapToInt(c -> c.budget)
 				.sum();
@@ -48,6 +52,8 @@ public class Quiz4 {
 		System.out.println("총 여행 비용: " + total);
 
 		System.out.println("== 20세 이상 고객 명단 ==");
+
+		// 순정렬(작은거 > 큰거) 도우너:25 둘리:40
 		customerList.stream()
 				.filter(c -> c.age >= 20)
 				.forEach(c -> System.out.println(c.name));
