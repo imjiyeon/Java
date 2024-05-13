@@ -77,7 +77,7 @@ public class Quiz3 {
 		// 총금액: 650, 거래건수: 3
 
 		// filter: 조건을 만족하는 요소만 추출 (년도가 2022년도인)
-		// mapToInt: 값을 int형으로 변환 (Order객체 -> int타입의 price필드)
+		// mapToInt: 값을 변환하고, 기본형 스트림 반환 (Order객체 -> int타입의 price필드)
 		// sum: 스트림 요소의 합 구하기 (거래금액의 합계)
 		int sum1 = list.stream()
 				.filter(o -> o.year == 2022)
