@@ -39,20 +39,19 @@ public class Quiz4 {
 
 		System.out.println("== 고객 명단 ==");
 		customerList.stream()
-						.map(c -> c.name)
-						.forEach(s -> System.out.println(s));
+				.forEach(c -> System.out.println(c.name));
 
 		int total = customerList.stream()
-						.mapToInt(c -> c.budget)
-						.sum();
-		System.out.println("총 여행 비용 :" + total);
+				.mapToInt(c -> c.budget)
+				.sum();
+
+		System.out.println("총 여행 비용: " + total);
 
 		System.out.println("== 20세 이상 고객 명단 ==");
 		customerList.stream()
-						.filter(c -> c.age >= 20)
-						.map(c -> c.name)
-						.sorted()
-						.forEach(s -> System.out.println(s));
+				.filter(c -> c.age >= 20)
+				.forEach(c -> System.out.println(c.name));
+
 	}
 }
 

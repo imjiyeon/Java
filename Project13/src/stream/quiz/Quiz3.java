@@ -71,8 +71,7 @@ public class Quiz3 {
 
 		Stream<Order> stream1 = list.stream();
 		stream1
-				.map(o -> o.orderNo)
-				.forEach(s-> System.out.print(s + " "));
+				.forEach(o-> System.out.print(o.orderNo + " "));
 
 		// 2022년도의 거래 총금액과 건수를 출력하세요
 		// 총금액: 650, 거래건수: 3
