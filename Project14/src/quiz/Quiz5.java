@@ -15,7 +15,9 @@ public class Quiz5 {
 
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("정수를 입력하세요.");
-		int num = scanner.nextInt(); // "abc" 를 입력하세요!
+
+		// "abc" 를 입력하세요!
+		int num = scanner.nextInt(); // 다른 타입의 데이터가 들어와서 에러남
 
 //		try {
 //			Scanner scanner = new Scanner(System.in); 

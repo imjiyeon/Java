@@ -25,6 +25,7 @@ public class Ex01 {
 			System.out.println(i); // a->97
 
 			// 문자로 사용하려면 형 변환 필요
+
 			System.out.println((char) i);
 
 		} catch (IOException e) {
