@@ -11,6 +11,8 @@ public class Quiz5 {
 
 	public static void main(String[] args) {
 
+		// 프로그램이 정상적으로 종료되도록 예외를 처리하세요.
+
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("정수를 입력하세요.");
 		int num = scanner.nextInt(); // "abc" 를 입력하세요!

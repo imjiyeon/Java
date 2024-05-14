@@ -7,7 +7,9 @@ package quiz;
 public class Quiz2 {
 
 	public static void main(String[] args) {
-		
+
+		// 프로그램이 정상적으로 종료되도록 예외를 처리하세요.
+
 		String s = null;
 		System.out.println(s.length());
 		

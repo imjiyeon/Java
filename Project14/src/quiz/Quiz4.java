@@ -8,6 +8,8 @@ public class Quiz4 {
 
 	public static void main(String[] args) {
 
+		// 프로그램이 정상적으로 종료되도록 예외를 처리하세요.
+
 		String str = "1.23";
 		int num = Integer.parseInt(str);
 
