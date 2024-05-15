@@ -11,7 +11,7 @@ import java.io.OutputStreamWriter;
  * FileOutputStream와 보조스트림을 사용하여
  * 파일에 "프로그래밍"을 출력하세요.
  * */
-public class Quiz7 {
+public class Quiz07 {
 
 	public static void main(String[] args) {
 

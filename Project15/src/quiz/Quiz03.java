@@ -10,7 +10,7 @@ import java.util.Scanner;
  * 단, "STOP"의 대소문자는 구분하지 않습니다.
  * */
 
-public class Quiz3 {
+public class Quiz03 {
 
 	public static void main(String[] args){
 		

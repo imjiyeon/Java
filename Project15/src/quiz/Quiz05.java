@@ -8,7 +8,7 @@ import java.io.IOException;
  * 
  * FileWriter을 사용하여 텍스트파일에 숫자 1부터 10 중에서 짝수를 출력하세요. 
  * */
-public class Quiz5 {
+public class Quiz05 {
 
 	public static void main(String[] args) throws IOException {
 	

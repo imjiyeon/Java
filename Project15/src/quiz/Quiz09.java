@@ -9,7 +9,7 @@ import java.io.IOException;
  * 
  * 이전 예제를 함수형태로 변경하세요.
  * */
-public class Quiz9 {
+public class Quiz09 {
 
 	public static void main(String[] args) throws IOException {
 

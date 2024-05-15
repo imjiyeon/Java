@@ -9,7 +9,7 @@ import java.util.Scanner;
  * 십의자리와 일의자리의 합을 구하세요.
  * */
 
-public class Quiz2 {
+public class Quiz02 {
 
 	public static void main(String[] args) {
 

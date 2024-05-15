@@ -8,7 +8,7 @@ import java.io.IOException;
  * 
  * FileWriter를 사용하여 파일에 구구단을 출력하세요.
  * */
-public class Quiz6 {
+public class Quiz06 {
 
 	public static void main(String[] args) {
 		try {

@@ -9,7 +9,7 @@ import java.util.Scanner;
  * 배열의 모든 요소의 합을 구하세요
  * */
 
-public class Quiz1 {
+public class Quiz01 {
 
 	public static void main(String[] args) {
 
