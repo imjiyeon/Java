@@ -6,7 +6,7 @@ import java.io.IOException;
 
 /*
  * <문자 단위 스트림>
- * FileReader로 읽기
+ * FileReader로 사용하기
  * */
 public class Ex08 {
 

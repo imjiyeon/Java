@@ -3,11 +3,12 @@ package quiz;
 import java.io.FileWriter;
 import java.io.IOException;
 
-/*
- * <문자 스트림>
- * 
- * FileWriter을 사용하여 텍스트파일에 숫자 1부터 10 중에서 짝수를 출력하세요. 
- * */
+
+// <문자 스트림>
+//  
+// FileWriter을 사용하여 텍스트파일에 숫자 1부터 10 중에서 짝수를 출력하세요. 
+// (파일 내용 함께 보기)
+ 
 public class Quiz05 {
 
 	public static void main(String[] args) throws IOException {

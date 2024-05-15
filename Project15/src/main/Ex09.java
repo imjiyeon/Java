@@ -5,7 +5,7 @@ import java.io.IOException;
 
 /*
  * <문자 단위 스트림>
- * FileWriter로 쓰기
+ * FileWriter로 사용하기
  * */
 public class Ex09 {
 

@@ -3,12 +3,12 @@ package quiz;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-/*
- * <바이트 스트림>
- * 
- * FileOutputStream을 사용하여 텍스트파일에 문자 A-Z까지 출력하세요. 
- * (파일 내용 보기)
- * */
+
+//  <바이트 스트림>
+//  
+//  FileOutputStream을 사용하여 텍스트파일에 문자 A-Z까지 출력하세요. 
+//  (파일 내용 함께 보기)
+
 public class Quiz04 {
 
 	public static void main(String[] args) throws IOException {

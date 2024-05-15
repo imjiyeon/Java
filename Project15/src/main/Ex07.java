@@ -5,7 +5,7 @@ import java.io.IOException;
 
 /*
  * <바이트 단위 스트림>
- * FileOutputStream 사용하기 
+ * 배열을 사용해서 파일에 쓰기
  * */
 public class Ex07 {
 

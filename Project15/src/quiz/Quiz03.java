@@ -2,13 +2,14 @@ package quiz;
 
 import java.util.Scanner;
 
-/*
- * <Scanner>
- * 
- * 무한루프를 사용하여 문자열을 계속 입력 받습니다.
- * 문자열을 입력받다가 "STOP"이 입력되면 루프를 종료하세요.
- * 단, "STOP"의 대소문자는 구분하지 않습니다.
- * */
+
+// <Scanner>
+//  
+// Scanner를 사용하여 문자열을 계속 입력받으세요.
+// while 루프를 사용하여 입력을 계속 받고,
+// 입력된 문자열이 "STOP"이면 루프를 종료하세요.
+// 단, "STOP"의 대소문자는 구분할 필요가 없습니다.
+// (결과 콘솔창 함께 보기) 
 
 public class Quiz03 {
 
@@ -16,6 +17,7 @@ public class Quiz03 {
 		
 		Scanner scanner = new Scanner(System.in);
 		
+		// 무한 루프 만들기 
 		while(true) {
 			System.out.println("문자를 입력하세요:");
 			String str = scanner.nextLine();
