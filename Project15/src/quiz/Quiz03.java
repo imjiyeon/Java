@@ -9,7 +9,7 @@ import java.util.Scanner;
 // while 루프를 사용하여 입력을 계속 받고,
 // 입력된 문자열이 "STOP"이면 루프를 종료하세요.
 // 단, "STOP"의 대소문자는 구분할 필요가 없습니다.
-// (결과 콘솔창 함께 보기) 
+// (결과 콘솔창 함께 보기)
 
 public class Quiz03 {
 
@@ -21,9 +21,18 @@ public class Quiz03 {
 		while(true) {
 			System.out.println("문자를 입력하세요:");
 			String str = scanner.nextLine();
+
+			//대문자로 변경한 다음에 비교
 			if(str.toUpperCase().equals("STOP")) {
 				break;
 			}
+
+			//소문자로 변경한 다음에 비교
+//			str.toLowerCase().equals("stop")
+
+			//대소문자 상관없이 비교
+//			str.equalsIgnoreCase("STOP")
+
 		}
 		
 		System.out.println("프로그램이 종료되었습니다");
