@@ -22,16 +22,16 @@ public class Quiz03 {
 			System.out.println("문자를 입력하세요:");
 			String str = scanner.nextLine();
 
-			//대문자로 변경한 다음에 비교
+			//대소문자 상관없이 비교
 			if(str.toUpperCase().equals("STOP")) {
-				break;
+				break; //stop이 입력됬으면 빠져나가기
 			}
+
+			//대문자로 변경한 다음에 비교
+//			str.toUpperCase().equals("STOP")
 
 			//소문자로 변경한 다음에 비교
 //			str.toLowerCase().equals("stop")
-
-			//대소문자 상관없이 비교
-//			str.equalsIgnoreCase("STOP")
 
 		}
 		
