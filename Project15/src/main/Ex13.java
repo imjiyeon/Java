@@ -5,13 +5,12 @@ import java.io.IOException;
 
 /*
  * File 클래스 사용하기
- * (활용도가 제일 높음)
  * */
 public class Ex13 {
 
 	public static void main(String[] args) {
 
-		// File: 파일 정보를 담는 클래스 
+		// File: 파일 정보를 담는 클래스 (활용도가 제일 높음!)
 		// 파일의 경로, 크기 등 정보를 확인하거나 파일을 생성할 수 있음
 
 		// newFile.txt와 연결된 파일 클래스 생성
