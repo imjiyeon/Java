@@ -15,11 +15,15 @@ public class Quiz04 {
 
 		try {
 			FileOutputStream fos = new FileOutputStream("quiz4.txt");
-			byte data = 65; // 'A'의 아스키 값
 
-			for (int i = 0; i < 26; i++) {
-				fos.write(data); // A-Z 출력
-				data++;
+			//
+//			fos.write('A'); //65
+//			fos.write('B'); //66
+//			fos.write('C'); //67 ....
+
+			// 시작! 'A'의 아스키 값
+			for (int i = 65; i <= 90; i++) {
+				fos.write(i); // A-Z 출력
 			}
 
 		} catch (IOException e) {
