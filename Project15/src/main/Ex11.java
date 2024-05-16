@@ -6,7 +6,6 @@ import java.io.IOException;
 
 /*
  * 보조스트림 사용하기 (2)
- * - 기반스트림으로 파일 복사하기
  * */
 public class Ex11 {
 
@@ -14,16 +13,19 @@ public class Ex11 {
 		
 		// 먼저 예제 프로젝트에서 a.txt 파일 복사 (용량이 2MB 정도되는 파일 준비)
 
-		long start = 0;
-		long end = 0;
+		// 그냥 기반스트림으로 파일 복사하기
+		
+		// 시간 측정
+		long start = 0; //시작 시간
+		long end = 0; //끝난 시간
 		
 		try {
 
-			//입출력 스트림 생성
+			//입력 스트림 생성
 			FileInputStream fis = new FileInputStream("a.txt"); 
-			FileOutputStream fos = new FileOutputStream("copy.txt"); 
 			
-			//복사 되는 시간 측정하기
+			//출력 스트림 생성
+			FileOutputStream fos = new FileOutputStream("copy.txt"); 
 			
 			//복사를 시작하는 시간 저장
 			start = System.currentTimeMillis(); 

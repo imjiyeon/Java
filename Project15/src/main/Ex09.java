@@ -5,14 +5,14 @@ import java.io.IOException;
 
 /*
  * <문자 단위 스트림>
- * FileWriter로 사용하기
+ * FileWriter 사용하기
  * */
 public class Ex09 {
 
 	public static void main(String[] args) {
 
 		try {
-			// 문자 기반 출력 스트림 생성
+			// 문자 출력 스트림 생성
 			FileWriter fw = new FileWriter("writer.txt");
 
 			// 문자 하나 출력

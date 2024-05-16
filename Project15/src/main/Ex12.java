@@ -8,12 +8,13 @@ import java.io.IOException;
 
 /*
  * 보조스트림 사용하기 (2)
- * - 보조스트림으로 파일 복사하기
  * */
 public class Ex12 {
 
 	public static void main(String[] args) {
 
+		// 보조 스트림을 사용해서 파일 복사하기
+		
 		long start = 0;
 		long end = 0;
 

@@ -6,7 +6,7 @@ import java.io.IOException;
 
 /*
  * <문자 단위 스트림>
- * FileReader로 사용하기
+ * FileReader 사용하기
  * */
 public class Ex08 {
 
@@ -16,6 +16,7 @@ public class Ex08 {
 
 		// 파일 내용 읽어오기
 		try {
+			// 바이트 입력 스트림 생성
 			FileInputStream fis = new FileInputStream("reader.txt");
 			while (true) {
 				int i = fis.read(); // 1바이트씩 읽기
@@ -27,21 +28,22 @@ public class Ex08 {
 
 			System.out.println();
 
-			// 문자 기반 입력 스트림 생성
+			// 문자 입력 스트림 생성
 			FileReader fr = new FileReader("reader.txt");
 
 			while (true) {
-				int i = fr.read(); // 한 문자(2바이트)씩 읽기
+				int i = fr.read(); // 2바이트씩 읽기
 				if (i == -1) {
 					break;
 				}
-				System.out.print((char) i); // 한글이 제대로 읽힘
+				System.out.print((char) i); // 한글이 제대로 읽어옴
 			}
+			
+			// 한글을 읽을 때는 문자 스트림 사용하기!
 
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
 
-	/* 문자 기반 스트림은 한글도 읽을 수 있다 */
 }
