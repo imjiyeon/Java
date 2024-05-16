@@ -5,7 +5,7 @@ import java.io.IOException;
 
 /*
  * File 클래스 사용하기
- * (활용도가 매우 높음)
+ * (활용도가 제일 높음)
  * */
 public class Ex13 {
 
