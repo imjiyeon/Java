@@ -28,6 +28,7 @@ public class Quiz06 {
 				fw.write("\n");
 			}
 
+			// 버퍼 비우기 안하면 출력 안됨~
 			fw.flush();
 
 		} catch (IOException e) {
