@@ -16,10 +16,11 @@ public class Quiz07 {
 	public static void main(String[] args) {
 
 		try {
-			// 기반 스트림 생성
+			// 바이트 스트림 생성
+			// 얘는 한글 못씀..
 			FileOutputStream fos = new FileOutputStream("quiz7.txt");
 
-			// 보조스트림 생성
+			// 보조 스트림 생성
 			OutputStreamWriter osw = new OutputStreamWriter(fos);
 
 			osw.write('프');
@@ -28,7 +29,8 @@ public class Quiz07 {
 			osw.write('래');
 			osw.write('밍');
 
-			// OutputStreamWriter도 버퍼를 사용함. 버퍼를 비워야 내용이 한번에 출력됨
+			// OutputStreamWriter도 버퍼를 사용함
+			// 버퍼를 비워야 내용이 한번에 출력됨
 			osw.flush();
 
 		} catch (FileNotFoundException e) {
