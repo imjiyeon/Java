@@ -5,6 +5,7 @@ package main;
  * */
 public class Ex02 {
 	public static void main(String[] args) {
+		
 		int x = 10; // 변수 선언과 동시에 값을 저장
 		System.out.println(x); // 출력
 

@@ -1,9 +1,9 @@
 package quiz;
 
-/* 
- * <변수>
- * 다음 주석을 보고 코드를 작성하세요
- * */
+ 
+//  <변수>
+//  다음 주석을 보고 코드를 작성하세요
+  
 public class Quiz1 {
 	public static void main(String[] args) {
 		// int형 변수 x 선언

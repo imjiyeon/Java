@@ -1,9 +1,9 @@
 package quiz;
 
-/* 
- * <변수>
- * 다음 코드를 보고 주석을 작성하세요
- * */
+ 
+//  <변수>
+//  다음 코드를 보고 주석을 작성하세요
+  
 public class Quiz2 {
 	public static void main(String[] args) {
 
