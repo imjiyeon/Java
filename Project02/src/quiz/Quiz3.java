@@ -8,9 +8,9 @@ package quiz;
 public class Quiz3 {
 	public static void main(String[] args) {
 
-		int year = 2023; // 연도
-		int month = 5; // 월
-		int day = 10; // 일
+		int year = 2024; // 연도
+		int month = 6; // 월
+		int day = 21; // 일
 
 		System.out.println(year);
 		System.out.println(month);
