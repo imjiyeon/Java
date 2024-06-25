@@ -1,8 +1,8 @@
 package quiz;
 
-/*
- * <삼항연산자>
- * */
+
+//  <삼항연산자>
+
 public class Quiz09 {
 
 	public static void main(String[] args) {

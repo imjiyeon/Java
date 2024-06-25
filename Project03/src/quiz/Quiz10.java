@@ -1,9 +1,9 @@
 package quiz;
 
-/*
- * <연산자 우선순위>
- * 코드를 보고 풀이과정과 예상결과를 주석으로 작성하세요
- * */
+
+//  <연산자 우선순위>
+//  코드를 보고 풀이과정과 예상결과를 주석으로 작성하세요
+
 public class Quiz10 {
 
 	public static void main(String[] args) {
