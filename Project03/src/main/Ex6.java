@@ -11,9 +11,9 @@ public class Ex6 {
 		int y = 10;
 		
 		boolean result1 = (x > 0) && (y > 0); // true && true 
-		boolean result2 = (x > 0) && (y < 0); // true && false   
-		boolean result3 = (x > 0) || (y > 0); // true||true
-		boolean result4 = (x > 0) || (y < 0); // true||false
+		boolean result2 = (5 > 0) && (10 < 0); // true && false
+		boolean result3 = (5 > 0) || (10 > 0); // true||true
+		boolean result4 = (5 > 0) || (10 < 0); // true||false
 		boolean result5 = !(x > 0); //!(true)
 		
 		System.out.println(result1);
