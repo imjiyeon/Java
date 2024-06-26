@@ -1,10 +1,10 @@
 package conditional.quiz;
 
-/*
- * <if문>
- * int형 변수를 선언하고 값을 대입하세요.
- * 그리고 조건문을 사용해서 변수의 값이 2의 배수거나 3의 배수라면 "2 또는 3의 배수입니다"를 출력하세요
- * */
+
+//  <if문>
+//  int형 변수를 선언하고 값을 대입하세요.
+//  그리고 조건문을 사용해서 변수의 값이 2의 배수거나 3의 배수라면 "2 또는 3의 배수입니다"를 출력하세요
+
 public class Quiz1 {
 
 	public static void main(String[] args){
