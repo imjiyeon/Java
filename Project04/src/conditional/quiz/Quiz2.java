@@ -11,7 +11,7 @@ public class Quiz2 {
 		int age = 10;
 		char gender = 'F';
 		
-		if(age>=8 && gender=='F') { //나이가 8살 이상고 성별이 여자라면
+		if(age>=8 && gender=='F') { //나이가 8살 이상이고 성별이 여자라면
 			System.out.println("여학생입니다");
 		}
 	}
