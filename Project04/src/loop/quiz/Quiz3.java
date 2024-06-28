@@ -9,7 +9,8 @@ public class Quiz3 {
 
 	public static void main(String[] args) {
 		int n = 5;
-		
+
+		// * 은 반복횟수만큼 출력됨. n을 조건문에 사용할 것
 		for (int i = 1; i <= n; i++) {
 			System.out.print("*");
 		}
