@@ -1,8 +1,7 @@
 package loop.quiz;
 
-/*
- * 구구단을 3단부터 7단까지만 출력하세요
- * */
+
+//  구구단을 3단부터 7단까지만 출력하세요
 
 public class Quiz7 {
 

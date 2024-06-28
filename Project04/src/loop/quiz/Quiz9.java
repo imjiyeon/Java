@@ -1,9 +1,10 @@
 package loop.quiz;
 
-// *****
-// *****
-// *****
 // 중첩반복문을 사용해서 직사각형을 그려보세요
+// *****
+// *****
+// *****
+
 public class Quiz9 {
 
 	public static void main(String[] args) {

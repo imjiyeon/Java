@@ -1,9 +1,8 @@
 package loop.quiz;
 
-/*
- * continue를 사용해서,
- * 1부터 100까지의 수 중에서 3의 배수만 출력하세요.
- * */
+
+//  continue를 사용해서,
+//  1부터 100까지의 수 중에서 3의 배수만 출력하세요.
 
 public class Quiz5 {
 

@@ -1,11 +1,12 @@
 package loop.quiz;
 
+// 중첩 반복문을 사용해서 직각삼각형을 그려보세요
 // *
 // **
 // ***
 // ****
 // *****
-// 중첩 반복문을 사용해서 직각삼각형을 그려보세요
+
 public class Quiz10 {
 
 	public static void main(String[] args) {
