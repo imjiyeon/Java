@@ -10,6 +10,7 @@ public class Ex9 {
 		int sum = 0; // 합계
 		int i; // 마지막에 i의값을 출력하기 위해 외부에 선언
 		
+		//break는 특정조건에서 빠져나와야할 때 사용할 것
 		for (i = 1; i <= 20; i++) { // i가 1부터 20이 될때까지 총 20번 수행함
 			sum = sum + i;
 			System.out.println("i: " + i + " , sum: " + sum);
