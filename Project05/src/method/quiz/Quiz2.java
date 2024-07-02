@@ -1,34 +1,32 @@
 package method.quiz;
 
-//  두 수를 비교하는 함수 만들고 호출하세요.
-//  둘 중에 더 큰 수를 구하고 반환하세요.
-//  예시) 10,5 => 10
+//  합을 구하는 함수 만들고 호출하세요.
+//  두 수를 입력받아 n1부터 n2까지의 합을 반환하세요.
+//  예시) 5,10 => 5+6+7+8+9+10
 
 public class Quiz2 {
 
-	//두수를 비교하는 함수 선언
-	public static int max(int n1, int n2){
-		if ( n1 > n2) {
-			return n1;
-		} else {
-			return n2;
-		}	
-		//모든 경우에 return을 해야함
+	// 매개변수o 리턴o
+	// n1부터 n2까지의 합을 구하는 함수 선언
+	public static int hap(int n1, int n2) {
+
+		int result = 0;	// 합계를 저장할 변수
+
+		// i를 n1으로 초기화, i가 n2가 될 때까지 반복
+		for(int i=n1; i<=n2; i++) {
+			result = result + i;
+			// for문 안에서 return하면 에러남
+			// for문도 조건문이라 만족하지 못하면 return 못함
+		}
+		return result;
 	}
-	
+
 	public static void main(String[] args) {
-		int result1 = max(10,5); //함수 호출
-		int result2 = max(2,7); 
-		int result3 = max(5,5); 
-		
-		System.out.println(result1);
-		System.out.println(result2);
-		System.out.println(result3);
+		int num1 = 5;
+		int num2 = 10;
+		int sum = hap(num1, num2);	//함수 호출
+
+		System.out.println(num1 + "부터 " + num2 + "까지의 합은 " + sum + "입니다.");
 	}
+
 }
-
-
-//문제풀이
-//매개변수는 int형 변수 2개
-//리턴값o
-//두수를 비교하여 더 큰 값 반환
