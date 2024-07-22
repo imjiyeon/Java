@@ -5,7 +5,7 @@ package object;
 //
 //  3번째 예제에서 작성한 Student클래스를 재사용하세요.
 //  Object형 변수를 선언하고 Student객체를 대입하세요.
-//  Object형 변수를 사용해서 학번과 이름을 출력하세요.
+//  Student객체를 사용해서 학번과 이름을 출력하세요.
 
 public class Quiz2 {
 
