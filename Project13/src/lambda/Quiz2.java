@@ -32,8 +32,8 @@ public class Quiz2 {
 
 //함수형 인터페이스 선언
 interface Hello {
-	// 추상메소드 선언
-	void helloPrint(); // "안녕하세요"를 출력하는 함수
+	// "안녕하세요"를 출력하는 함수
+	void helloPrint(); 
 }
 
 //Hello의 구현 클래스

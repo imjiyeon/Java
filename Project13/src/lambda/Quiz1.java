@@ -32,8 +32,8 @@ public class Quiz1 {
 //함수형 인터페이스
 interface MyNumber {
 	
-	// 추상메소드 선언
-	int max(int x, int y); // 두숫자 중에 더 큰 값을 반환하는 함수
+	// 두숫자 중에 더 큰 값을 반환하는 함수
+	int max(int x, int y); 
 }
 
 //Q.MyNumber의 구현 클래스

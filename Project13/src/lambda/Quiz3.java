@@ -9,7 +9,7 @@ package lambda;
 public class Quiz3 {
 
 	public static void main(String[] args) {
-		
+
 		// 구현 클래스 사용하여 convert() 호출
 		StringConverter converter1 = new ToUpperCaseConverter();
 		String result1 = converter1.convert("Hello, World!");
@@ -35,8 +35,8 @@ public class Quiz3 {
 
 //함수형 인터페이스 선언
 interface StringConverter {
-	// 추상 메서드 선언
-	String convert(String s); // 문자열을 대문자로 변환해서 반환하는 함수
+	// 문자열을 대문자로 변환해서 반환하는 함수
+	String convert(String s);
 }
 
 //Q.Hello의 구현 클래스
