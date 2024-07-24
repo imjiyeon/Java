@@ -1,7 +1,7 @@
-package innerclass.ex4;
+package innerclass;
 
 /*
- * 인스턴스 내부 클래스와 정적 내부 클래스(2)
+ * 내부 클래스 종류
  * */
 class Outer {
 

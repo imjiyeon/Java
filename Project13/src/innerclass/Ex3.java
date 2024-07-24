@@ -8,7 +8,7 @@ import java.awt.event.ActionListener;
  * 익명클래스 사용하기
  * */
 
-public class Ex5 {
+public class Ex3 {
 
 	public static void main(String[] args) {
 
