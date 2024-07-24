@@ -1,25 +1,23 @@
 package map;
 
+import java.util.Collection;
 import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Set;
 
-
-//  1. 다음과 같이 학생(Student) 클래스를 만드세요.
-//  속성: 학번, 이름, 국어점수, 수학점수, 영어점수
+//1. 다음과 같이 학생(Student) 클래스를 만드세요.
+//속성: 학번, 이름, 국어점수, 수학점수, 영어점수
 //
-//  2. 학생목록을 저장하는 map 객체를 생성하세요. (키:학번, 값:학생정보)
+//2. 학생목록을 저장하는 map 객체를 생성하세요. (키:학번, 값:학생정보)
 //
-//  3. 다음과 같이 맵에 학생 3명을 추가하세요.
-//  ( 학번: 1001, 이름: 둘리, 국어: 90, 수학: 80, 영어: 70 )
-//  ( 학번: 1002, 이름: 도우너, 국어: 55, 수학: 65, 영어: 75 )
-//  ( 학번: 1003, 이름: 또치, 국어: 80, 수학: 50, 영어: 50 )
+//3. 다음과 같이 맵에 학생 3명을 추가하세요.
+//( 학번: 1001, 이름: 둘리, 국어: 90, 수학: 80, 영어: 70 )
+//( 학번: 1002, 이름: 도우너, 국어: 55, 수학: 65, 영어: 75 )
+//( 학번: 1003, 이름: 또치, 국어: 80, 수학: 50, 영어: 50 )
 //
-//  4. 학생별 총점과 평균점수를 구하세요.
-//  ex) 둘리의 총점: 240, 평균: 80.0
+//4. 학생별 총점과 평균점수를 구하세요.
+//ex) 둘리의 총점: 240, 평균: 80.0
 //
-//  5. 과목별 총점과 평균점수를 구하세요.
-//  ex) 국어의 총점: 225, 평균: 75.0
+//5. 과목별 총점과 평균점수를 구하세요.
+//ex) 국어의 총점: 225, 평균: 75.0
 
 public class Quiz4 {
 
@@ -34,19 +32,16 @@ public class Quiz4 {
 		map.put(1003, new Student(1003, "또치", 80, 50, 50));
 
 		// 학생별 총점과 평균 구하기
-		Set<Integer> keys = map.keySet(); // 학생을 꺼내려면 키를 꺼내야함
+		Collection<Student> values = map.values();
 
-		for (int key : keys) {
-			// 학생 객체를 여러번 사용해야하기 때문에, 변수에 저장해야함.
-			Student student = map.get(key);
+		for (Student student : values) {
 			// 총점 구하기
 			int sum = student.kor + student.math + student.eng;
 			// 평균 구하기
 			double avg = sum / 3.0;
-
 			// for문 안에서 출력해야함!
 			System.out.println(student.studentName + "학생의 총점: " + sum + ", 평균: " + avg);
-		} //for문이 한번 돌면, 한 학생에대한 정보가 나옴
+		} // for문이 한번 돌면, 한 학생에대한 정보가 나옴
 
 		System.out.println();
 
@@ -55,8 +50,7 @@ public class Quiz4 {
 		int mathSum = 0;
 		int engSum = 0;
 
-		for (int key : keys) {
-			Student student = map.get(key);
+		for (Student student : values) {
 			korSum = korSum + student.kor;
 			mathSum = mathSum + student.math;
 			engSum = engSum + student.eng;
