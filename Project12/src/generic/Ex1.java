@@ -4,7 +4,7 @@ package generic;
  * 여러가지 재료를 사용하는 3D 프린터 클래스 만들기
  * */
 
-//재료로 사용할 파우더 클래스 만들기
+//재료로 사용할 파우더 클래스
 class Powder {
 
 	public void doPrinting() {
@@ -17,7 +17,7 @@ class Powder {
 
 }
 
-//재료로 사용할 플라스틱 클래스 만들기
+//재료로 사용할 플라스틱 클래스
 class Plastic {
 
 	public void doPrinting() {

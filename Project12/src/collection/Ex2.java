@@ -19,6 +19,7 @@ public class Ex2 {
 		
 		System.out.println(list.get(0)); //회원 꺼내기
 		System.out.println(list.get(1));
+
 		System.out.println(list.get(2));
 		System.out.println(list.get(3));
 		

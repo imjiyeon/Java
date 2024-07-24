@@ -4,6 +4,10 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Set;
 
+//  String형 키, float형 value를 가지는 HashMap 객체를 생성하세요.
+//  다음과 같이 데이터 3개를 추가하세요. {"국어", 80.0},  {"수학", 90.0}, {"영어", 100.0}
+//  map에 저장된 과목명만 출력하세요
+//  map에 저장된 점수만 출력하세요
 public class Quiz3 {
 
 	public static void main(String[] args) {
