@@ -1,9 +1,9 @@
 package lambda;
 
 /*
- * Hello의 구현 클래스를 만들고, max()를 호출하세요
- * Hello를 익명클래스로 구현하고, max()를 호출하세요
- * Hello를 람다식 함수로 구현하고, max()를 호출하세요
+ * Hello의 구현 클래스를 만들고, helloPrint()를 호출하세요
+ * Hello를 익명클래스로 구현하고, helloPrint()를 호출하세요
+ * Hello를 람다식 함수로 구현하고, helloPrint()를 호출하세요
  * */
 
 public class Quiz2 {

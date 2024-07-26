@@ -1,9 +1,9 @@
 package lambda;
 
 /*
- * StringConverter의 구현 클래스를 만들고, max()를 호출하세요
- * StringConverter를 익명클래스로 구현하고, max()를 호출하세요
- * StringConverter를 람다식 함수로 구현하고, max()를 호출하세요
+ * StringConverter의 구현 클래스를 만들고, convert()를 호출하세요
+ * StringConverter를 익명클래스로 구현하고, convert()를 호출하세요
+ * StringConverter를 람다식 함수로 구현하고, convert()를 호출하세요
  * */
 
 public class Quiz3 {
