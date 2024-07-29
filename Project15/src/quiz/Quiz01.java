@@ -1,5 +1,6 @@
 package quiz;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 
@@ -36,6 +37,8 @@ public class Quiz01 {
 		for(int i = 0; i < 5; i++) {
 			sum = sum + arr[i];
 		}
+		
+		System.out.println("배열:" + Arrays.toString(arr));
 
 		System.out.println("숫자 5개의 합은 " + sum + "입니다");
 	}

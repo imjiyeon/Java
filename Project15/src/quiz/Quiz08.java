@@ -15,8 +15,9 @@ public class Quiz08 {
 	public static void main(String[] args) throws IOException {
 
 		// 다운로드 폴더와 연결된 파일 클래스 생성
-		File dir = new File("C:\\Users\\G201\\Downloads");
-
+//		File dir = new File("C:\\Users\\G201\\Downloads");
+		File dir = new File("C:\\Users\\imjiyeon\\Downloads");
+		
 		// 폴더 밑에 있는 파일 목록 읽어오기 읽어오기
 		File[] files = dir.listFiles();
 

@@ -20,7 +20,8 @@ public class Quiz10 {
 	public static void main(String[] args) throws IOException {
 
 		// 폴더 경로
-		String filepath = "e:\\Users\\205-T\\Downloads";
+//		String filepath = "e:\\Users\\205-T\\Downloads";
+		String filepath = "C:\\Users\\imjiyeon\\Downloads";
 
 		// 출력 스트림
 		FileWriter fw = new FileWriter("quiz10.txt");
