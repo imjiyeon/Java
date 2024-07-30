@@ -3,15 +3,12 @@ package quiz;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-/*
- * 다음 코드를 실행하면 에러가 발생합니다.
- * 프로그램이 정상적으로 종료되도록 예외를 처리하세요.
- * */
 public class Quiz5 {
 
 	public static void main(String[] args) {
 
-		// 프로그램이 정상적으로 종료되도록 예외를 처리하세요.
+		// 다음 코드를 실행하면 에러가 발생합니다.
+		// Q.프로그램이 정상적으로 종료되도록 예외를 처리하세요.
 
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("정수를 입력하세요.");
