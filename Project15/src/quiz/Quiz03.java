@@ -23,7 +23,7 @@ public class Quiz03 {
 			String str = scanner.nextLine();
 
 			//대소문자 상관없이 비교
-			if(str.toUpperCase().equals("STOP")) {
+			if(str.equalsIgnoreCase("STOP")) {
 				break; //stop이 입력됬으면 빠져나가기
 			}
 
