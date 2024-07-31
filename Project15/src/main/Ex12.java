@@ -23,7 +23,7 @@ public class Ex12 {
 			FileInputStream fis = new FileInputStream("a.txt");
 			FileOutputStream fos = new FileOutputStream("copy2.txt");
 
-			// 버퍼링 보조스트림 생성
+			// 버퍼 보조스트림 생성
 			BufferedInputStream bis = new BufferedInputStream(fis); // 인자로 기반스트림 넣기
 			BufferedOutputStream bos = new BufferedOutputStream(fos);
 

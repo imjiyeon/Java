@@ -16,12 +16,13 @@ public class Quiz04 {
 		try {
 			FileOutputStream fos = new FileOutputStream("quiz4.txt");
 
-			//
 //			fos.write('A'); //65
 //			fos.write('B'); //66
-//			fos.write('C'); //67 ....
+//			fos.write('C'); //67
+//			...
+//			fos.write('Z'); //90
 
-			// 시작! 'A'의 아스키 값
+			// 초기값: 문자'A'의 아스키 값
 			for (int i = 65; i <= 90; i++) {
 				fos.write(i); // A-Z 출력
 			}

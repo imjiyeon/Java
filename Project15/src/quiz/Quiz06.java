@@ -7,7 +7,6 @@ import java.io.IOException;
 //  <문자 스트림>
 //  
 //  FileWriter을 사용하여 파일에 구구단을 출력하세요.
-// (파일 내용 함께 보기)
  
 public class Quiz06 {
 

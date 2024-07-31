@@ -17,7 +17,7 @@ public class Ex10 {
 			FileInputStream fis = new FileInputStream("reader.txt");
 
 			while (true) {
-				int i = fis.read(); // 1바이트씩 읽기
+				int i = fis.read();
 				if (i == -1) {
 					break;
 				}

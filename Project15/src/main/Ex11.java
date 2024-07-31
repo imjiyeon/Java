@@ -46,6 +46,8 @@ public class Ex11 {
 			e.printStackTrace();
 		}
 
+		String.format("파일 복사하는 데 %d milliseconds 소요되었습니다.", (end-start));
+
 		System.out.println("파일 복사하는 데 " + (end - start) + " milliseconds 소요되었습니다.");
 	}
 }
